@@ -1,0 +1,174 @@
+.ourservices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: #020202;
+}
+
+.ourservices-cards{
+    position:absolute;
+     display: flex;
+     width: 90%;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 5rem;
+}
+
+
+
+
+.ourservices-cards .card{
+
+
+
+    display: flex;
+    width: 290.128px;
+    height: 401.936px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12.8px;
+    flex-shrink: 0;
+    border-top-right-radius: 22.4px;
+    border-top-left-radius: 22.4px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 6.4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card img{
+    border-top-right-radius: 22.4px;
+    border-top-left-radius: 22.4px;
+}
+
+
+.card p{
+  
+   color: #FFF;
+font-family: Inter;
+font-size: 17.05px;
+font-style: normal; 
+font-weight: 400;
+line-height: 22.88px; /* 134.194% */
+}
+
+
+
+.services-headline{
+   
+    position:absolute;
+    right: 7rem;
+    padding-top: 1rem;
+
+    color: #080808;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+
+.services-headline::after {
+    content: "";
+    display: block;
+    border-bottom: .5rem solid #ffffff; /* Set the thickness and color of the underline */
+    margin-top: 1px; /* Adjust the spacing between text and underline if needed */
+    width: 11.5rem;
+    /* border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem; */
+
+  }
+
+  .ourservices-span{
+      font-size: .8rem;
+  }
+
+
+
+  @media (max-width:600px) {
+
+    .ourservices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .12rem;
+        background-color: #020202;
+    }
+
+    .wapper{
+       
+        width: 100%;
+    }
+
+
+    .card p{
+  
+     font-size: 13.05px;
+     font-weight: 500;
+     line-height: 15.88px; /* 134.194% */
+     }
+     
+
+  
+    .card img{
+        border-top-right-radius: 12.4px;
+        border-top-left-radius: 12.4px;
+
+        width: 100%;
+    }
+    
+    .ourservices-cards{
+       
+         margin-top: 2rem;
+    }
+    
+    
+   
+.ourservices-cards .card{
+
+
+
+  
+    width: 90.128px;
+    height: 140.936px;
+   
+}
+
+
+
+.services-headline{
+   
+    position:absolute;
+    right: 1.5rem;
+    padding-top: .1rem;
+
+    color: #080808;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+
+
+
+.services-headline::after {
+    content: "";
+    display: block;
+    border-bottom: .2rem solid #ffffff; /* Set the thickness and color of the underline */
+    margin-top: 1px; /* Adjust the spacing between text and underline if needed */
+    width: 7.8rem;
+    /* border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem; */
+
+  }
+
+  .ourservices-span{
+    font-size: .6rem;
+}
+
+      
+  }

@@ -1,0 +1,444 @@
+.feature-section h1 {
+	font-weight: 300;
+	font-size: 2.5vw;
+}
+
+.feature-section h2 {
+	font-weight: 300;
+	font-size: 1.1vw;
+	padding-bottom: 0.4vw;
+}
+
+.feature-section p {
+	padding: 1vw;
+	font-weight: 200;
+	font-size: 1.1vw;
+	word-spacing: 4px;
+}
+
+.feature-icons {
+	font-weight: 200;
+	font-size: 1vw;
+}
+
+
+.banner-outer {
+	font-family: "Lato", sans-serif;
+}
+.carousel-control-prev-icon{
+	display: none;
+}
+.carousel-control-prev-icon::after{
+	display: none;
+	
+}
+.carousel-control-next-icon::after{
+	display: none;
+	
+}
+
+.banner-outer h5 {
+	font-weight: 600;
+	padding-bottom: 1vw;
+	color: #5db9ac;
+}
+
+.banner-outer h1 {
+	font-weight: 300;
+}
+
+.banner-outer p {
+	font-weight: 200;
+	font-size: 1.3vw;
+}
+.banner-outer img {
+	height: 30vw;
+	width: 40vw;
+	border-radius: 1vw;
+}
+
+.carousel-image {
+	object-fit: cover;
+	height: 85vh;
+	width: 100%;
+	filter: brightness(0.4);
+}
+
+.carousel-wrapper.video {
+	object-fit: cover;
+	height: 85vh;
+	width: 100%;
+	filter: brightness(0.4);
+}
+
+.caption {
+	position: absolute;
+}
+
+.caption-heading {
+	position: absolute;
+	bottom: 28vw;
+	font-size: 4vw;
+	font-weight: 900;
+	letter-spacing: 0.2vw;
+}
+
+.caption-para {
+	position: absolute;
+	bottom: 15vw;
+	font-size: 2vw;
+	font-weight: 200;
+}
+
+@media (max-width: 600px) {
+
+	.caption-heading {
+		position: absolute;
+		bottom: 10vw;
+		font-size: 6vw;
+		font-weight: 800;
+		letter-spacing: 0.2vw;
+	}
+
+	.caption-para {
+		position: absolute;
+		bottom: 12vw;
+		font-size: 2.2vw;
+		font-weight: 400;
+	}
+}
+
+.custom-shape-divider-bottom-1698744223 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1698744223 svg {
+	position: relative;
+	display: block;
+	width: calc(142% + 1.3px);
+	height: 39px;
+}
+
+.custom-shape-divider-bottom-1698744223 .shape-fill {
+	fill: #ffffff;
+}
+
+.below-banner {
+	color: rgb(255, 255, 255);
+	background-color: #c45254;
+	padding: 3vw;
+
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+}
+
+.below-banner .para {
+	padding: 2vw;
+	font-weight: 200;
+	font-size: 1.1vw;
+	word-spacing: 5px;
+}
+.data .icon {
+	font-size: 4vw;
+}
+
+.data h1 {
+	font-weight: 900;
+}
+
+.data p {
+	font-weight: 400;
+}
+.below-banner .heading {
+	width: 100%;
+}
+
+.below-banner .data {
+	width: 100%;
+}
+.below-banner h2 {
+	font-weight: 400;
+	font-size: 2vw;
+	padding: 2vw;
+	padding-bottom: 2vw;
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+
+@media (max-width: 600px) {
+	.banner-outer p {
+		font-size: 4vw;
+		text-align: center;
+		margin-top: 2vw;
+	}
+
+	.banner-outer img {
+		height: 60vw;
+		width: 100%;
+	}
+
+	.below-banner h4 {
+		font-size: 5vw;
+	}
+
+	.banner-outer h1 {
+		text-align: center;
+	}
+
+	.below-banner h2 {
+		font-weight: 500;
+		font-size: 6vw;
+		padding-top: 5vw;
+	}
+	.below-banner .para {
+		padding: 1vw;
+		font-weight: 300;
+		font-size: 4vw;
+		word-spacing: 3px;
+	}
+
+	.below-banner .para p {
+		padding: 2.5vw;
+	}
+}
+
+/* --------------------module Overview starts-------------------------------- */
+
+.module-section h1 {
+	font-weight: 300;
+}
+
+@media (max-width: 600px) {
+	.module-section {
+		padding-top: 10vw;
+	}
+
+	.caption-para {
+		display: none;
+	}
+}
+
+/* --------------------module Overview ends-------------------------------- */
+
+/* -------------feature-------------- */
+
+.video-container {
+	width: 100%;
+	height: 40vh;
+	position: relative;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.5);
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.content h1 {
+	font-weight: 500;
+	font-size: 2vw;
+}
+
+.content p {
+	font-weight: 300;
+	font-size: 1.2vw;
+}
+
+@media (max-width: 600px) {
+	.content h1 {
+		font-weight: 600;
+		font-size: 5vw;
+	}
+
+	.content p {
+		font-weight: 300;
+		font-size: 3vw;
+		text-align: center;
+	}
+}
+
+.VR-container {
+	width: 300px;
+	height: 80vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.VR-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	border-top-left-radius: 2vw;
+	border-bottom-left-radius: 2vw;
+}
+
+.VR-heading {
+	top: 6vw;
+	left: 15vw;
+	z-index: 99;
+}
+
+.VR-heading h1 {
+	font-size: 5.8vw;
+	padding-top: 3vw;
+	background-image: linear-gradient(90deg, #d4595b, #868688d5);
+	background-clip: text;
+	color: transparent;
+}
+
+.VR-heading h2 {
+	font-size: 2.5vw;
+	padding-top: 1vw;
+	font-weight: 100;
+}
+
+@media (max-width: 600px) {
+	.VR-heading h1 {
+		font-size: 12vw;
+		padding-top: 2vw;
+	}
+
+	.VR-heading h2 {
+		font-size: 3.5vw;
+		padding-top: 1vw;
+		font-weight: 100;
+		margin-bottom: 5vw;
+	}
+}
+
+.features h1 {
+	background-image: linear-gradient(90deg, #d4595b, #a7a7a8d5);
+	background-clip: text;
+	color: transparent;
+	font-size: 5vw;
+	position: relative;
+}
+
+.features h1::after {
+	content: "";
+	display: block;
+	width: 20%;
+	height: 3px;
+	background-image: linear-gradient(90deg, #d4595b, #a7a7a8d5);
+
+	position: absolute;
+	bottom: 0;
+	left: 33.3vw;
+}
+
+.features h3 {
+	font-size: 2vw;
+	color: #b84446;
+}
+
+.features ul {
+	list-style-type: none;
+}
+
+.feature-link {
+	text-decoration: none;
+	padding: 0.5vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	border-radius: 0.6vw;
+	border: 1px solid black;
+	color: black;
+	transition: all ease-in-out 0.3s;
+}
+
+.features .li-style {
+	background-image: linear-gradient(90deg, #d4595b, #a7a7a8d5);
+	background-clip: text;
+	color: transparent;
+	font-size: 1.5vw;
+	font-weight: 900;
+}
+.feature-link:hover {
+	transform: translateY(-4px);
+	background-color: black;
+	color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+	.features h1 {
+		font-size: 7vw;
+	}
+
+	.features h3 {
+		font-size: 6vw;
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	.feature-section h1 {
+		font-weight: 300;
+		font-size: 4vw;
+		padding-top: 6vw;
+		font-style: italic;
+	}
+
+	.feature-section h2 {
+		font-weight: 300;
+		font-size: 10vw;
+		padding: 1vw;
+		padding-top: 10vw;
+	}
+
+	.feature-section p {
+		padding: 1vw;
+		font-weight: 200;
+		font-size: 4vw;
+		word-spacing: 3px;
+		padding-top: 5vw;
+	}
+
+	.feature-icons {
+		font-weight: 200;
+		font-size: 4vw;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

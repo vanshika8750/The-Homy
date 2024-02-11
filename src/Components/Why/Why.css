@@ -1,0 +1,76 @@
+.Whygoforhomy{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #020202;
+    padding: 3rem;
+}
+
+
+.headline-inner{
+    color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+.headline-inner::after {
+    content: "";
+    display: block;
+    border-bottom: 5px solid #E23744; /* Set the thickness and color of the underline */
+    margin-top: 4px; /* Adjust the spacing between text and underline if needed */
+    width: 15rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+  }
+
+
+  .why1 img{
+      padding-right: 1rem;
+
+  }
+
+  .why2 img{
+    padding-right: 1rem;
+    padding-top: .5rem;
+
+}
+
+
+
+
+@media (max-width:600px) {
+
+    .why1 img{
+        padding-top: 1rem;
+    }
+  
+    .why2 img{
+      padding-top: 1rem;
+  }
+
+  .Whygoforhomy{
+    
+    padding: 4rem;
+}
+
+
+.why1 img{
+   
+    height: 100px;
+}
+
+.why2 img{
+ 
+
+  height: 100px;
+
+
+}
+    
+}

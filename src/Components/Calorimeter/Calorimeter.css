@@ -1,0 +1,36 @@
+.slider-container-cal {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: auto;
+    width: 100%;
+}
+
+.slider-cal {
+    width: 80%;
+    accent-color: #E23744;
+    margin-bottom: 5px;
+}
+
+.slider-marks-cal {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: white;
+}
+
+.mark {
+    /* width: 20px; */
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.cal-display{
+    font-size: 25px;
+    width: 80%;
+    border: solid 2px #E23744;
+    margin: 10px 0px;
+    padding: 0px 30px;
+    border-radius: 5px;
+}

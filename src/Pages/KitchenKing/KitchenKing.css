@@ -1,0 +1,215 @@
+.kitchen-king{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.kitchen1frame{
+    position: absolute;
+    z-index: 1;
+    width: 80vw; 
+    margin-left: 10vw;
+    overflow-x: hidden;
+}
+.head-kitchen-king{
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    overflow-x: hidden;
+
+}
+.kitchen1bg{
+    position: absolute;
+    z-index: 0;
+    height: fit-content;
+    width: 80vw; 
+    margin-left: 10vw;
+    overflow-x: hidden;
+
+}
+.content{
+    position: relative;
+    z-index: 2;
+    height: 600px;
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+.btn-kitchenking{
+    border: none;
+    color: white;
+    background-color: red;
+    height: 35px;
+    overflow-x: hidden;
+
+}
+.why-kitchen{
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+
+}
+.kitchen2{
+    position: absolute;
+    width: 80vw;
+    height: 800px;
+    overflow-x: hidden;
+
+}
+.lower-kitchen{
+    width: 80vw;
+    /* margin-left: 17px; */
+    margin-top: -80px;
+    height: 800px;
+    overflow: hidden;
+    overflow-x: hidden;
+
+}
+.content-lower-kitchen{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+.div-lower{
+    background: red;
+    padding: 15px;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    overflow-x: hidden;
+
+}
+.btn-div-lower{
+    text-align: center;
+    overflow-x: hidden;
+
+}
+@media only screen and (max-width: 1431px) and (min-width:1000px){
+    .lower-kitchen {
+      margin-top: -100px;
+      height:900px;
+    }
+    .kitchen2{
+        height:900px;
+    }
+.head-kitchen-king{
+    height: 80px;
+}
+  }
+  @media only screen and (max-width:1260px){
+    .head-kitchen-king{
+        font-size: 30px;
+        height: 70px;
+    }
+    .div-lower{
+        width: 250px;
+    }
+  }
+  @media only screen and (max-width:1190px) {
+    .kitchen2{
+        height: 1500px;
+    }
+    .lower-kitchen{
+        height: 1200px;
+    }
+  }
+  @media only screen and (max-width:1100px) {
+    .head-kitchen-king{
+        height: 60px;
+    }
+    .why-kitchen{
+        margin-top: -20px;
+    }
+    .content-lower-kitchen{
+display: block;
+    }
+    .content-lower-kitchen div{
+        width: 70vw;
+        margin: auto;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+    .lower-kitchen{
+        height: 1500px;
+    }
+    .kitchen2{
+        height: 2000px;
+    }
+  }
+  @media only screen and (max-width:1000px){
+    .kitchen1frame{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .kitchen1bg{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .kitchen2{
+        height: 2200px;
+    }
+    .content{
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width:900px){
+    .kitchen1bg{
+        position: static;
+    }
+    .content{
+        height: 300px;
+    margin: auto;
+    width: 80%;
+    }
+    .btn-kitchenking{
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+    .kitchen1bg{
+        margin-top: -10px;
+    }
+  }
+  @media only screen and (max-width:850px){
+    .kitchen2{
+        height: 2500px;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .kitchen1bg{
+        margin-top: -20px;
+    }
+    .head-kitchen-king{
+        font-size: 25px;
+        height: 60px;
+    }
+    .kitchen2{
+        height: 2700px;
+    }
+  }
+  @media only screen and (max-width:500px){
+    .kitchen1bg{
+        margin-top: 0px;
+    }
+    .kitchen2{
+        height: 3100px;
+    }
+    .lower-kitchen{
+        height: 1700px;
+    }
+  }

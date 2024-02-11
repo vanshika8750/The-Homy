@@ -1,0 +1,144 @@
+.customize-page{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 5rem;
+    background-color: #020202;
+}
+
+
+.content-div-customize{
+    position:absolute;
+     display: flex;
+     width: 90%;
+     height: 100%;
+     align-items: flex-start;
+     /* justify-content: ; */
+     margin-top: 5rem;
+     color: white;
+}
+
+
+.first-col-customize{
+    display: flex;
+    width: 40%;
+    padding: 0px 50px;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.first-col-div-customize{
+    margin-bottom: 40px;
+}
+
+
+.head-first-cus{
+    font-size: 68px;
+    font-weight: bold;
+    line-height: 69.36px;
+}
+
+
+.second-col-customize{
+    margin: 40px;
+    width: 60%;
+    background-color: #000;
+    height: max-content;
+    padding:5rem;
+}
+
+.content-first-cus{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29px;
+}
+.your-plan{
+  font-size: 30px;
+font-weight:bold;
+}
+
+.homy-types-cus{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+.homy-cus,.homypro-cus,.homypromax-cus{
+  background: #1E1E1E;
+  padding: 2px 10px;
+  border-radius: 5px;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.homy-types-cus img{
+  margin-right: 5px;
+  width: 20px;
+  aspect-ratio: 1;
+}
+.options-cus{
+  width: 100%;
+  background: none;
+  border: solid 2px black;
+  padding: 5px;
+margin: 10px 0px;
+}
+.head-cus-right{
+  font-size: 25px;
+}
+.radio-cus{
+  display: flex;
+  margin: 10px 0px;
+  justify-content: space-around;
+}
+.row-cus{
+  margin: 20px 0px;
+}
+.time-slot-text{
+  color: rgba(255, 255, 255, 0.637);
+}
+.btn-cust{
+  text-align: center;
+}
+.btn-cust button{
+  background: #E23744;
+  border: none;
+  padding: 6px 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+@media only screen and (max-width:1140px){
+  .first-col-customize{
+padding: 0px 10px;  }
+.second-col-customize{
+  padding: 50px 20px;
+}
+}
+@media only screen and (max-width:1000px){
+  .second-col-customize{
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width:900px){
+  .content-div-customize{
+    display: block;
+    justify-content: center;
+  }
+
+  .first-col-customize{
+    display: block;
+    width: 100%;
+  }
+  .head-first-cus{
+   font-size: 50px;
+  }
+  .homy-types-cus{
+    justify-content: space-evenly;
+  }
+  .second-col-customize{
+    width: 90%;
+  }
+ 
+}

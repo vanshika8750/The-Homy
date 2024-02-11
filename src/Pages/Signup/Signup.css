@@ -1,0 +1,349 @@
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    background-color: #020202;
+}
+
+.signup-cards{
+    position:absolute;
+     display: flex;
+     width: 90%;
+     display: flex;
+     justify-content: space-evenly;
+     margin-top: 5rem;
+}
+
+
+
+
+.signup-cards .card{
+
+
+
+    display: flex;
+    width: 100%;
+    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 12.8px;
+    flex-shrink: 0;
+    border-top-right-radius: 22.4px;
+    border-top-left-radius: 22.4px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0px 0px 6.4px 0px rgba(0, 0, 0, 0.20);
+    text-align: center;
+    justify-content: center;
+}
+
+.card img{
+    border-top-right-radius: 22.4px;
+    border-top-left-radius: 22.4px;
+}
+
+
+.card p{
+  
+   color: #FFF;
+font-family: Inter;
+font-size: 20.05px;
+font-style: normal; 
+font-weight: 200;
+line-height: 35.88px; /* 134.194% */
+}
+
+.card .first-para{
+  
+    color: #FFF;
+ font-family: Inter;
+ font-size: 25.05px;
+ font-style: normal; 
+ font-weight: 200;
+ line-height: 35.88px; /* 134.194% */
+ }
+
+
+
+.signup-headline{
+   
+    position:absolute;
+    right: 8rem;
+    padding-top: .5rem;
+
+    color: #ffffff;
+font-family: Inter;
+font-size: 35px;
+font-style: normal;
+font-weight: 800;
+line-height: 4rem;
+}
+
+
+
+.signup-headline::after {
+    content: "";
+    display: block;
+    border-bottom: .5rem solid #ffffff; /* Set the thickness and color of the underline */
+    margin-top: 1px; /* Adjust the spacing between text and underline if needed */
+    width: 10.5rem;
+    /* border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem; */
+
+  }
+
+
+  .mobileview{
+      display: none;
+  }
+
+  .signup-cards img{
+      height: 20rem;
+      margin-top: 5rem;
+      border-radius: .6rem;
+  }
+
+  .submit-btn{
+
+    color: grey;
+    transition: all ease-in-out 0.3s;
+
+  }
+
+  .submit-btn:hover{
+
+    color: #E23744;
+
+  }
+
+
+
+/* ------------------------------ */
+
+
+.signup-form input{
+    background-color: #1E1E1E;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 40rem;
+    margin-top: .3rem;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    
+}
+
+.signup-form textarea{
+  background-color: #1E1E1E;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 40rem;
+  border: none;
+  color: white;
+  margin-top: .3rem;
+  border-radius: 6px;
+
+  
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.submit-btn{
+    border: 1px solid white;
+    margin-left: 17rem;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 6px;
+    background: #FFF;
+
+    color: #1E1E1E;
+
+
+font-family: Verdana;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 80%; 
+letter-spacing: -0.48px;
+
+}
+/* ----------------------------------------- */
+
+
+
+  @media (max-width:600px) {
+
+    .desktopview{
+        display: none;
+    }
+
+    .mobileview{
+        display: block;
+    }
+
+    .signup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .12rem;
+        background-color: #020202;
+    }
+
+    .wapper{
+       
+        width: 100%;
+    }
+
+  
+
+    .card p{
+  
+     font-size: 18.05px;
+     font-weight: 200;
+     line-height: 20.88px; /* 134.194% */
+     }
+
+     .card .first-para{
+  
+        color: #FFF;
+     font-family: Inter;
+     font-size: 20.05px;
+     font-style: normal; 
+     font-weight: 500;
+     line-height: 25.88px; /* 134.194% */
+     }
+    
+     
+
+  
+    .card img{
+        border-top-right-radius: 12.4px;
+        border-top-left-radius: 12.4px;
+
+        width: 100%;
+    }
+    
+    .signup-cards{
+        display: flex;
+       flex-direction: row;
+
+       
+         margin-top: 2rem;
+    }
+  
+
+
+
+
+.signup-headline{
+   
+    position:absolute;
+    right: .7rem;
+    padding-top: .9rem;
+
+    color: #ffffff;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+
+
+
+
+.signup-headline::after {
+    content: "";
+    display: block;
+    border-bottom: .2rem solid #ffffff; /* Set the thickness and color of the underline */
+    margin-top: 1px; /* Adjust the spacing between text and underline if needed */
+    width: 7.8rem;
+    /* border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem; */
+
+  }
+
+  .signup-span{
+    font-size: .6rem;
+}
+
+
+
+
+
+.signup-cards img{
+display:none;
+ 
+}
+
+
+.signup-form input{
+    background-color: #1E1E1E;
+    outline: none;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    margin-top: .1rem;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    
+}
+
+.signup-form textarea{
+  background-color: #1E1E1E;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 25rem;
+  border: none;
+  color: white;
+  margin-top: .1rem;
+  border-radius: 6px;
+
+  
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+.submit-btn{
+    padding: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 6px;
+    background: #FFF;
+
+    color: #1E1E1E;
+
+/* text website */
+font-family: Verdana;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 80%; /* 19.2px */
+letter-spacing: -0.48px;
+margin-left: 9rem;
+
+}
+
+      
+  }
+
+
