@@ -23,6 +23,7 @@ function OffcanvasExample() {
          <Link to="/aboutus" className='navbar-link-buttons1 '>About Us</Link>
           <Link to="/services" className='navbar-link-buttons2 '>Services</Link>
           <Link to="/contactus" className='navbar-link-buttons3'>Contact Us</Link>
+
          </div>
 
           <div className="logo1" >

@@ -8,6 +8,7 @@ import vectorstar from "../../assets/vectorstar.svg"
 import homypro from "../../assets/homypro.svg"
 import homypromax from "../../assets/homypromax.svg"
 import customizationhead from "../../assets/customizationhead.svg"
+import cusbgmobile from "../../assets/cusbgmobile.svg"
 
 const Customize = () => {
 
@@ -31,7 +32,8 @@ const Customize = () => {
   return (
     <div className="customize-page">
       <div className="img-div-customize">
-        <img src={customizebg} alt="" />
+        <img src={customizebg} alt="" className="desktop-cus" />
+        <img src={cusbgmobile} alt="" className="mobile-cus" />
       </div>
 
       <div className="content-div-customize">

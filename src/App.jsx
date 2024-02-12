@@ -11,7 +11,7 @@ import Signup from './Pages/Signup/Signup'
 import Login from './Pages/Login/Login'
 import KitchenKing from './Pages/KitchenKing/KitchenKing'
 import Customize from './Pages/Customize/Customize'
-
+import Otp from './Pages/Otp/Otp'
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
          <Route exact path='/login' element={<Login/>}/>
          <Route exact path='/kitchenking' element={<KitchenKing/>}/>
          <Route exact path='/customize' element={<Customize/>}/>
+         <Route exact path='/otp' element={<Otp/>}/>
 
 
 
