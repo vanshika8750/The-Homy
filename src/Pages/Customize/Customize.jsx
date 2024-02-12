@@ -29,6 +29,13 @@ const Customize = () => {
   };
 
 
+  const [userSelectedOption, setUserSelectedOption] = useState('');
+
+  const handleSelect = (value) => {
+    setUserSelectedOption(value);
+    console.log('Selected Option:', value);
+  };
+
   return (
     <div className="customize-page">
       <div className="img-div-customize">
@@ -53,32 +60,60 @@ const Customize = () => {
           <div className="first-col-div-customize">
             <div className="your-plan">Your Plan</div>
 
+           
             <div className="homy-types-cus">
-              <div className="homy-cus">
-                <div>
-                  <img className="star" src={vectorstar} alt=""  />
-                </div>
-                <div>
-                  Homy
-                </div>
-              </div>
-              <div className="homypro-cus">
-              <div>
-                  <img src={homypro} alt="" />
-                </div>
-                <div>
-                  Homy Pro
-                </div>
-              </div>
-              <div className="homypromax-cus">
-              <div>
-                  <img src={homypromax} alt=""  />
-                </div>
-                <div>
-                  Homy Pro max
-                </div>
-              </div>
-            </div>
+      <div 
+        style={{
+          cursor: 'pointer',
+          backgroundColor: userSelectedOption === 'Homy' ? 'black' : '#1e1e1e',
+          border: userSelectedOption === 'Homy' ? '2px solid white' : 'none'
+        }} 
+        className="homy-cus" 
+        onClick={() => handleSelect('Homy')}
+      >
+        <div>
+          <img className="star" src={vectorstar} alt="" />
+        </div>
+        <div>
+          Homy
+        </div>
+      </div>
+      <div 
+        style={{
+          cursor: 'pointer',
+          backgroundColor: userSelectedOption === 'Homy Pro' ? 'black' : '#1e1e1e',
+          border: userSelectedOption === 'Homy Pro' ? '2px solid white' : 'none'
+        }} 
+        className="homypro-cus" 
+        onClick={() => handleSelect('Homy Pro')}
+      >
+        <div>
+          <img src={homypro} alt="" />
+        </div>
+        <div>
+          Homy Pro
+        </div>
+      </div>
+      <div 
+        style={{
+          cursor: 'pointer',
+          backgroundColor: userSelectedOption === 'Homy Pro Max' ? 'black' : '#1e1e1e',
+          border: userSelectedOption === 'Homy Pro Max' ? '2px solid white' : 'none'
+        }} 
+        className="homypromax-cus" 
+        onClick={() => handleSelect('Homy Pro Max')}
+      >
+        <div>
+          <img src={homypromax} alt="" />
+        </div>
+        <div>
+          Homy Pro max
+        </div>
+      </div>
+    </div>
+
+
+
 
             <div >
               <select className="options-cus" value={selectedOption} onChange={handleChange}>

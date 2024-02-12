@@ -118,6 +118,10 @@ margin: 10px 0px;
   color: white;
   border-radius: 10px;
 }
+.options-cus {
+ /* Remove the border */
+  outline: none; /* Remove the outline when selected */
+}
 @media only screen and (max-width:1140px){
   .first-col-customize{
 padding: 0px 10px;  }
