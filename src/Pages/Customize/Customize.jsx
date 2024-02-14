@@ -9,35 +9,38 @@ import homypro from "../../assets/homypro.svg"
 import homypromax from "../../assets/homypromax.svg"
 import customizationhead from "../../assets/customizationhead.svg"
 import cusbgmobile from "../../assets/cusbgmobile.svg"
+import { useCustomizationContext} from '../../Components/Context/CustomizationContext'
+import { Link } from "react-router-dom";
+
 
 const Customize = () => {
 
-    const [selectedOption, setSelectedOption] = useState('');
+    const {selectedOption, setSelectedOption} = useCustomizationContext('');
 
     const handleChange = (event) => {
       setSelectedOption(event.target.value);
-      console.log("Selected option:", event.target.value);
+      // console.log("Selected option:", event.target.value);
     };
 
-    const [selectedGender, setSelectedGender] = useState('');
+    const {selectedGender, setSelectedGender} = useCustomizationContext('');
 
   const handleGenderChange = (event) => {
     const selectedValue = event.target.value;
     setSelectedGender(selectedValue);
-    console.log("Selected gender:", selectedValue);
+    // console.log("Selected gender:", selectedValue);
     // You can store the selected value somewhere else as per your requirement
   };
 
 
-  const [userSelectedOption, setUserSelectedOption] = useState('');
+  const {userSelectedOption, setUserSelectedOption} = useCustomizationContext('');
 
   const handleSelect = (value) => {
     setUserSelectedOption(value);
-    console.log('Selected Option:', value);
+    // console.log('Selected Option by user:', value);
   };
 
   return (
-    <div className="customize-page">
+     <div className="customize-page">
       <div className="img-div-customize">
         <img src={customizebg} alt="" className="desktop-cus" />
         <img src={cusbgmobile} alt="" className="mobile-cus" />
@@ -107,7 +110,7 @@ const Customize = () => {
           <img src={homypromax} alt="" />
         </div>
         <div>
-          Homy Pro max
+          Homy Pro Max
         </div>
       </div>
     </div>
@@ -118,11 +121,11 @@ const Customize = () => {
             <div >
               <select className="options-cus" value={selectedOption} onChange={handleChange}>
                 <option value="">Select</option>
-                <option value="daily">Daily</option>
-                <option value="weekly">Weekly</option>
-                <option value="monthly">Monthly</option>
-                <option value="half_yearly">Half Yearly</option>
-                <option value="yearly">Yearly</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly">Monthly</option>
+                <option value="Half Yearly">Half Yearly</option>
+                <option value="Yearly">Yearly</option>
               </select>
             </div>
           </div>
@@ -190,7 +193,7 @@ const Customize = () => {
 </div>
 
 <div className="btn-cust">
-  <button>Continue</button>
+  <Link to="/cart"><button>Continue</button></Link>
 </div>
 
 </div>

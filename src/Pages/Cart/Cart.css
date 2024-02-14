@@ -95,6 +95,7 @@ margin: 20px 0px;
     margin: 0px;
 }
 .suggestions textarea{
+    padding: 5px;
     width: 100%;
     background: rgba(0, 0, 0, 0.366);
     color: white;

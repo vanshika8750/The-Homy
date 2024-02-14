@@ -4,13 +4,15 @@ import "./Cart.css";
 import cusbgmobile from "../../assets/cusbgmobile.svg"
 import carthead from '../../assets/cart-head.svg'
 import percent from '../../assets/percent.svg'
-
+import pricesArray from '../../Components/prices'
+import {useCustomizationContext} from '../../Components/Context/CustomizationContext'
 
 
 const Cart = () => {
+    const { userSelectedOption,selectedOption} = useCustomizationContext();
 
     const [count, setCount] = useState(1);
-    const pricePerProduct = 646;
+    
 
     const increment = () => {
         setCount(count + 1);
@@ -22,7 +24,7 @@ const Cart = () => {
         }
     };
 
-    console.log('Current count:', count);
+    // console.log('Current count:', count);
 
 
     const [suggestion, setSuggestion] = useState('');
@@ -35,8 +37,28 @@ const Cart = () => {
         console.log('Submitted suggestion:', suggestion);
     };
 
+
+    const findPrice = (category, option) => {
+        const categoryObj = pricesArray.find(item => item.category === category);
+      
+        if (categoryObj) {
+          const optionObj = categoryObj.options.find(item => item.plan === option);
+          if (optionObj) {
+            return optionObj.price;
+          }
+        }
+        return null;
+      };
+      
+      const category = userSelectedOption;
+      const option = selectedOption;
+      const price = findPrice(category, option);
+      
+      const priceprod = count*price;
+
   return (
-    <div className="cart-page">
+  
+ <div className="cart-page">
       <div className="img-div-cart">
         <img src={customizebg} alt="" className="desktop-cart" />
         <img src={cusbgmobile} alt="" className="mobile-cart" />
@@ -46,7 +68,7 @@ const Cart = () => {
 
         <div className="first-col-cart">
           <div className="first-col-div-cart head-first-cart">
-            <div>Way to Finalize </div>
+            <div>Way to Finalize</div>
           </div>
 
           <div className="first-col-div-cart content-first-cart">
@@ -71,7 +93,7 @@ const Cart = () => {
                 <div className="prod-no">
 
                     <div className="prodname">
-                        Lorem ipsum dolor sit.
+                       {userSelectedOption}-{selectedOption}
                     </div>
 
                     <div className="no-prod">
@@ -80,7 +102,7 @@ const Cart = () => {
                 <button onClick={increment}>+</button>
             </div>
             <div className="price-prod">
-                {count * pricePerProduct}
+                {priceprod}
             </div>
                 </div>
 
@@ -131,11 +153,11 @@ const Cart = () => {
             </div>
 
             <div className="right-pay">
-                <div>9595</div>
-                <div>99</div>
-                <div>9595</div>
+                <div>{priceprod}</div>
+                <div>10</div>
+                <div>5</div>
                 <div>.............</div>
-                <div>9595</div>
+                <div>{priceprod-10-5}</div>
             </div>
           </div>
 
@@ -146,7 +168,7 @@ const Cart = () => {
                     Amount to be paid
                 </div>
 
-                <div>9595</div>
+                <div>{priceprod-10-5}</div>
             </div>
 
 
@@ -160,6 +182,7 @@ const Cart = () => {
       </div>
 
     </div>
+
   );
 };
 

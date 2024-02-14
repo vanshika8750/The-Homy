@@ -16,11 +16,13 @@ import ForgotPassword from './Pages/ForgotPassword/ForgotPassword'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Cart from './Pages/Cart/Cart'
 import AdminDashboard from './Pages/AdminDashboard/AdminDashboard'
+import { CustomizationProvider } from './Components/Context/CustomizationContext'
 
 function App() {
 
   return (
-    <Router>
+    <CustomizationProvider>
+          <Router>
     <Navbar/>
        <Routes>
 
@@ -43,6 +45,8 @@ function App() {
        </Routes>    
        <Footer/>
     </Router>
+    </CustomizationProvider>
+
   )
 }
 
