@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import card from '../../assets/servicescard.svg'
 import mobileview  from '../../assets/mobileview.svg'
+import { Link } from 'react-router-dom'
 import desktopview from '../../assets/ourservicesbackground.svg'
 import aboutimg from '../../assets/feature.jpg'
 import "./Signup.css"
@@ -120,7 +121,7 @@ const handleSubmit = (e) => {
             required
         ></textarea>
     </div>
-    <button className='submit-btn' type="submit" >Submit</button>
+    <Link to="/login"><button className='submit-btn' type="submit" >Submit</button></Link>
 </form>
 
 </div>

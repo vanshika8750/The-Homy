@@ -19,7 +19,7 @@ const Otp = () => {
     return () => clearInterval(interval);
   }, [timer]);
 
-  const handleOtpInputChange = (index, value) => {
+  const handleOtpInputChange = (index, value, event) => {
     if (/\d/.test(value) || value === "") {
       const newOtpDigits = [...otpDigits];
       newOtpDigits[index] = value;
@@ -27,6 +27,11 @@ const Otp = () => {
 
       if (value !== "" && index < otpDigits.length - 1) {
         otpInputRefs.current[index + 1].focus();
+      }
+
+      // Handle backspace key press
+      if (value === "" && event.key === "Backspace" && index > 0) {
+        otpInputRefs.current[index - 1].focus();
       }
     }
   };
@@ -72,7 +77,8 @@ const Otp = () => {
                   type="text"
                   maxLength="1"
                   value={digit}
-                  onChange={(e) => handleOtpInputChange(index, e.target.value)}
+                  onChange={(e) => handleOtpInputChange(index, e.target.value, e)}
+                  onKeyDown={(e) => handleOtpInputChange(index, digit, e)}
                   ref={(ref) => (otpInputRefs.current[index] = ref)}
                 />
               ))}

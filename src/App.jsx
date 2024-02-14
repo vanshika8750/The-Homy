@@ -13,6 +13,8 @@ import KitchenKing from './Pages/KitchenKing/KitchenKing'
 import Customize from './Pages/Customize/Customize'
 import Otp from './Pages/Otp/Otp'
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword'
+import Dashboard from './Pages/Dashboard/Dashboard'
+import Cart from './Pages/Cart/Cart'
 
 function App() {
 
@@ -31,10 +33,9 @@ function App() {
          <Route exact path='/customize' element={<Customize/>}/>
          <Route exact path='/otp' element={<Otp/>}/>
          <Route exact path='/forgotPassword' element={<ForgotPassword/>}/>
-          
-
-
-
+         <Route exact path='/dashboard' element={<Dashboard/>}/>
+         <Route exact path='/cart' element={<Cart/>}/>
+         
 
 
        </Routes>    

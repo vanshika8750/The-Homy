@@ -1,0 +1,93 @@
+@media only screen and (max-width:500px){
+   .calendar{
+    width: 90%;
+   }
+}
+.calendar {
+   font-family: Arial, sans-serif;
+   max-width: 600px;
+   margin: 0 auto;
+ }
+
+ .arrow-cal {
+   border: solid black;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 3px;
+ }
+ 
+ .right-cal {
+   transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+ }
+ 
+ .left-cal {
+   transform: rotate(135deg);
+   -webkit-transform: rotate(135deg);
+ }
+ .navigation {
+   display: flex;
+   margin-bottom: 10px;
+   justify-content: center;
+ }
+ 
+ .navigation button {
+   cursor: pointer;
+   background-color: white;
+   color: white;
+   border: none;
+   padding: 5px 10px;
+   margin-right: 5px;
+   border-radius: 5px;
+ }
+ 
+ .navigation button:hover {
+   background-color: rgba(255, 255, 255, 0.37);
+ }
+ .head-calendar{
+   font-size: 20px;
+   margin: 0px 10px;
+ }
+ .calendarTable {
+   width: 100%;
+   border-collapse: collapse;
+   background: white;
+   color: black;
+   border-radius: 10px;
+ }
+ 
+ .calendarTable th,
+ .calendarTable td {
+   padding: 10px;
+   text-align: center;
+ }
+ 
+ .calendarTable th {
+border-bottom: 1px solid black;
+/* padding: 0px 10px; */
+}
+ 
+ .calendarDay {
+   position: relative;
+   /* cursor: pointer; */
+ }
+ 
+ .redColor {
+   cursor: pointer;
+   background-color: #ff0000;
+border-radius: 100%;
+color: white;
+}
+
+ 
+ .calendarDay:hover .eventInfo {
+   display: block;
+ }
+ .eventInfoPanel{
+   color: black;
+   background-color: white;
+
+   height: 50px;
+   border: 1px solid white;
+ }
+ 

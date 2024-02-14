@@ -98,7 +98,7 @@ const handleSubmit = (e) => {
     </div>
 
     <div className="Forgot-password">
-        <Link className='Forgot-password'>Forgot Password</Link>
+        <Link to="/forgotPassword" className='Forgot-password'>Forgot Password</Link>
     </div>
 
    

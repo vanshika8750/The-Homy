@@ -1,0 +1,188 @@
+.dashboard{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    color: white;
+}
+.upper-dashboard{
+    width: 100%;
+    display: flex;
+    /* height: 80vh; */
+    justify-content: space-between;
+}
+.left-dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E23744;
+    border-radius: 10px;
+    padding: 20px;
+    width: 25%;
+}
+
+.right-dashboard{
+    /* background-color: #; */
+    width: 70%;
+}
+.name-left-dash{
+    font-size: 36px;
+}
+.info-left-dash{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-size: 18px;
+}
+.icon{
+    margin: 0px 20px;
+}
+.info-dash{
+    margin: 20px 0px;
+}
+.upper-right-dash{
+    /* width: 75%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020202;
+    overflow-x: hidden;
+}
+.content-upper-right-dash{
+    position:absolute;
+     display: flex;
+     align-items: center;
+     padding: 0px 3rem;
+}
+.left-cont-ur{
+    /* width: 70%; */
+    margin-left: 3rem;
+}
+.left-cont-ur .head{
+   font-size: 40px;
+   margin-bottom: 30px;
+   font-weight: 500;
+}
+.left-cont-ur div{
+    font-size: 28px;
+    width: 90%;
+}
+
+/* lower dashboard */
+.lower-dashboard{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.showplan{
+    border: 2px solid white;
+    width: 30%;
+    height: 80px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+.lower-dashboard .up{
+    font-size: 14px;
+}
+.lower-dashboard .plan,.timing{
+    color: #E23744;
+}
+.lower-dashboard .time{
+    text-align: right;
+}
+.lower-dashboard .date{
+    aspect-ratio: 1;
+    width: 40px;
+    background: white;
+    color: black;
+   text-align: center;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:1300px){
+    .info-left-dash{
+        font-size: 16px;
+    }
+   .left-dashboard{
+    width: 28%;
+   } 
+   .girl-dash{
+    height: 160px;
+    margin-right: 30px;
+   }
+   .left-cont-ur .head{
+    margin-bottom: 10px;
+   }
+}
+
+@media only screen and (max-width:1150px){
+    .upper-dashboard{
+        display: block;
+    }
+    .left-dashboard{
+width: 100%;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+    }
+     .imgandname{
+        width: 40%;
+    }
+    
+.right-dashboard{
+    width: 100%;
+}
+    .upper-right-dash{
+        margin-top: 40px;
+    }
+
+}
+@media only screen and (max-width:1050px){
+    .imgandname{
+        width: 50%;
+    }
+    .name-left-dash{
+        font-size: 30px;
+    }
+    .showplan{
+        width: 33%;
+    }
+.dashboard{
+    padding: 2rem;
+}
+}
+@media only screen and (max-width:850px){
+    .upper-right-dash{
+        display: none;
+    }
+    .lower-dashboard{
+        display: block;
+    }
+    .showplan{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+@media only screen and (max-width:700px){
+    .left-dashboard{
+        display: block;
+        width: 100%;
+    }
+    .info-dash{
+        width: 100%;
+    }
+    .imgandname{
+        text-align: center;
+        width: 100%;
+    }
+    .dashboard{
+        padding: 1rem;
+    }
+}

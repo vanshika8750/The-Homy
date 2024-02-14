@@ -69,7 +69,7 @@ function OffcanvasExample() {
                 <Form className="d-flex connect-button justify-content-center align-items-center" >
 
                   
-<Link to="/" className='connect-btn'>Connect<GoArrowUpRight /></Link>
+<Link to="/signup" className='connect-btn'>Connect<GoArrowUpRight /></Link>
 
 </Form>
 
@@ -100,7 +100,7 @@ function OffcanvasExample() {
             <Form className="d-flex connect-button justify-content-center align-items-center"  >
 
                   
-             <Link to="/" className='connect-btn'>Connect<GoArrowUpRight /></Link>
+             <Link to="/signup" className='connect-btn'>Connect<GoArrowUpRight /></Link>
 
              </Form>
 
