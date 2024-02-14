@@ -10,6 +10,37 @@ import { FaGoogle } from "react-icons/fa";
 
 const login = () => {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const [formData, setFormData] = useState({
     name: '',
     phoneNumber: '',

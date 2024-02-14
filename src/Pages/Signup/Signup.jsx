@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import card from '../../assets/servicescard.svg'
 import mobileview  from '../../assets/mobileview.svg'
 import { Link } from 'react-router-dom'
@@ -8,6 +8,8 @@ import "./Signup.css"
 
 
 const signup = () => {
+
+
 
 const [formData, setFormData] = useState({
     name: '',

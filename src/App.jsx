@@ -15,6 +15,7 @@ import Otp from './Pages/Otp/Otp'
 import ForgotPassword from './Pages/ForgotPassword/ForgotPassword'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Cart from './Pages/Cart/Cart'
+import AdminDashboard from './Pages/AdminDashboard/AdminDashboard'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
          <Route exact path='/forgotPassword' element={<ForgotPassword/>}/>
          <Route exact path='/dashboard' element={<Dashboard/>}/>
          <Route exact path='/cart' element={<Cart/>}/>
+         <Route exact path='/admin' element={<AdminDashboard/>}/>
          
 
 
