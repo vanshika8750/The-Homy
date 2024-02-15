@@ -4,6 +4,11 @@ import './Calorimeter.css';
 function Calorimeter() {
     const [data, setData] = useState(1000); // Initial value set to 1000
 
+    const handleInputChange = (e) => {
+        const newValue = parseInt(e.target.value);
+        setData(newValue);
+    };
+
     return (
         <div className="slider-container-cal">
             <input 
@@ -12,7 +17,7 @@ function Calorimeter() {
                 min="1000" 
                 max="3000" 
                 value={data} 
-                onChange={(e) => setData(e.target.value)} 
+                onChange={(e) => setData(parseInt(e.target.value))} 
             />
             <div className="slider-marks-cal">
                 <div className="mark">1000</div>
@@ -22,7 +27,12 @@ function Calorimeter() {
                 <div className="mark">3000</div>
             </div>
             <div className="cal-display">
-                ={data}
+                =
+                <input 
+                    type="number" 
+                    value={data} 
+                    onChange={handleInputChange} 
+                />
             </div>
         </div>
     );
