@@ -1,32 +1,33 @@
-.Services{
-    height: 270vh;
-    background-color: black;
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 5rem;
-
+.Services {
+	height: 270vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 5rem;
+	margin-bottom: 10rem;
 }
-.service-headline{
-    position:absolute;
+.service-headline {
+	position: absolute;
 }
 
-.service-headline h1{
-     color: #FFF;
-text-align: right;
-font-family: Anton;
-font-size: 60px;
-font-style: normal;
-font-weight: 600;
-padding-right: 12rem;
-padding-top: .8rem;
-line-height: 100%; /* 69.36px */
-letter-spacing: 0.58px;
-  }
-.services-box{
-    position: absolute;
-    top: 40rem;
-    width: 80%;
+.service-headline h1 {
+	color: #fff;
+	font-family: montserrat;
+	text-align: right;
+	/* font-family: Anton; */
+	font-size: 54px;
+	font-style: normal;
+	font-weight: 600;
+	padding-right: 11rem;
+	padding-top: 0.8rem;
+	line-height: 100%; /* 69.36px */
+	letter-spacing: 0.58px;
+}
+.services-box {
+	position: absolute;
+	top: 40rem;
+	width: 80%;
 }
 
 /* .service1{
@@ -35,242 +36,204 @@ letter-spacing: 0.58px;
     justify-content: space-between;
 } */
 
-.service-title h2{
-
-    color: #E23744;
-    font-family: Montserrat;
-    font-size: 3.5rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+.service-title h2 {
+	color: #e23744;
+	font-family: Montserrat;
+	font-size: 3.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
 }
-.services-content p:first-child{
-    font-size: 3rem;
-   font-weight: 300;
-}
-
-
-.services-content p:nth-child(2){
-    font-size: 1.2rem;
-}
-.services-content{
-    text-align: center;
-    padding-top: 5rem;
-    color: black;
+.services-content p:first-child {
+	font-size: 3rem;
+	font-weight: 300;
 }
 
-.service1{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-top: 5rem;
-
+.services-content p:nth-child(2) {
+	font-size: 1.2rem;
+}
+.services-content {
+	text-align: center;
+	padding-top: 5rem;
+	color: black;
 }
 
-.service1 .service-image img{
-    height: 25rem;
+.service1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-top: 5rem;
 }
 
-.booking{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 8rem;
+.service1 .service-image img {
+	height: 25rem;
 }
 
-.booking p{
-    color: #FFF;
-font-family: Montserrat;
-font-size: 19.2px;
-font-style: normal;
-font-weight: 300;
-line-height: normal;
+.booking {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 8rem;
 }
 
-
-
-
-
-
-.Customize-button{
-padding: 12px 15.6px;
- color: white;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 10px;
-border-radius: 8px;
-background-color: #E23744;
-transition: all ease-in-out .3s;
-
-
-
+.booking p {
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 19.2px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
 }
 
-
-
-
-.Customize-button .Customize-btn{
-    font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 300;
-line-height: 80%; /* 12.8px */
-letter-spacing: -0.32px;
-text-decoration: none ;
-color: white;
-transition: all ease-in-out .3s;
-
+.Customize-button {
+	padding: 12px 15.6px;
+	color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background-color: #e23744;
+	transition: all ease-in-out 0.3s;
 }
 
-
-.Customize-button .Customize-btn:hover{
-    color: #020202;
- 
+.Customize-button .Customize-btn {
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 80%; /* 12.8px */
+	letter-spacing: -0.32px;
+	text-decoration: none;
+	color: white;
+	transition: all ease-in-out 0.3s;
 }
 
-
-.service-image img{
-    border-radius: .5rem;
-
+.Customize-button .Customize-btn:hover {
+	color: #020202;
 }
-@media (max-width:600px) {
 
-    .Services{
-        height: 130vh;
-        background-color: black;
-        display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 5rem;
-    
-    }
+.service-image img {
+	border-radius: 0.5rem;
+}
+@media (max-width: 600px) {
+	.Services {
+		height: 110vh;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5rem;
+	}
 
-    
-    .services-upper-background img{
-        width: 100%;
-    }
-    
-    .services-lower-background img{
-        width: 100%;
-    }
+	.services-upper-background img {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		width: 100%;
+	}
 
-    .Services{
-      
-      padding-top: 2rem;
-    
-    }
+	.services-lower-background img {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		width: 100%;
+	}
 
-    .service-headline h1{
-        color: #FFF;
-   font-family: Anton;
-   font-size: 21px;
-   font-style: normal;
-   font-weight: 800;
-   padding-right: 4rem;
-   padding-top: .5rem;
-   line-height: 100%; /* 69.36px */
-   letter-spacing: 0.48px;
-     }
+	.Services {
+		padding-top: 2rem;
+	}
 
+	.service-headline h1 {
+		color: #fff;
+		font-family: montserrat;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		padding-right: 4.5rem;
+		padding-top: 0.5rem;
+		line-height: 100%; /* 69.36px */
+		letter-spacing: 0.48px;
+	}
 
-     .services-content p:first-child{
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-    
-    
-    .services-content p:nth-child(2){
-        font-size: .8rem;
-        font-weight: 500;
-    }
-    .services-content{
-        text-align: center;
-        padding-top: 1rem;
-        color: black;
-    }
+	.services-content p:first-child {
+		font-size: 1.5rem;
+		font-weight: 300;
+	}
 
+	.services-content p:nth-child(2) {
+		font-size: 0.8rem;
+		font-weight: 500;
+	}
+	.services-content {
+		text-align: center;
+		padding-top: 1rem;
+		color: black;
+	}
 
-    .services-box{
-        position: absolute;
-        top: 15rem;
-        width: 100%;
-        padding: .2rem;
-    }
+	.services-box {
+		position: absolute;
+		top: 15rem;
+		width: 100%;
+		padding: 0.2rem;
+	}
+	.service1 {
+		padding-top: 3rem;
+	}
+	.service1 .service-image img {
+		height: 6rem;
+	}
 
-    .service1 .service-image img{
-        height: 10rem;
-    }
-     
-    .service-title h2{
+	.service-title h2 {
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
 
-      
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-    }
+	.Customize-button {
+		padding: 12px 15.6px;
+		color: white;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		border-radius: 8px;
+		background-color: #e23744;
+		transition: all ease-in-out 0.3s;
+	}
 
-    .Customize-button{
-        padding: 12px 15.6px;
-         color: white;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 8px;
-        background-color: #E23744;
-        transition: all ease-in-out .3s;
-        
-        
-        
-        }
-        
-        
-        
-        
-        .Customize-button .Customize-btn{
-            font-family: Inter;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 80%; /* 12.8px */
-        letter-spacing: -0.32px;
-        text-decoration: none ;
-        color: white;
-        transition: all ease-in-out .3s;
-        
-        }
-    
+	.Customize-button .Customize-btn {
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 80%; /* 12.8px */
+		letter-spacing: -0.32px;
+		text-decoration: none;
+		color: white;
+		transition: all ease-in-out 0.3s;
+	}
 
-        .booking{
-           
-            padding-right: 2rem;
-        }
-        .booking img{
-           
-            height: 1rem;
-        }
-        
-        
-        .booking p{
-            color: #FFF;
-        font-family: Montserrat;
-        font-size: 12.2px;
-       
-        }
-        
+	.booking {
+		padding-right: 2rem;
+	}
+	.booking img {
+		height: 1rem;
+	}
 
-        .service-title h2{
+	.booking p {
+		color: #fff;
+		font-family: Montserrat;
+		font-size: 12.2px;
+	}
 
-      
-            font-size: 1.2rem;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-    
-        .service-icon img{
-            height: 1.6rem;
-        }
+	.service-title h2 {
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.service-icon img {
+		height: 1.6rem;
+	}
 }
