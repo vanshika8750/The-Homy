@@ -16,7 +16,10 @@ import ForgotPassword from './Pages/ForgotPassword/ForgotPassword'
 import Dashboard from './Pages/Dashboard/Dashboard'
 import Cart from './Pages/Cart/Cart'
 import AdminDashboard from './Pages/AdminDashboard/AdminDashboard'
+import Homy from './Pages/Homy/Homy'
 import { CustomizationProvider } from './Components/Context/CustomizationContext'
+import Homypro from './Pages/HomyPro/HomyPro'
+import Homypromax from './Pages/HomyProMax/HomyProMax'
 
 function App() {
 
@@ -39,6 +42,9 @@ function App() {
          <Route exact path='/dashboard' element={<Dashboard/>}/>
          <Route exact path='/cart' element={<Cart/>}/>
          <Route exact path='/admin' element={<AdminDashboard/>}/>
+         <Route exact path='/homy' element={<Homy/>}/>
+         <Route exact path='/homypro' element={<Homypro/>}/>
+         <Route exact path='/homypromax' element={<Homypromax/>}/>
          
 
 

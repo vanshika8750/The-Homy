@@ -32,7 +32,7 @@ export default function App() {
 	}, [currentYear]);
 
 	return (
-		<div>
+		<div className="footer">
 			<MDBFooter className="text-center" color="footer" bgColor="black">
 				<div className="footer-logo">
 					<Link to="/">

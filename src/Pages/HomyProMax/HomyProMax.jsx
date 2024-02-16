@@ -2,18 +2,18 @@ import React from "react";
 import KitchenKingbg from "../../assets/KitchenKingbg.svg";
 import KithcenKingimg from "../../assets/KitchenKing.png";
 import KitchenKingBorder from "../../assets/KitchenKingBorder.svg";
-import "./Homypro.css";
+import "./HomyProMax.css";
 import { IoDiamondOutline } from "react-icons/io5";
 import { LiaCrownSolid } from "react-icons/lia";
 import { IoStarOutline } from "react-icons/io5";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 
-const Homypro = () => {
+const Homypromax = () => {
 	return (
-		<div className="KitchenKing-homypro">
-			<div className="KitchenKing-homypro-top">
-				<div className="KitchenKing-homypro-upper-background">
+		<div className="KitchenKing-homypromax">
+			<div className="KitchenKing-homypromax-top">
+				<div className="KitchenKing-homypromax-upper-background">
 					<img className="desktopview" src={KitchenKingbg} />
 					<img
 						className="mobileview"
@@ -21,7 +21,7 @@ const Homypro = () => {
 						alt=""
 					/>
 				</div>
-				<div className="KitchenKing-homyproimg">
+				<div className="KitchenKing-homypromaximg">
 					<img className="desktopview" src={KithcenKingimg} />
 					<img
 						className="mobileview"
@@ -29,10 +29,10 @@ const Homypro = () => {
 						alt=""
 					/>
 				</div>
-				<div className="KitchenKing-homypro-Heading">
-					<h1>HOMY PRO</h1>
+				<div className="KitchenKing-homypromax-Heading">
+					<h1>HOMY PRO MAX</h1>
 				</div>
-				<div className="KitchenKing-homypro-content">
+				<div className="KitchenKing-homypromax-content">
 					<p>
 						Lorem ipsum dolor sit amet consectetur. Iaculis
 						tristique pulvinar id neque sed. Tincidunt phasellus
@@ -40,7 +40,7 @@ const Homypro = () => {
 						sagittis nunc. Ullamcorper ac risus in aliquet tincidunt
 						eget nibh adipiscing id.
 					</p>
-					<div className="KitchenKing-homypro-features">
+					<div className="KitchenKing-homypromax-features">
 						<p style={{ color: "red" }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
@@ -51,11 +51,11 @@ const Homypro = () => {
 					</div>
 				</div>
 			</div>
-			<div className="KitchenKing-homypro-bottom">
-				<div className="KitchenKing-homypro-lower-background">
+			<div className="KitchenKing-homypromax-bottom">
+				<div className="KitchenKing-homypromax-lower-background">
 					<img className="desktopview" src={KitchenKingBorder} />
 				</div>
-				<div className="KitchenKing-homypro-price">
+				<div className="KitchenKing-homypromax-price">
 					<ul>
 						<li>DAILY</li>
 						<li>WEEKLY</li>
@@ -64,7 +64,7 @@ const Homypro = () => {
 						<li>YEARLY&nbsp;&nbsp;&nbsp;</li>
 					</ul>
 				</div>
-				<div className="KitchenKing-homypro-price KitchenKing-homypro-price-amount ">
+				<div className="KitchenKing-homypromax-price KitchenKing-homypromax-price-amount ">
 					<ul>
 						<li>499&nbsp;&nbsp;</li>
 						<li>2,099&nbsp;&nbsp;</li>
@@ -76,12 +76,9 @@ const Homypro = () => {
 					<h3>Check our other beneficial plans </h3>
 				</div>
 
-				<div className="KitchenKing-homypro-cards">
-					<div className="KitchenKing-homypro-card">
-						<h2>
-						
-							<IoStarOutline /> HOMY
-						</h2>
+				<div className="KitchenKing-homypromax-cards">
+					<div className="KitchenKing-homypromax-card">
+                    <h2><IoStarOutline /> HOMY</h2>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
@@ -90,11 +87,8 @@ const Homypro = () => {
 						</ul>
 						<div className="connect-button book-btn">TRY OUT</div>
 					</div>
-					<div className="KitchenKing-homypro-card">
-						<h2>
-							{" "}
-							<IoDiamondOutline /> HOMY PRO MAX
-						</h2>
+					<div className="KitchenKing-homypromax-card">
+                    <h2> <LiaCrownSolid /> HOMY PRO</h2>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
@@ -109,4 +103,4 @@ const Homypro = () => {
 	);
 };
 
-export default Homypro;
+export default Homypromax;

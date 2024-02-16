@@ -6,7 +6,7 @@ import "./Homy.css";
 import { IoDiamondOutline } from "react-icons/io5";
 import { LiaCrownSolid } from "react-icons/lia";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
-import KitchenKingMobile from "../../assets/KitchenKi	ngMobile.png";
+import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 
 import { IoStarOutline } from "react-icons/io5";
 
