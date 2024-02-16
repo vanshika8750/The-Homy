@@ -21,7 +21,9 @@ import { CustomizationProvider } from './Components/Context/CustomizationContext
 function App() {
 
   return (
-    <CustomizationProvider>
+
+    <div style={{overflowX:'hidden'}}>
+      <CustomizationProvider >
           <Router>
     <Navbar/>
        <Routes>
@@ -46,6 +48,7 @@ function App() {
        <Footer/>
     </Router>
     </CustomizationProvider>
+    </div>
 
   )
 }
