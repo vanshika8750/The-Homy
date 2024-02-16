@@ -1,215 +1,248 @@
-.kitchen-king{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.KitchenKing {
+	display: flex;
+	flex-direction: column;
 }
-.kitchen1frame{
-    position: absolute;
-    z-index: 1;
-    width: 80vw; 
-    margin-left: 10vw;
-    overflow-x: hidden;
+.KitchenKing-top {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	top: 0;
 }
-.head-kitchen-king{
-    position: relative;
-    z-index: 0;
-    text-align: center;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    overflow-x: hidden;
+.KitchenKing-upper-background {
+	width: max-content;
+	z-index: 0;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0);
+	/* margin-left: 8.7rem; */
 
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(0, 0, 0, .2) 60%,
+		rgba(11, 10, 10, 1) 97%
+	);
 }
-.kitchen1bg{
-    position: absolute;
-    z-index: 0;
-    height: fit-content;
-    width: 80vw; 
-    margin-left: 10vw;
-    overflow-x: hidden;
 
+.KitchenKing-Heading {
+	position: absolute;
+	padding-top: 0rem;
+	top: -1rem;
+	margin-left: 32rem;
 }
-.content{
-    position: relative;
-    z-index: 2;
-    height: 600px;
-    margin: auto;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: hidden;
+.KitchenKing-Heading h1 {
+	color: #fff;
+	font-family: Anton;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%; /* 69.36px */
+	letter-spacing: 0.58px;
+}
 
-}
-.btn-kitchenking{
-    border: none;
-    color: white;
-    background-color: red;
-    height: 35px;
-    overflow-x: hidden;
+.KitchenKingimg {
+	/* width: 100%; */
+	height: 100%;
+	position: absolute;
+	top: 5.8rem;
 
+	z-index: -1;
 }
-.why-kitchen{
-    position: relative;
-    z-index: 1;
-    overflow-x: hidden;
+.KitchenKing-content-m{
+	margin-top: 7rem;
+	margin-left: 1rem;
+	max-width: 18rem;
+    font-size: 14px;
+	font-family: Montserrat;
+text-align: center;
+	color: #ffffff;
+	}
 
-}
-.kitchen2{
-    position: absolute;
-    width: 80vw;
-    height: 800px;
-    overflow-x: hidden;
+.KitchenKing-content {
+	bottom: 10rem;
+	width: 50%;
+	margin-left: 18rem;
 
+	text-align: center;
+	position: absolute;
 }
-.lower-kitchen{
-    width: 80vw;
-    /* margin-left: 17px; */
-    margin-top: -80px;
-    height: 800px;
-    overflow: hidden;
-    overflow-x: hidden;
+.KitchenKing-content p {
+	font-size: 24px;
+	color: #ffffff;
+	font-family: Montserrat;
+}
 
+.connect-button {
+	display: inline-flex;
+	padding: 15px 21.6px;
+	color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background-color: #e23744;
+	transition: all ease-in-out 0.3s;
+	margin-right: 1rem;
 }
-.content-lower-kitchen{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    overflow-x: hidden;
 
+.connect-button .connect-btn {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 80%; /* 12.8px */
+	letter-spacing: -0.32px;
+	text-decoration: none;
+	color: white;
+	transition: all ease-in-out 0.3s;
 }
-.div-lower{
-    background: red;
-    padding: 15px;
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
-    overflow-x: hidden;
 
+.connect-button:hover {
+	color: #020202;
+	cursor: pointer;
 }
-.btn-div-lower{
-    text-align: center;
-    overflow-x: hidden;
+.Kitchen-button {
+	font-family: Montserrat;
+	position: absolute;
+	bottom: 3rem;
+	left: 42rem;
+}
 
+.KitchenKing-bottom {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5rem;
+	top: 0;
 }
-@media only screen and (max-width: 1431px) and (min-width:1000px){
-    .lower-kitchen {
-      margin-top: -100px;
-      height:900px;
-    }
-    .kitchen2{
-        height:900px;
-    }
-.head-kitchen-king{
-    height: 80px;
+.KitchenKing-lower-background {
+	width: max-content;
+	background-color: rgb(11, 10, 10);
+	position: relative;
+	z-index: 0;
 }
-  }
-  @media only screen and (max-width:1260px){
-    .head-kitchen-king{
-        font-size: 30px;
-        height: 70px;
-    }
-    .div-lower{
-        width: 250px;
-    }
-  }
-  @media only screen and (max-width:1190px) {
-    .kitchen2{
-        height: 1500px;
-    }
-    .lower-kitchen{
-        height: 1200px;
-    }
-  }
-  @media only screen and (max-width:1100px) {
-    .head-kitchen-king{
-        height: 60px;
-    }
-    .why-kitchen{
-        margin-top: -20px;
-    }
-    .content-lower-kitchen{
-display: block;
-    }
-    .content-lower-kitchen div{
-        width: 70vw;
-        margin: auto;
-        height: fit-content;
-        margin-bottom: 20px;
-    }
-    .lower-kitchen{
-        height: 1500px;
-    }
-    .kitchen2{
-        height: 2000px;
-    }
-  }
-  @media only screen and (max-width:1000px){
-    .kitchen1frame{
-        width: 90vw;
-        margin-left: 5vw;
-    }
-    .kitchen1bg{
-        width: 90vw;
-        margin-left: 5vw;
-    }
-    .kitchen2{
-        height: 2200px;
-    }
-    .content{
-        width: 80%;
-    }
-  }
-  @media only screen and (max-width:900px){
-    .kitchen1bg{
-        position: static;
-    }
-    .content{
-        height: 300px;
-    margin: auto;
-    width: 80%;
-    }
-    .btn-kitchenking{
-        margin: 10px 0;
-        border-radius: 5px;
-    }
-    .kitchen1bg{
-        margin-top: -10px;
-    }
-  }
-  @media only screen and (max-width:850px){
-    .kitchen2{
-        height: 2500px;
-    }
-  }
-  @media only screen and (max-width:600px){
-    .kitchen1bg{
-        margin-top: -20px;
-    }
-    .head-kitchen-king{
-        font-size: 25px;
-        height: 60px;
-    }
-    .kitchen2{
-        height: 2700px;
-    }
-  }
-  @media only screen and (max-width:500px){
-    .kitchen1bg{
-        margin-top: 0px;
-    }
-    .kitchen2{
-        height: 3100px;
-    }
-    .lower-kitchen{
-        height: 1700px;
-    }
-  }
+.KitchenFeatures {
+	position: absolute;
+	margin-top: 5rem;
+	margin-left: 17rem;
+}
+.KitchenFeatures img {
+	width: 700px;
+	height: auto;
+}
+.KitchenOptions {
+	height: 100px;
+	width: auto;
+	position: absolute;
+	margin-top: 25rem;
+	margin-left: 12rem;
+}
+.KitchenKing-cards {
+	gap: 5rem;
+	z-index: 3;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 69rem;
+	left: 12rem;
+}
+.KitchenKing-card {
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	/* align-items: center; */
+	width: 20rem;
+	background-color: #1e1e1e;
+	color: #ffffff;
+	font-family: Montserrat;
+	height: 30rem;
+}
+.KitchenKing-card ul {
+	padding: 0;
+	margin-top: 1rem;
+}
+.KitchenKing-card li {
+	line-height: 3rem;
+}
+.book-btn{
+	margin-top: 2rem;
+}
+.desktopview {
+	display: block;
+}
+.mobileview {
+	display: none;
+}
+
+/* =====================================================================*/
+@media(max-width:600px){
+	.KitchenKing{
+		display: flex;
+		height: 250vh;
+		margin-left: 2rem;
+	}
+	.KitchenKing-Heading{
+		margin-top: 6rem;
+		margin-left: 1rem;
+	}
+	.KitchenKing-Heading h1{
+		font-size: 28px;
+	}
+	.KitchenKing-top{
+		display: flex;
+		flex-direction: column;
+		margin-left: 0;
+	}
+	.KitchenKing-upper-background{
+		height: 400px;
+	}
+	.desktopview {
+		display: none;
+	}
+	.mobileview {
+		display: block;
+	}
+	.KitchenKing-content{
+		margin: 0;
+		
+		font-size: 12px;
+	}
+	.KitchenKing-content p{
+		font-size: 12px;
+	}
+	.Kitchen-button{
+		left: 9rem;
+		bottom: 17rem;
+	}
+	
+	.KitchenFeatures img{
+		height: 350px;
+		width: auto;
+	
+	}
+	.KitchenFeatures{
+		position: absolute;
+		margin: 0rem;
+		padding: 0rem;
+		left: 4rem;
+		top:45rem
+	}
+	.KitchenKing-cards{
+		flex-direction: column;
+		left: 4rem;
+		gap:1rem
+
+	
+	}
+	.KitchenKing-card{
+		border: 2px solid #e23744;
+		height: 16rem;
+	}
+	.KitchenKing-card li{
+		font-size: 12px;
+		line-height: 1.5rem;
+	}
+	.book-btn{
+		margin-top: 0 !important;
+	}
+}
+
