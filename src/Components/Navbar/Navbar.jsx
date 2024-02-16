@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "../../assets/logo.svg";
+import homelogo from "../../assets/home-logo.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { GoArrowUpRight } from "react-icons/go";
@@ -95,7 +96,13 @@ function OffcanvasExample() {
 												Contact Us
 											</Link>
 
+											
+
 											<Form className="d-flex connect-button justify-content-center align-items-center">
+
+												
+												
+
 												<Link
 													to="/signup"
 													className="connect-btn"
@@ -111,6 +118,13 @@ function OffcanvasExample() {
 						</Navbar.Offcanvas>
 
 						<div className="connect-btn-control">
+
+						<Link to="/">
+												<div className="home-logo-nav">
+													<img src={homelogo} alt="" />
+												</div>
+												</Link>
+
 							<Form className="d-flex connect-button justify-content-center align-items-center">
 								<Link to="/signup" className="connect-btn">
 									Connect

@@ -7,7 +7,17 @@
 	height: 3.5rem;
 	flex-shrink: 0;
 }
-
+.home-logo-nav{
+	width: max-content;
+	background-color: #e23744;
+	border-start-start-radius: 8px;
+	border-end-start-radius: 8px;
+	padding: 15px 21.6px;
+	margin-right: 5px;
+}
+.connect-btn-control{
+	display: flex;
+}
 .connect-button {
 	display: inline-flex;
 	padding: 15px 21.6px;
@@ -16,7 +26,8 @@
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	border-radius: 8px;
+	border-start-end-radius: 8px;
+	border-end-end-radius: 8px;
 	background-color: #e23744;
 	transition: all ease-in-out 0.3s;
 	margin-right: 1rem;

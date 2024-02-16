@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import desktopview from '../../assets/ourservicesbackground.svg'
 import aboutimg from '../../assets/feature.jpg'
 import "./Signup.css"
+import axios from 'axios'
 
 
 const signup = () => {
@@ -13,9 +14,9 @@ const signup = () => {
 
 const [formData, setFormData] = useState({
     name: '',
-    phoneNumber: '',
     email: '',
-    message: ''
+    password: '',
+    confirm_password: ''
 });
 
 const handleChange = (e) => {
@@ -23,16 +24,35 @@ const handleChange = (e) => {
     setFormData({ ...formData, [name]: value });
 };
 
-const handleSubmit = (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formData);
-    setFormData({
-        name: '',
-        phoneNumber: '',
-        email: '',
-        message: ''
-    });
+
+    const { name, email, password, confirm_password } = formData;
+
+    const response = await fetch(
+        "url",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ name, email, password, confirm_password })
+        }
+    );
+
+    if (response.ok) {
+        alert("Data stored");
+
+        setFormData({
+            name: '',
+            email: '',
+            password: '',
+            confirm_password: ''
+        });
+    }
 };
+
 
 
   return (
@@ -66,7 +86,7 @@ const handleSubmit = (e) => {
 
      <div className="signup-form" >
 
-<form onSubmit={handleSubmit}>
+<form method='POST'  onSubmit={handleSubmit}>
     
     <div>
         <input
@@ -120,7 +140,7 @@ const handleSubmit = (e) => {
             value={formData.message}
             placeholder="message"
             onChange={handleChange}
-            required
+            // required
         ></textarea>
     </div>
     <Link to="/login"><button className='submit-btn' type="submit" >Submit</button></Link>

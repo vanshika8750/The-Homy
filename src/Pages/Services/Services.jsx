@@ -33,9 +33,8 @@ const Services = () => {
 				<div className="services-content">
 					<p>The luxury homecare services</p>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Saepe explicabo dolores iusto omnis maxime. Veniam
-						excepturi iusto laudantium eum vitae!.
+						<div>Commitment, Quality and Trust</div>
+						<div></div>
 					</p>
 				</div>
 			</div>

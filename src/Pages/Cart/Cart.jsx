@@ -6,6 +6,7 @@ import carthead from '../../assets/cart-head.svg'
 import percent from '../../assets/percent.svg'
 import pricesArray from '../../Components/prices'
 import {useCustomizationContext} from '../../Components/Context/CustomizationContext'
+import rightarrcart from '../../assets/right-arr-cart.svg'
 
 
 const Cart = () => {
@@ -72,10 +73,10 @@ const Cart = () => {
           </div>
 
           <div className="first-col-div-cart content-first-cart">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
-            quae vel sed rem, ducimus dignissimos explicabo ad minima, quibusdam
-            sequi molestiae commodi pariatur minus veritatis officia corporis
-            modi cupiditate!
+          We are here to ensure that all our services are delivered per your expectations. 
+
+<div style={{marginTop:'10px'}}>Hence, let's set it as per requirements! 
+Fill in the details here 👉</div>
           </div>
 
        
@@ -135,7 +136,9 @@ const Cart = () => {
     <div>Login/Sign up to view offers</div>
 </div>
 
-<div>.</div>
+<div>
+    <img src={rightarrcart} alt="" />
+</div>
 
             </div>
 
@@ -146,18 +149,18 @@ const Cart = () => {
           <div className="pay-prices">
           <div className="left-pay">
                 <div>Item total</div>
-                <div>Item discount</div>
+                
                 <div>Gst</div>
                 <div>.............</div>
                 <div>Total</div>
             </div>
 
             <div className="right-pay">
-                <div>{priceprod}</div>
-                <div>10</div>
-                <div>5</div>
+                <div>{count}</div>
+               
+                <div>18%</div>
                 <div>.............</div>
-                <div>{priceprod-10-5}</div>
+                <div>{priceprod+(priceprod*0.18)}</div>
             </div>
           </div>
 
@@ -168,7 +171,7 @@ const Cart = () => {
                     Amount to be paid
                 </div>
 
-                <div>{priceprod-10-5}</div>
+                <div>{priceprod+(priceprod*0.18)}</div>
             </div>
 
 

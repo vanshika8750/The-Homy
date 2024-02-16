@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import './Calorimeter.css';
 
 function Calorimeter() {
     const [data, setData] = useState(1000); // Initial value set to 1000
 
     const handleInputChange = (e) => {
-        const newValue = parseInt(e.target.value);
-        setData(newValue);
+        let newValue = e.target.value.trim(); // Trim any leading or trailing whitespaces
+        // Check if the input is a valid number with at most 4 digits
+        if (/^\d{0,4}$/.test(newValue)) {
+            setData(newValue === '' ? '' : parseInt(newValue));
+        }
     };
+    
+    
 
     return (
         <div className="slider-container-cal">
