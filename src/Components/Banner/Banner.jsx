@@ -2,6 +2,7 @@ import React from "react";
 import "./Banner.css";
 import banner from "../../assets/Banner.svg";
 import {Link} from "react-router-dom"
+import mockup from "../../assets/mockup.mp4";
 import Form from 'react-bootstrap/Form';
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -15,7 +16,9 @@ const Banner = () => {
 
 
       <div className="banner-image" >
-        <img src={banner} alt="" />
+        {/* <img src={banner} alt="" /> */}
+        <video src={mockup}  muted loop autoPlay playsInline/>
+
       </div>
 
       <div className="banner-title" >

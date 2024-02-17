@@ -5,7 +5,7 @@ import card from "../../assets/servicescard.svg";
 
 const Ourservices = () => {
   return (
-    <div className="ourservices" >
+    <div className="ourservices deskview" >
 
       <div
         className="wapper"

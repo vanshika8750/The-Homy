@@ -15,7 +15,7 @@
     justify-content: end;
 }
 
-.banner-image img{
+.banner-image video{
     width: 750px;
 height: 562.5px;
 flex-shrink: 0;
@@ -82,7 +82,7 @@ transition: all ease-in-out .3s;
     .Banner{
         flex-direction: column;
     }
-    .banner-image img{
+    .banner-image video{
         width: 430px;
     height: 462.5px;
     flex-shrink: 0;
@@ -97,11 +97,14 @@ transition: all ease-in-out .3s;
     font-weight: 600;
     line-height: normal;
     }
-    
+    .deskview{
+        display: none !important; 
+    }
     .app-button{
         display: inline-flex;
     padding: 15px 50px;
      color: white;
+     margin: 1rem auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
