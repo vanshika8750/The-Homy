@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import desktopview from '../../assets/ourservicesbackground.svg'
 import aboutimg from '../../assets/feature.jpg'
 import "./Signup.css"
-import axios from 'axios'
+// import axios from 'axios'
 
 
 const signup = () => {
