@@ -24,7 +24,9 @@ import Homypromax from './Pages/HomyProMax/HomyProMax'
 function App() {
 
   return (
-    <CustomizationProvider>
+
+    <div style={{overflowX:'hidden'}}>
+      <CustomizationProvider >
           <Router>
     <Navbar/>
        <Routes>
@@ -52,6 +54,7 @@ function App() {
        <Footer/>
     </Router>
     </CustomizationProvider>
+    </div>
 
   )
 }

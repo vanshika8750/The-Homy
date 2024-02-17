@@ -22,21 +22,19 @@ const Customize = () => {
       // console.log("Selected option:", event.target.value);
     };
 
-    const {selectedGender, setSelectedGender} = useCustomizationContext('');
-
-  const handleGenderChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectedGender(selectedValue);
-    // console.log("Selected gender:", selectedValue);
-    // You can store the selected value somewhere else as per your requirement
-  };
-
 
   const {userSelectedOption, setUserSelectedOption} = useCustomizationContext('');
 
   const handleSelect = (value) => {
     setUserSelectedOption(value);
     // console.log('Selected Option by user:', value);
+  };
+
+
+  const [selectedFoodWay, setSelectedFoodWay] = useState("");
+
+  const handleFoodWayChange = (e) => {
+      setSelectedFoodWay(e.target.value);
   };
 
   return (
@@ -54,10 +52,13 @@ const Customize = () => {
           </div>
 
           <div className="first-col-div-customize content-first-cus">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
-            quae vel sed rem, ducimus dignissimos explicabo ad minima, quibusdam
-            sequi molestiae commodi pariatur minus veritatis officia corporis
-            modi cupiditate!
+            <div>
+            We are here to ensure that all our services are delivered per your expectations. 
+            </div>
+            <div style={{marginTop:'10px'}}>
+            Hence, let's set it as per requirements! 
+Fill in the details here 👉
+            </div>
           </div>
 
           <div className="first-col-div-customize">
@@ -138,32 +139,35 @@ const Customize = () => {
             </div>
 
 <div >
-            <div className="row-cus gender-cus">
-                <div className="head-cus-right">Homy Gender</div>
-                <div className="radio-cus">
-                <label>
-        <input
-          type="radio"
-          name="gender"
-          value="male"
-          checked={selectedGender === "male"}
-          onChange={handleGenderChange}
-        />
-        Male
-      </label>
-      <br />
-      <label>
-        <input
-          type="radio"
-          name="gender"
-          value="female"
-          checked={selectedGender === "female"}
-          onChange={handleGenderChange}
-        />
-        Female
-      </label>
-                </div>
-            </div>
+          
+
+            <div className="row-cus foodway-cus">
+    <div className="head-cus-right">Food Way</div>
+    <div className="radio-cus">
+        <label>
+            <input
+                type="radio"
+                name="foodWay"
+                value="vegetarian"
+                checked={selectedFoodWay === "vegetarian"}
+                onChange={handleFoodWayChange}
+            />
+            Vegetarian
+        </label>
+        <br />
+        <label>
+            <input
+                type="radio"
+                name="foodWay"
+                value="nonvegetarian"
+                checked={selectedFoodWay === "nonvegetarian"}
+                onChange={handleFoodWayChange}
+            />
+            Non Vegetarian
+        </label>
+    </div>
+</div>
+
 
       
       <div  className="row-cus" >

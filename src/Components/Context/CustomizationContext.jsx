@@ -5,13 +5,12 @@ const CustomizationContext = createContext();
 
 export const CustomizationProvider = ({ children }) => {
     const [selectedOption, setSelectedOption] = useState('');
-    const [selectedGender, setSelectedGender] = useState('');
     const [userSelectedOption, setUserSelectedOption] = useState('');
 
 
 
     return (
-        <CustomizationContext.Provider value={{ selectedOption, setSelectedOption, selectedGender, setSelectedGender,userSelectedOption,setUserSelectedOption }}>
+        <CustomizationContext.Provider value={{ selectedOption, setSelectedOption,userSelectedOption,setUserSelectedOption }}>
             {children}
         </CustomizationContext.Provider>
     );

@@ -26,11 +26,26 @@
     background-color: black;
     text-align: center;
 }
-.cal-display{
+.cal-display {
     font-size: 25px;
     width: 80%;
     border: solid 2px #E23744;
     margin: 10px 0px;
     padding: 0px 30px;
     border-radius: 5px;
+}
+.cal-display input[type="number"]{
+    width:100px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+
+.cal-display input[type="number"]::-webkit-inner-spin-button,
+.cal-display input[type="number"]::-webkit-outer-spin-button {
+    /* Hide the inner and outer spin buttons */
+    -webkit-appearance: none;
+    display: none;
 }

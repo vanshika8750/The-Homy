@@ -2,31 +2,31 @@ const plansArray = [
     {
       category: 'Homy',
       options: [
-        { plan: 'Daily', price: 10 },
-        { plan: 'Weekly', price: 50 },
-        { plan: 'Monthly', price: 200 },
-        { plan: 'Half Yearly', price: 1000 },
-        { plan: 'Yearly', price: 2000 }
+        { plan: 'Daily', price: 499 },
+        { plan: 'Weekly', price: 2099 },
+        { plan: 'Monthly', price: 4499 },
+        { plan: 'Half Yearly', price: 22499 },
+        { plan: 'Yearly', price: 35999 }
       ]
     },
     {
       category: 'Homy Pro',
       options: [
-        { plan: 'Daily', price: 15 },
-        { plan: 'Weekly', price: 70 },
-        { plan: 'Monthly', price: 250 },
-        { plan: 'Half Yearly', price: 1200 },
-        { plan: 'Yearly', price: 2500 }
+        { plan: 'Daily', price: 1999 },
+        { plan: 'Weekly', price: 8399 },
+        { plan: 'Monthly', price: 17999 },
+        { plan: 'Half Yearly', price: 89999 },
+        { plan: 'Yearly', price: 143999 }
       ]
     },
     {
       category: 'Homy Pro Max',
       options: [
-        { plan: 'Daily', price: 20 },
-        { plan: 'Weekly', price: 90 },
-        { plan: 'Monthly', price: 300 },
-        { plan: 'Half Yearly', price: 1500 },
-        { plan: 'Yearly', price: 3000 }
+        { plan: 'Daily', price: 4999 },
+        { plan: 'Weekly', price: 20999 },
+        { plan: 'Monthly', price: 44999 },
+        { plan: 'Half Yearly', price: 224999 },
+        { plan: 'Yearly', price: 359999 }
       ]
     }
   ];
