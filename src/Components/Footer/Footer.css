@@ -2,7 +2,9 @@
     text-decoration: none;
     padding: 10px;
 }   
-
+.footer{
+    z-index: 5;
+}
 .list-unstyled {
     width: 200px;    text-align: left;
     

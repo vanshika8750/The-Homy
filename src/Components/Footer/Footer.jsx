@@ -32,7 +32,7 @@ export default function App() {
 	}, [currentYear]);
 
 	return (
-		<div>
+		<div className="footer">
 			<MDBFooter className="text-center" color="footer" bgColor="black">
 				<div className="footer-logo">
 					<Link to="/">
@@ -40,7 +40,7 @@ export default function App() {
 					</Link>
 					<div className="download">
 						<Link
-							to="https://th.bing.com/th/id/OIG.oAvoqHNli7n2MAJSkt59?pid=ImgGn"
+							to="https://i.pinimg.com/originals/36/bc/74/36bc74ebbedaa9566a0e343b83fee876.png"
 							target="_blank"
 						>
 							<img src={ps} alt="" />
