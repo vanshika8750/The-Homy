@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Pricing.css";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
 	useEffect(() => {
@@ -71,9 +72,10 @@ const Pricing = () => {
 								</li>
 								<li>Comes prepared with a kitchen kit.</li>
 							</ul>
-							<a href="./contact" className="pcard__cta cta">
-								Get Started
+							<a href="./homy" className="pcard__cta cta">
+						Get Started
 							</a>
+							
 						</div>
 
 						<div className="pcards__pcard pcard">
@@ -81,13 +83,14 @@ const Pricing = () => {
 							<p className="pcard__price">₹1,999 onwards</p>
 							<ul role="list" className="pcard__bullets flow">
 								<li>Culinary pro for diverse dishes.</li>
-								<li>Hotel Management diploma.</li>
+								<li>Professional degree.</li>
 								<li>
 									Vaccinated, hygiene checked, kitchen kit
 									included.
 								</li>
+								<li>Helper Chef included.</li>
 							</ul>
-							<a href="./contact" className="pcard__cta cta">
+							<a href="./homypro" className="pcard__cta cta">
 								Get Started
 							</a>
 						</div>
@@ -110,8 +113,9 @@ const Pricing = () => {
                 Professional, vaccinated, well-equipped kitchen kit.
 
 								</li>
+								
 							</ul>
-							<a href="./contact" className="pcard__cta cta">
+							<a href="./homypromax" className="pcard__cta cta">
 								Get Started
 							</a>
 						</div>

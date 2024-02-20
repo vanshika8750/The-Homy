@@ -1,15 +1,17 @@
-import React from 'react'
-import "./Description.css"
+import React from "react";
+import "./Description.css";
 
 const Description = () => {
-  return (
-    <div className='Description'>
-   
-   <p>Building Bonds and Brightening HomesStep into Thehomy, where we don't just clean homes; we build bonds and brighten lives, creating a harmonious haven for all. Our commitment goes beyond the surface, extending to the heart of what makes a house a home. </p>
+	return (
+		<div className="Description">
+			<p>
+				The Homy efficiently streamlines your daily tasks, simplifying
+				your life and proving valuable in creating a homely atmosphere.
+				With Homy, all your daily chores are expertly handled, allowing
+				you to navigate through the day effortlessly.{" "}
+			</p>
+		</div>
+	);
+};
 
-            
-    </div>
-  )
-}
-
-export default Description
+export default Description;
