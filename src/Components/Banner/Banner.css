@@ -1,4 +1,5 @@
-.Banner{
+.Banner{ 
+   max-width:100% ;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -15,8 +16,11 @@
     justify-content: end;
 }
 
+.banner-image {
+    width: 50%;
+}
 .banner-image video{
-    width: 750px;
+    width: 100%;
 height: 562.5px;
 flex-shrink: 0;
 }

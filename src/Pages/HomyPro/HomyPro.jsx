@@ -73,7 +73,7 @@ const Homypro = () => {
 						<li>35,999</li>
 					</ul>
 					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3>Check our other beneficial plans </h3>
+					<h3 className="checkout-plans">Check our other beneficial plans </h3>
 				</div>
 
 				<div className="KitchenKing-homypro-cards">
@@ -85,8 +85,8 @@ const Homypro = () => {
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">TRY OUT</div>
 					</div>
@@ -98,8 +98,8 @@ const Homypro = () => {
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li  className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">TRY OUT</div>
 					</div>

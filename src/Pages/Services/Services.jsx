@@ -61,12 +61,16 @@ const Services = () => {
 								499
 							</h2>
 						</div>
-						<div className="Customize-button">
-							<Link to="/" className=" Customize-btn pt-2">
+						<Link
+							to="/Kitchenking"
+							className=" Customize-btn pt-2"
+							style={{ textDecoration: "none" }}
+						>
+							<div className="Customize-button">
 								Customize your way
 								<GoArrowUpRight />
-							</Link>
-						</div>
+							</div>
+						</Link>
 					</div>
 
 					<div className="service-image">
@@ -95,12 +99,16 @@ const Services = () => {
 								449
 							</h2>
 						</div>
-						<div className="Customize-button">
-							<Link to="/" className=" Customize-btn pt-2">
+						<Link
+							to="/Dustguard"
+							className=" Customize-btn pt-2"
+							style={{ textDecoration: "none" }}
+						>
+							<div className="Customize-button">
 								Customize your way
 								<GoArrowUpRight />
-							</Link>
-						</div>
+							</div>
+						</Link>
 					</div>
 
 					<div className="service-image">
@@ -129,12 +137,14 @@ const Services = () => {
 								449
 							</h2>
 						</div>
-						<div className="Customize-button">
-							<Link to="/" className=" Customize-btn pt-2">
+						<Link to="/hygiene" className=" Customize-btn pt-2" style={{textDecoration:'none'}}>
+
+						<div className="Customize-button" >
 								Customize your way
 								<GoArrowUpRight />
-							</Link>
 						</div>
+						</Link>
+
 					</div>
 
 					<div className="service-image">

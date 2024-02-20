@@ -20,6 +20,8 @@ import Homy from './Pages/Homy/Homy'
 import { CustomizationProvider } from './Components/Context/CustomizationContext'
 import Homypro from './Pages/HomyPro/HomyPro'
 import Homypromax from './Pages/HomyProMax/HomyProMax'
+import Dustguard from './Pages/Dustguard/Dustguard'
+import Hygiene from './Pages/Hygiene/Hygiene'
 
 function App() {
 
@@ -47,6 +49,9 @@ function App() {
          <Route exact path='/homy' element={<Homy/>}/>
          <Route exact path='/homypro' element={<Homypro/>}/>
          <Route exact path='/homypromax' element={<Homypromax/>}/>
+         <Route exact path='/dustguard' element={<Dustguard/>}/>
+         <Route exact path='/Hygiene' element={<Hygiene/>}/>
+         
          
 
 
