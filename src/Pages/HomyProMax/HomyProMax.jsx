@@ -41,12 +41,14 @@ const Homypromax = () => {
 						eget nibh adipiscing id.
 					</p>
 					<div className="KitchenKing-homypromax-features">
-						<p style={{ color: "red" }}>Kitchen King</p>
+						<p style={{ color: "red"  }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
+							<li>Well trained staff: 2 cleaner + 1 supervisor </li>
+							<li>Professional & experienced </li>
+							<li>Equipped with cleaning kit </li>
+							<li>Professional & experienced</li>
+							<li>Adaptable to all requirements</li>
 						</ul>
 					</div>
 				</div>
@@ -73,27 +75,32 @@ const Homypromax = () => {
 						<li>35,999</li>
 					</ul>
 					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3>Check our other beneficial plans </h3>
+					<h3 className="checkout-plans">Check our other beneficial plans </h3>
 				</div>
 
 				<div className="KitchenKing-homypromax-cards">
 					<div className="KitchenKing-homypromax-card">
-                    <h2><IoStarOutline /> HOMY</h2>
+						<h2>
+							<IoStarOutline /> HOMY
+						</h2>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">TRY OUT</div>
 					</div>
 					<div className="KitchenKing-homypromax-card">
-                    <h2> <LiaCrownSolid /> HOMY PRO</h2>
+						<h2>
+							{" "}
+							<LiaCrownSolid /> HOMY PRO
+						</h2>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">TRY OUT</div>
 					</div>

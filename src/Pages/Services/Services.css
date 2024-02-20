@@ -1,5 +1,5 @@
 .Services {
-	height: 270vh;
+	min-height: 270vh;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
