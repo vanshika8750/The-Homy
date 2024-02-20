@@ -6,11 +6,18 @@ const CustomizationContext = createContext();
 export const CustomizationProvider = ({ children }) => {
     const [selectedOption, setSelectedOption] = useState('');
     const [userSelectedOption, setUserSelectedOption] = useState('');
-
+    const [data,setData] = useState(0)
+    const [caldata, setCalData] = useState(1000); // Initial value set to 1000
+    const [selectedOptionTiming, setSelectedOptionTiming] = useState([]);
+    const [selectedTimings, setSelectedTimings] = useState({
+        breakfast: [],
+        lunch: [],
+        dinner: []
+    });
 
 
     return (
-        <CustomizationContext.Provider value={{ selectedOption, setSelectedOption,userSelectedOption,setUserSelectedOption }}>
+        <CustomizationContext.Provider value={{ selectedOptionTiming,setSelectedOptionTiming,selectedTimings,setSelectedTimings,selectedOption, setSelectedOption,userSelectedOption,setUserSelectedOption,data,setData,caldata,setCalData }}>
             {children}
         </CustomizationContext.Provider>
     );
