@@ -125,7 +125,7 @@ function OffcanvasExample() {
 												</div>
 												</Link>
 
-							<Form className="d-flex connect-button justify-content-center align-items-center">
+							<Form className="d-flex  connect-button justify-content-center align-items-center">
 								<Link to="/signup" className="connect-btn">
 									Connect
 									<GoArrowUpRight />

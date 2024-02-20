@@ -82,7 +82,9 @@ const handleSubmit = async (e) => {
 
     <div className="signup-cards" >
 
+    <div className='signup-img'>
     <img src={aboutimg} alt="" className='aboutusimg' />
+    </div>
 
      <div className="signup-form" >
 
