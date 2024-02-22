@@ -25,8 +25,8 @@ const Banner = () => {
 
         <p> <span className="E-letter" >E</span>xperience the <span style={{color:" #E23744"}}>luxury</span> homecare <br/>services</p>
            
-           <div className="app-button">
-           <Link to="/" className="app-btn">
+           <div className="connect-button "style={{width:'15vw', height:'3.5vw'}}>
+           <Link to="/" className="connect-btn" style={{textDecoration:'none'}}>
             Get the app now
             <GoArrowUpRight />
           </Link>

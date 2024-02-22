@@ -33,8 +33,14 @@ const Services = () => {
 				<div className="services-content">
 					<p>The luxury homecare services</p>
 					<p>
-						<div>Commitment, Quality and Trust</div>
-						<div></div>
+						<p>Commitment, Quality and Trust</p>
+						<p>
+							We ensure utmost professionalism for every service
+							we offer, whether it's cooking, house cleaning or
+							toilet cleaning. So, now it's time to sit back and
+							relax while we finish your daily chores with
+							finesse.
+						</p>
 					</p>
 				</div>
 			</div>
@@ -137,14 +143,16 @@ const Services = () => {
 								449
 							</h2>
 						</div>
-						<Link to="/hygiene" className=" Customize-btn pt-2" style={{textDecoration:'none'}}>
-
-						<div className="Customize-button" >
+						<Link
+							to="/hygiene"
+							className=" Customize-btn pt-2"
+							style={{ textDecoration: "none" }}
+						>
+							<div className="Customize-button">
 								Customize your way
 								<GoArrowUpRight />
-						</div>
+							</div>
 						</Link>
-
 					</div>
 
 					<div className="service-image">
