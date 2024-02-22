@@ -14,12 +14,14 @@
 .service-headline h1 {
 	color: #fff;
 	font-family: montserrat;
-	text-align: right;
+	position: absolute;
+	text-align: center;
+	width: 90%;
 	/* font-family: Anton; */
 	font-size: 54px;
 	font-style: normal;
 	font-weight: 600;
-	margin-left: 23rem;
+	margin-left: 15rem;
 	padding-top: 0.8rem;
 	line-height: 100%; /* 69.36px */
 	letter-spacing: 0.58px;
@@ -42,10 +44,12 @@
 	font-size: 3.5rem;
 	font-style: normal;
 	font-weight: 600;
+	margin-top: 1rem;
 	line-height: normal;
 }
 .services-content p:first-child {
-	font-size: 3rem;
+	font-size: 2rem;
+	margin-top: 2rem;
 	font-weight: 300;
 }
 
@@ -53,6 +57,8 @@
 	font-size: 1.2rem;
 }
 .services-content {
+	margin-top: 2rem;
+	width: 75vw;
 	text-align: center;
 	padding-top: 5rem;
 	color: black;
@@ -148,7 +154,7 @@
 		font-size: 16px;
 		font-style: normal;
 		font-weight: 600;
-		padding-right: 4.5rem;
+		margin-left: 4.5rem;
 		padding-top: 0.5rem;
 		line-height: 100%; /* 69.36px */
 		letter-spacing: 0.48px;
@@ -164,6 +170,8 @@
 		font-weight: 500;
 	}
 	.services-content {
+		margin-top: 1rem;
+		font-weight: bolder;
 		text-align: center;
 		padding-top: 1rem;
 		color: black;
@@ -236,4 +244,8 @@
 	.service-icon img {
 		height: 1.6rem;
 	}
+	.booking img,.booking p{
+		display: none;
+	}
+	
 }
