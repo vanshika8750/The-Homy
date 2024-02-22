@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import './TimeSlots.css';
+import { useCustomizationContext } from "../Context/CustomizationContext";
 
 function TimeSlot() {
-    const [selectedOptions, setSelectedOptions] = useState([]);
-    const [selectedTimings, setSelectedTimings] = useState({
+    const {selectedOptionTiming, setSelectedOptionTiming} = useCustomizationContext([]);
+    const {selectedTimings, setSelectedTimings} = useCustomizationContext({
         breakfast: [],
         lunch: [],
         dinner: []
     });
 
     const handleMealClick = (meal) => {
-        if (selectedOptions.includes(meal)) {
-            setSelectedOptions(selectedOptions.filter(item => item !== meal));
+        if (selectedOptionTiming.includes(meal)) {
+            setSelectedOptionTiming(selectedOptionTiming.filter(item => item !== meal));
         } else {
-            setSelectedOptions([...selectedOptions, meal]);
+            setSelectedOptionTiming([...selectedOptionTiming, meal]);
         }
     };
 
@@ -30,19 +31,19 @@ function TimeSlot() {
             });
         }
     };
-  // console.log(selectedOptions)
+  console.log(selectedOptionTiming)
   console.log(selectedTimings)
 
     return (
         <div className="meal-container">
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptions.includes('breakfast') ? 'selected' : ''}`}
+                    className={`option-button ${selectedOptionTiming.includes('breakfast') ? 'selected' : ''}`}
                     onClick={() => handleMealClick('breakfast')}
                 >
                     Breakfast
                 </button>
-                {selectedOptions.includes('breakfast') && (
+                {selectedOptionTiming.includes('breakfast') && (
                     <div className="timing-options">
                         <label>
                             <input
@@ -65,12 +66,12 @@ function TimeSlot() {
             </div>
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptions.includes('lunch') ? 'selected' : ''}`}
+                    className={`option-button ${selectedOptionTiming.includes('lunch') ? 'selected' : ''}`}
                     onClick={() => handleMealClick('lunch')}
                 >
                     Lunch
                 </button>
-                {selectedOptions.includes('lunch') && (
+                {selectedOptionTiming.includes('lunch') && (
                     <div className="timing-options">
                         <label>
                             <input
@@ -101,12 +102,12 @@ function TimeSlot() {
             </div>
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptions.includes('dinner') ? 'selected' : ''}`}
+                    className={`option-button ${selectedOptionTiming.includes('dinner') ? 'selected' : ''}`}
                     onClick={() => handleMealClick('dinner')}
                 >
                     Dinner
                 </button>
-                {selectedOptions.includes('dinner') && (
+                {selectedOptionTiming.includes('dinner') && (
                     <div className="timing-options">
                         <label>
                             <input

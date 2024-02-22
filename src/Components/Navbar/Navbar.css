@@ -26,8 +26,10 @@
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-	border-start-end-radius: 8px;
-	border-end-end-radius: 8px;
+	border-start-end-radius: 8px !important;
+	border-end-end-radius: 8px !important;
+	border-start-start-radius: 0px !important;
+	border-end-start-radius: 0px !important;
 	background-color: #e23744;
 	transition: all ease-in-out 0.3s;
 	margin-right: 1rem;

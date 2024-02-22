@@ -6,12 +6,22 @@ import Ourservices from '../../Components/Ourservices/Ourservices'
 import Why from '../../Components/Why/Why'
 import Pricing from '../../Components/Pricing/Pricing'
 import Footer from '../../Components/Footer/Footer'
+import { Helmet } from 'react-helmet';
+
 
 const Home = () => {
   return (
     <>
     
-    
+    <Helmet>
+                <title>The Homy</title>
+                <meta name="description" content="
+                
+                
+
+                " />
+                
+            </Helmet>
     
         <Banner/>
         <Description/>
