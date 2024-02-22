@@ -233,8 +233,9 @@ const Customize = () => {
                             <div className="head-cus-right">Time Slots</div>
 
                             <div className="time-slot-text">
-                                <div>Lorem ipsum dolor sit amet.</div>
-                                <div style={{ fontStyle: 'Italic' }}>Lorem ipsum dolor sit amet.</div>
+                                <div>Choose time slot as per your requirements
+</div>
+                                <div style={{ fontStyle: 'Italic' }}>*you can select multiple options at once</div>
                             </div>
 
 
