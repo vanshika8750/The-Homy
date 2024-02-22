@@ -92,8 +92,8 @@ const Homypromax = () => {
 								Access to all premium nutrition & workout plans
 							</li>
 							<li>5-star professional chef at home</li>
-							<li>Customizable gourmet meals</li>
-							<li>Get dietician once a month</li>
+							<li className="middle">Customizable gourmet meals</li>
+							<li className="middle">Get dietician once a month</li>
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">

@@ -255,3 +255,84 @@ text-align: center;
 	}
 }
 
+@media (max-width: 1280px) {
+	.DustGuard-top{
+		margin-left: 2rem;
+		
+	}
+	.DustGuard-top img{
+		margin-left: 1.5rem;
+		width: 91%;
+		
+	}
+	
+	.DustGuard-bottom{
+		margin-left: 2rem;
+		
+	}
+	.DustGuard-bottom img{
+		margin-left: 1.5rem;
+		width: 91%;
+		
+	}
+
+	.DustGuard {	
+		margin-left: -2rem;
+	}
+	.DustGuard-Heading {
+		margin-top: -1rem;
+
+		margin-left: 26.5em;
+	}
+	.DustGuard-content {
+		margin-left: 18rem;
+	}
+	.DustGuard-content p {
+		font-size: 18px;
+	}
+	.DustGuardimg img {
+		width: 96%;
+		margin-top: -1.5rem;
+		display: block;
+		margin-left: 1.5rem;
+	}
+	.DustGuard-features {
+		left: -10rem;
+	}
+	.DustGuard-price {
+		/* top: 95rem; */
+		margin-top: 2rem;
+		font-size: 18px;
+		left: 7rem;
+	}
+	.book-now-btn {
+		margin-left: 22rem !important;
+	}
+	.checkout-plans {
+		font-size: 18px;
+		margin-left: 18rem !important;
+	}
+	.DustGuard-cards {
+		top: 73rem;
+		left: 5rem;
+	}
+	.DustGuard-card {
+		height: 20rem;
+		margin-top: -5rem;
+	}
+	.middle {
+		display: none;
+	}
+	.book-btn {
+		margin-top: 1rem !important;
+		height: 2.5rem;
+		left: 0rem;
+	}
+	.Kitchen-button {
+		font-family: Montserrat;
+		position: absolute;
+		bottom: 3rem;
+		left: 35rem;
+		z-index: 1;
+	}
+}
