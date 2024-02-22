@@ -30,23 +30,25 @@ const Login = () => {
                         },
                         body: JSON.stringify(formData),
                     });
-
+    
                     if (response.ok) {
-                        console.log(formData);
                         console.log('Login successful');
-                        // const data = await response.json();
-                        
-                        // Store user data and tokens in local storage
-                        // localStorage.setItem('userData', JSON.stringify(formData));
-                        // localStorage.setItem("accessToken", data.access);
-                        // localStorage.setItem("refreshToken", data.refresh);
-
+                        const data = await response.json();
+                        console.log(data);
+    
+                        // Extract the token from the response data
+                        const { token } = data;
+    
+                        // Now you can use the token as needed
+                        console.log('Access Token:', token.access);
+                        console.log('Refresh Token:', token.refresh);
+    
                         // Clear form data after successful login
                         setFormData({
                             email: '',
                             password: ''
                         });
-
+    
                         // Redirect the user to the desired page after login
                         // window.location.href = '/dashboard';
                     } else {
@@ -58,7 +60,7 @@ const Login = () => {
                     setIsSubmitting(false);
                 }
             };
-
+    
             loginUser();
         }
     }, [isSubmitting, formData]);

@@ -8,8 +8,8 @@ const Contactus = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
+        f_name: '',
+        phone_number: '',
         email: '',
         message: ''
     });
@@ -23,7 +23,7 @@ const Contactus = () => {
         const submitForm = async () => {
             if (isSubmitting) {
                 try {
-                    const response = await fetch('https://projects.skymetweather.com/wnddevauth/fieldUserLogin', {
+                    const response = await fetch('http://3.27.122.168/api/contact', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -35,8 +35,8 @@ const Contactus = () => {
                         console.log(formData)
                         console.log('Contact us successful');
                         setFormData({
-                            name: '',
-                            phone: '',
+                            f_name: '',
+                            phone_number: '',
                             email: '',
                             message: ''
                         });
@@ -73,9 +73,9 @@ const Contactus = () => {
                         <div>
                             <input
                                 type="text"
-                                id="name"
-                                name="name"
-                                value={formData.name}
+                                id="f_name"
+                                name="f_name"
+                                value={formData.f_name}
                                 onChange={handleChange}
                                 placeholder="Name"
                                 required
@@ -84,9 +84,9 @@ const Contactus = () => {
                         <div>
                             <input
                                 type="tel"
-                                id="phone"
-                                name="phone"
-                                value={formData.phone}
+                                id="phone_number"
+                                name="phone_number"
+                                value={formData.phone_number}
                                 placeholder="Phone number"
                                 onChange={handleChange}
                                 required
