@@ -57,11 +57,14 @@ flex-shrink: 0;
 .connect-button .connect-btn:hover {
 	color: #020202;
 }
+.banner-title{
+    margin-right: 1rem;
+}
 .banner-title p{
     color: #FFF;
-text-align: right;
+text-align: center;
 font-family: Montserrat;
-font-size: 2rem;
+font-size: 1.5rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;

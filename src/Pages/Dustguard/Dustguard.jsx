@@ -70,7 +70,7 @@ const DustGuard = () => {
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">BOOK NOW</div>
 					</div>
@@ -82,8 +82,8 @@ const DustGuard = () => {
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li >Lorem ipsum dolor sit amet.</li>
+							<li  className="middle">Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">BOOK NOW</div>
 					</div>
@@ -95,8 +95,8 @@ const DustGuard = () => {
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
+							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li >Lorem ipsum dolor sit amet.</li>
 						</ul>
 						<div className="connect-button book-btn">BOOK NOW</div>
 					</div>

@@ -304,3 +304,58 @@
 		height: 2.5rem;
 	}
 }
+@media (max-width: 1280px) {
+	.KitchenKing-homypro {
+		
+		margin-left: -2rem;
+	}
+	.KitchenKing-homypro-Heading {
+		margin-top: -1rem;
+
+		margin-left: 28rem;
+	}
+	.KitchenKing-homypro-content {
+		margin-left: 18rem;
+	}
+	.KitchenKing-homypro-content p {
+		font-size: 18px;
+	}
+	.KitchenKing-homyproimg img {
+		width: 96%;
+		margin-top: -1.5rem;
+		display: block;
+		margin-left: .5rem;
+	}
+	.KitchenKing-homypro-features {
+		left: -10rem;
+	}
+	.KitchenKing-homypro-price {
+		/* top: 95rem; */
+		margin-top: 2rem;
+		font-size: 18px;
+		left: 7rem;
+	}
+	.book-now-btn {
+		margin-left: 22rem !important;
+	}
+	.checkout-plans {
+		font-size: 18px;
+		margin-left: 18rem !important;
+	}
+	.KitchenKing-homypro-cards {
+		top: 30rem;
+		left: 10rem;
+	}
+	.KitchenKing-homypro-card {
+		height: 20rem;
+		margin-top: -5rem;
+	}
+	.middle {
+		display: none;
+	}
+	.book-btn {
+		margin-top: 1rem !important;
+		height: 2.5rem;
+		left: 0rem;
+	}
+}
