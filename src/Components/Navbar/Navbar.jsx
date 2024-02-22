@@ -87,13 +87,13 @@ function OffcanvasExample() {
                       <Link to="/" className="connect-btn1">
                         Home
                       </Link>
-                      <Link to="/" className="connect-btn1">
+                      <Link to="/aboutus" className="connect-btn1">
                         About Us
                       </Link>
-                      <Link to="/" className="connect-btn1">
+                      <Link to="/services" className="connect-btn1">
                         Services
                       </Link>
-                      <Link to="/" className="connect-btn1">
+                      <Link to="/contactus" className="connect-btn1">
                         Contact Us
                       </Link>
 

@@ -1,14 +1,14 @@
-.Dustguard {
+.DustGuard {
 	display: flex;
 	flex-direction: column;
 }
-.Dustguard-top {
+.DustGuard-top {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5rem;
 	top: 0;
 }
-.Dustguard-upper-background {
+.DustGuard-upper-background {
 	width: max-content;
 	z-index: 1;
 	/* changed */
@@ -25,13 +25,13 @@
 	);
 }
 
-.Dustguard-Heading {
+.DustGuard-Heading {
 	position: absolute;
 	padding-top: 0rem;
 	top: 7rem;
 	margin-left: 30rem;
 }
-.Dustguard-Heading h1 {
+.DustGuard-Heading h1 {
 	color: #fff;
 	font-family: Montserrat;
 	font-size: 60px;
@@ -41,7 +41,7 @@
 	letter-spacing: 0.58px;
 }
 
-.Dustguardimg {
+.DustGuardimg {
 	/* width: 100%; */
 	height: 100%;
 	position: absolute;
@@ -50,7 +50,7 @@
 	z-index: 0;
 	/* changed */
 }
-.Dustguard-content-m{
+.DustGuard-content-m{
 	margin-top: 7rem;
 	margin-left: 1rem;
 	max-width: 18rem;
@@ -60,7 +60,7 @@ text-align: center;
 	color: #ffffff;
 	}
 
-.Dustguard-content {
+.DustGuard-content {
 	bottom: 10rem;
 	z-index: 2;
 	width: 50%;
@@ -69,7 +69,7 @@ text-align: center;
 	text-align: center;
 	position: absolute;
 }
-.Dustguard-content p {
+.DustGuard-content p {
 	font-size: 24px;
 	color: #ffffff;
 	font-family: Montserrat;
@@ -112,13 +112,13 @@ text-align: center;
 	z-index: 1;
 }
 
-.Dustguard-bottom {
+.DustGuard-bottom {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5rem;
 	top: 0;
 }
-.Dustguard-lower-background {
+.DustGuard-lower-background {
 	width: max-content;
 	background-color: rgb(11, 10, 10);
 	position: relative;
@@ -141,7 +141,7 @@ text-align: center;
 	margin-top: 25rem;
 	margin-left: 12rem;
 }
-.Dustguard-cards {
+.DustGuard-cards {
 	gap: 5rem;
 	z-index: 4;
 	/* changed */
@@ -152,7 +152,7 @@ text-align: center;
 	top: 71rem;
 	left: 12rem;
 }
-.Dustguard-card {
+.DustGuard-card {
 	padding-top: 2rem;
 	border-radius: 10px;
 	display: flex;
@@ -165,11 +165,11 @@ text-align: center;
 	font-family: Montserrat;
 	height: 30rem;
 }
-.Dustguard-card ul {
+.DustGuard-card ul {
 	padding: 0;
 	margin-top: 1rem;
 }
-.Dustguard-card li {
+.DustGuard-card li {
 	line-height: 3rem;
 }
 .book-btn{
@@ -184,24 +184,24 @@ text-align: center;
 
 /* =====================================================================*/
 @media(max-width:600px){
-	.Dustguard{
+	.DustGuard{
 		display: flex;
 		height: 250vh;
 		margin-left: 2rem;
 	}
-	.Dustguard-Heading{
+	.DustGuard-Heading{
 		margin-top: 6rem;
 		margin-left: 1rem;
 	}
-	.Dustguard-Heading h1{
+	.DustGuard-Heading h1{
 		font-size: 28px;
 	}
-	.Dustguard-top{
+	.DustGuard-top{
 		display: flex;
 		flex-direction: column;
 		margin-left: 0;
 	}
-	.Dustguard-upper-background{
+	.DustGuard-upper-background{
 		height: 400px;
 	}
 	.desktopview {
@@ -210,12 +210,12 @@ text-align: center;
 	.mobileview {
 		display: block;
 	}
-	.Dustguard-content{
+	.DustGuard-content{
 		margin: 0;
 		
 		font-size: 12px;
 	}
-	.Dustguard-content p{
+	.DustGuard-content p{
 		font-size: 12px;
 	}
 	.Kitchen-button{
@@ -235,18 +235,18 @@ text-align: center;
 		left: 4rem;
 		top:45rem
 	}
-	.Dustguard-cards{
+	.DustGuard-cards{
 		flex-direction: column;
 		left: 4rem;
 		gap:1rem
 
 	
 	}
-	.Dustguard-card{
+	.DustGuard-card{
 		border: 2px solid #e23744;
 		height: 16rem;
 	}
-	.Dustguard-card li{
+	.DustGuard-card li{
 		font-size: 12px;
 		line-height: 1.5rem;
 	}

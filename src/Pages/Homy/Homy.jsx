@@ -47,9 +47,10 @@ const Homy = () => {
 						<p style={{ color: "red" }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
+							<li>Chefs with cooking expertise</li>
+							<li>Equipped with kitchen kits</li>
+							<li>Verified for hygiene and well-trained</li>
+							<li>Vaccinated for safety</li>
 						</ul>
 					</div>
 				</div>
@@ -82,7 +83,7 @@ const Homy = () => {
 				</div>
 
 				<div className="KitchenKing-homy-cards">
-					<div className="KitchenKing-card">
+					<div className="KitchenKing-homy-card">
 						<h2>
 							{" "}
 							<LiaCrownSolid /> HOMY PRO
@@ -91,8 +92,10 @@ const Homy = () => {
 							<li>Versatile culinary expert </li>
 							<li>Skilled in crafting diverse dishes.</li>
 							<li>Possesses a professional degree</li>
-							<li>Equipped with kitchen kits</li>
-							<li>Vaccinated for safety</li>
+							<li className="middle">
+								Equipped with kitchen kits
+							</li>
+							<li className="middle">Vaccinated for safety</li>
 						</ul>{" "}
 						<Link to="/homypro">
 							<div className="connect-button book-btn">
@@ -100,7 +103,7 @@ const Homy = () => {
 							</div>
 						</Link>
 					</div>
-					<div className="KitchenKing-card">
+					<div className="KitchenKing-homy-card">
 						<h2>
 							{" "}
 							<IoDiamondOutline /> HOMY PRO MAX
@@ -110,8 +113,12 @@ const Homy = () => {
 								Access to all premium nutrition & workout plans
 							</li>
 							<li>5-star professional chef at home</li>
-							<li>Customizable gourmet meals</li>
-							<li>Get dietician once a month</li>
+							<li className="middle">
+								Customizable gourmet meals
+							</li>
+							<li className="middle">
+								Get dietician once a month
+							</li>
 						</ul>
 						<Link to="/homypromax">
 							<div className="connect-button book-btn">

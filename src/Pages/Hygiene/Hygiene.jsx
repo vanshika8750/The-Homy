@@ -33,20 +33,19 @@ const hygiene = () => {
 				</div>
 				<div className="hygiene-content desktopview">
 					<p>
-						Dust cleaning services goodbye to untidy spaces and the
-						headaches that come with them. Our team of professionals
-						ensures your abode is spotless and cleaned with the best
-						techniques and care. All of our staff is hygiene
-						checked, vaccinated, responsible and trustworthy. So,
-						it's time to relax and sit back, and let our experts
-						make your home shine!
+						Our skilled cleaners uphold the highest standards of
+						hygiene and precision, leaving no tile unpolished and no
+						fixture untouched. With an unwavering commitment to
+						excellence, we ensure restoring your restroom to
+						pristine luxury.
 					</p>
 				</div>
 
 				<div className="hygiene-content-m mobileview">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Laboriosam voluptatum maxime dignissimos esse praesentium.
-					Est sunt incidunt numquam porro!
+					Our skilled cleaners uphold the highest standards of hygiene
+					and precision, leaving no tile unpolished and no fixture
+					untouched. With an unwavering commitment to excellence, we
+					ensure restoring your restroom to pristine luxury.
 					<p></p>
 				</div>
 				<div className="connect-button Kitchen-button">BOOK NOW</div>

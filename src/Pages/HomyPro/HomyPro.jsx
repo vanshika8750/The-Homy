@@ -8,6 +8,8 @@ import { LiaCrownSolid } from "react-icons/lia";
 import { IoStarOutline } from "react-icons/io5";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
+import { Link } from "react-router-dom";
+
 
 const Homypro = () => {
 	return (
@@ -34,19 +36,23 @@ const Homypro = () => {
 				</div>
 				<div className="KitchenKing-homypro-content">
 					<p>
-						Lorem ipsum dolor sit amet consectetur. Iaculis
-						tristique pulvinar id neque sed. Tincidunt phasellus
-						amet ante quis. Adipiscing at lacinia eget dui hac
-						sagittis nunc. Ullamcorper ac risus in aliquet tincidunt
-						eget nibh adipiscing id.
+					Our chefs are trained and experienced in curating
+						exquisite meals tailored to your preferences. Whether
+						it's a five-course gourmet experience or your favorite
+						comfort food, with a keen eye for detail, focus on
+						nutrition and calorie count, our chefs ensure you get
+						the most delicious food on the table that doesn't
+						compromise your health!
 					</p>
 					<div className="KitchenKing-homypro-features">
 						<p style={{ color: "red" }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
-							<li>lorel ipsum lorel ipsum </li>
+							<li>Versatile culinary expert </li>
+							<li>Skilled in crafting diverse dishes. </li>
+							<li>lPossesses a professional degree</li>
+							<li>Equipped with kitchen kits</li>
+							<li>Vaccinated for safety</li>
 						</ul>
 					</div>
 				</div>
@@ -73,22 +79,30 @@ const Homypro = () => {
 						<li>35,999</li>
 					</ul>
 					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3 className="checkout-plans">Check our other beneficial plans </h3>
+					<h3 className="checkout-plans">
+						Check our other beneficial plans{" "}
+					</h3>
 				</div>
 
 				<div className="KitchenKing-homypro-cards">
-					<div className="KitchenKing-homypro-card">
+				<div className="KitchenKing-homypro-card">
 						<h2>
-						
-							<IoStarOutline /> HOMY
+							{" "}
+							<IoDiamondOutline /> HOMY
 						</h2>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li className="middle">Lorem ipsum dolor sit amet.</li>
-							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li>
+								Access to all premium nutrition & workout plans
+							</li>
+							<li>5-star professional chef at home</li>
+							<li className='middle'>Customizable gourmet meals</li>
+							<li className="middle">Get dietician once a month</li>
 						</ul>
-						<div className="connect-button book-btn">TRY OUT</div>
+						<Link to="/homy">
+							<div className="connect-button book-btn">
+								BOOK NOW
+							</div>
+						</Link>
 					</div>
 					<div className="KitchenKing-homypro-card">
 						<h2>
@@ -96,12 +110,18 @@ const Homypro = () => {
 							<IoDiamondOutline /> HOMY PRO MAX
 						</h2>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li className="middle">Lorem ipsum dolor sit amet.</li>
-							<li  className="middle">Lorem ipsum dolor sit amet.</li>
+							<li>
+								Access to all premium nutrition & workout plans
+							</li>
+							<li>5-star professional chef at home</li>
+							<li className="middle">Customizable gourmet meals</li>
+							<li className="middle">Get dietician once a month</li>
 						</ul>
-						<div className="connect-button book-btn">TRY OUT</div>
+						<Link to="/homypromax">
+							<div className="connect-button book-btn">
+								BOOK NOW
+							</div>
+						</Link>
 					</div>
 				</div>
 			</div>
