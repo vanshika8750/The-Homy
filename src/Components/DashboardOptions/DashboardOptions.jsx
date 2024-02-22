@@ -1,6 +1,14 @@
 import React from 'react'
 import './DashboardOptions.css'
 import Calendar from '../Calendar/Calendar'
+import command from '../../assets/command.svg'
+import command1 from '../../assets/command1.svg'
+import phone1 from '../../assets/phone1.svg'
+import codepen from '../../assets/codepen.svg'
+import creditcard from '../../assets/credit-card.svg'
+import lock from '../../assets/lock.svg'
+
+
 const DashboardOptions = () => {
   return (
     <div className="lower-right-dash">
@@ -18,7 +26,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={command} alt="" />
                 </div>
             </div>
 
@@ -31,7 +39,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={command1} alt="" />
                 </div>
             </div>
 
@@ -44,7 +52,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={phone1} alt="" />
                 </div>
             </div>
 
@@ -61,7 +69,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={codepen} alt="" />
                 </div>
             </div>
 
@@ -75,7 +83,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={creditcard} alt="" />
                 </div>
             </div>
 
@@ -89,7 +97,7 @@ const DashboardOptions = () => {
                 </div>
 
                 <div className="right">
-                    img
+                    <img src={lock} alt="" />
                 </div>
             </div>
 
@@ -97,9 +105,9 @@ const DashboardOptions = () => {
 
     </div>
 
-    <div className="right-lower-right-dash">
+    {/* <div className="right-lower-right-dash">
         <Calendar/>
-    </div>
+    </div> */}
 </div>
   )
 }
