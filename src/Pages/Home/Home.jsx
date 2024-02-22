@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import Banner from '../../Components/Banner/Banner'
 import Description from '../../Components/Description/Description'
 import FeatureBanner from '../../Components/FeatureBanner/FeatureBanner'
@@ -10,10 +10,11 @@ import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
+
   return (
     <>
-    
-    <Helmet>
+
+    {/* <Helmet>
                 <title>The Homy</title>
                 <meta name="description" content="
                 
@@ -21,7 +22,7 @@ const Home = () => {
 
                 " />
                 
-            </Helmet>
+            </Helmet> */}
     
         <Banner/>
         <Description/>

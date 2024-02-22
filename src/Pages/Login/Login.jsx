@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import mobileview from '../../assets/mobileview.svg';
 import desktopview from '../../assets/ourservicesbackground.svg';
 import aboutimg from '../../assets/feature.jpg';
-import "./Login.css";
 import { Link } from 'react-router-dom';
 import { FaPhone, FaGoogle } from "react-icons/fa";
+import "./Login.css";
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -23,7 +23,7 @@ const Login = () => {
         if (isSubmitting) {
             const loginUser = async () => {
                 try {
-                    const response = await fetch('https://projects.skymetweather.com/wnddevauth/fieldUserLogin', {
+                    const response = await fetch('http://3.27.122.168/api/user/login/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -32,12 +32,23 @@ const Login = () => {
                     });
 
                     if (response.ok) {
-                        console.log(formData)
+                        console.log(formData);
                         console.log('Login successful');
+                        // const data = await response.json();
+                        
+                        // Store user data and tokens in local storage
+                        // localStorage.setItem('userData', JSON.stringify(formData));
+                        // localStorage.setItem("accessToken", data.access);
+                        // localStorage.setItem("refreshToken", data.refresh);
+
+                        // Clear form data after successful login
                         setFormData({
                             email: '',
                             password: ''
                         });
+
+                        // Redirect the user to the desired page after login
+                        // window.location.href = '/dashboard';
                     } else {
                         console.log('Login failed');
                     }
@@ -69,7 +80,7 @@ const Login = () => {
                 <div className="login-form">
                     <form onSubmit={handleSubmit}>
                         <div className="Signup-link">
-                            <p>Did't have an account ? <Link to="/signup" className='Signup'>Sign up</Link></p>
+                            <p>Didn't have an account ? <Link to="/signup" className='Signup'>Sign up</Link></p>
                         </div>
                         <div>
                             <input
@@ -116,3 +127,4 @@ const Login = () => {
 }
 
 export default Login;
+ 
