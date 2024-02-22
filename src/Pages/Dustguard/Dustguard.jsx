@@ -21,6 +21,7 @@ const DustGuard = () => {
 					<img
 						className="mobileview"
 						src={DustGuardBorderMobile}
+				
 						alt=""
 					/>
 				</div>
