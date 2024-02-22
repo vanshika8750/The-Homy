@@ -5,8 +5,12 @@ import aboutimg from '../../assets/feature.jpg';
 import { Link } from 'react-router-dom';
 import { FaPhone, FaGoogle } from "react-icons/fa";
 import "./Login.css";
+import {jwtDecode} from 'jwt-decode';
+
 
 const Login = () => {
+
+
     const [formData, setFormData] = useState({
         email: '',
         password: ''
@@ -43,12 +47,12 @@ const Login = () => {
                         console.log('Access Token:', token.access);
                         console.log('Refresh Token:', token.refresh);
     
-                        // Clear form data after successful login
+                       
                         setFormData({
                             email: '',
                             password: ''
                         });
-    
+                        decodeToken(token.access);
                         // Redirect the user to the desired page after login
                         // window.location.href = '/dashboard';
                     } else {
@@ -70,8 +74,19 @@ const Login = () => {
         setIsSubmitting(true);
     };
 
+    const decodeToken = (accessToken) => {
+        const decoded = jwtDecode(accessToken);
+        console.log('Decoded Token:', decoded);
+        console.log(JSON.stringify(decoded.user_id))
+//         console.log(decoded.email)
+//         const decodedHeader = jwtDecode(accessToken, { header: true });
+// console.log(decodedHeader);
+    };
+
+
     return (
         <div className="login">
+       
             <div className="wapper" style={{ display: "flex", flexDirection: "column" }}>
                 <div className="login-headline">LOGIN</div>
                 <img src={mobileview} alt="" className='mobileview' />

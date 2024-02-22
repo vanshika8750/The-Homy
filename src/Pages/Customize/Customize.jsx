@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import customizebg from "../../assets/customizebg.svg";
 import "./customize.css";
 import Slider from '../../Components/Slider/Slider'
@@ -14,15 +14,38 @@ import { Link } from "react-router-dom";
 
 
 const Customize = () => {
-
     const { data, caldata, selectedOptionTiming, selectedTimings } = useCustomizationContext();
+    
+    const [formData, setFormData] = useState({
+        plan: '',
+        time: '',
+        foodway: '',
+        spicy: '',
+        Calorimeter: '',
+        timingoptions: '',
+        timings: ''
+    });
+
+    useEffect(() => {
+        // Update formData whenever data changes
+        setFormData(prevState => ({
+            ...prevState,
+            spicy: data,
+            Calorimeter: caldata,
+            timingoptions: selectedOptionTiming,
+            timings: selectedTimings
+        }));
+    }, [data, caldata, selectedOptionTiming, selectedTimings]);
 
     // daily,weekly and so on...
     const { selectedOption, setSelectedOption } = useCustomizationContext('');
 
     const handleChange = (event) => {
         setSelectedOption(event.target.value);
-        console.log("Selected option:", event.target.value);
+        setFormData({
+            ...formData,
+            time: event.target.value // Update time in formData
+        });
     };
 
     // homy, hompy pro , homy pro max
@@ -30,25 +53,33 @@ const Customize = () => {
 
     const handleSelect = (value) => {
         setUserSelectedOption(value);
-        console.log('Selected Option by user:', value);
+        setFormData({
+            ...formData,
+            plan: value // Update plan in formData
+        });
     };
 
 
     const [selectedFoodWay, setSelectedFoodWay] = useState("");
 
     const handleFoodWayChange = (e) => {
-        setSelectedFoodWay(e.target.value);
+        const selectedFood = e.target.value;
+    setSelectedFoodWay(selectedFood);
+    setFormData({
+        ...formData,
+        foodway: selectedFood // Update foodway in formData
+    });
     };
 
-    const [formData, setFormData] = useState({
-        plan: userSelectedOption,
-        time: selectedOption,
-        foodway: selectedFoodWay,
-        spicy: data,
-        Calorimeter: caldata,
-        timingoptions: selectedOptionTiming,
-        timings: selectedTimings
-    });
+    // const [formData, setFormData] = useState({
+    //     plan: userSelectedOption,
+    //     time: selectedOption,
+    //     foodway: selectedFoodWay,
+    //     spicy: data,
+    //     Calorimeter: caldata,
+    //     timingoptions: selectedOptionTiming,
+    //     timings: selectedTimings
+    // });
 
     const handleContinue = () => {
         console.log("Form Data:", formData);

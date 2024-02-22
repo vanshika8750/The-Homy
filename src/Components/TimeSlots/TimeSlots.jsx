@@ -31,8 +31,7 @@ function TimeSlot() {
             });
         }
     };
-  console.log(selectedOptionTiming)
-  console.log(selectedTimings)
+
 
     return (
         <div className="meal-container">
