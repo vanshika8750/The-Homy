@@ -77,7 +77,7 @@ const Homy = () => {
 						<li>35,999</li>
 					</ul>
 					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3 className="checkout-plans">
+					<h3 className="checkout-plans-homy">
 						Check our other beneficial plans{" "}
 					</h3>
 				</div>

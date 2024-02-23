@@ -175,7 +175,7 @@
 .mobileview {
 	display: none !important;
 }
-@media (max-width: 600px) {
+@media only screen and (min-width: 200px) and  (max-width: 600px) {
 	.KitchenKing-homypro-top {
 		margin-left: 2rem !important;
 	}
@@ -199,7 +199,7 @@
 		left: 2rem;
 	}
 	.KitchenKing-homypro-price {
-		top: -95rem;
+		top: -90rem;
 		font-size: 18px;
 		left: 2rem;
 		/* text-align: center; */
@@ -220,6 +220,13 @@
 		margin-left: 1rem;
 		margin-top: 0rem;
 	}
+
+	.KitchenKing-homypro-price-amount h3 {
+		margin-top: 3rem;
+		font-size: 22px;
+		text-align: center;
+		margin-left: -4rem !important;
+	}
 	.KitchenKing-homypro-Heading h1 {
 		font-size: 28px;
 	}
@@ -229,13 +236,15 @@
 	}
 
 	.KitchenKing-homypro-cards {
-		top: -55rem;
+		top: -50rem;
 		left: -1rem;
 		flex-direction: column;
 	}
 	.KitchenKing-homypro-card {
 		border: 2px solid #e23744;
-		height: 16rem;
+		width: 95%;
+		margin: 1rem auto;
+		height: 20rem;
 	}
 	.KitchenKing-homypro-card li {
 		font-size: 12px;
@@ -249,7 +258,7 @@
 		margin-left: -2rem !important;
 	}
 }
-@media (max-width: 1080px) {
+@media only screen and (min-width: 601px) and  (max-width: 1080px) {
 	.KitchenKing-homypro {
 		margin-left: -2rem;
 	}
@@ -277,7 +286,7 @@
 		left: -10rem;
 	}
 	.KitchenKing-homypro-price {
-		/* top: 95rem; */
+	
 		font-size: 18px;
 		left: 3rem;
 	}
@@ -289,8 +298,11 @@
 		margin-left: 18rem !important;
 	}
 	.KitchenKing-homypro-cards {
-		top: 27rem;
-		left: 10rem;
+		top: 26rem;
+		left: 6rem;
+		width: 95%;
+		margin: -1 auto;
+		height: 20rem;
 	}
 	.KitchenKing-homypro-card {
 		height: 16rem;
@@ -304,7 +316,7 @@
 		height: 2.5rem;
 	}
 }
-@media (max-width: 1280px) {
+@media only screen and (min-width: 1081px) and  (max-width: 1280px){
 	.KitchenKing-homypro {
 		
 		margin-left: -2rem;
@@ -330,7 +342,7 @@
 		left: -10rem;
 	}
 	.KitchenKing-homypro-price {
-		/* top: 95rem; */
+	
 		margin-top: 2rem;
 		font-size: 18px;
 		left: 7rem;

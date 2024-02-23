@@ -36,7 +36,7 @@ const KitchenKing = () => {
 					<h1>KITCHEN KING</h1>
 				</div>
 				<div className="KitchenKing-content desktopview">
-					<p>
+					
 						Our chefs are trained and experienced in curating
 						exquisite meals tailored to your preferences. Whether
 						it's a five-course gourmet experience or your favorite
@@ -44,13 +44,17 @@ const KitchenKing = () => {
 						nutrition and calorie count, our chefs ensure you get
 						the most delicious food on the table that doesn't
 						compromise your health!
-					</p>
+					
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Laboriosam voluptatum maxime dignissimos esse praesentium.
-					Est sunt incidunt numquam porro!
+				Our chefs are trained and experienced in curating
+						exquisite meals tailored to your preferences. Whether
+						it's a five-course gourmet experience or your favorite
+						comfort food, with a keen eye for detail, focus on
+						nutrition and calorie count, our chefs ensure you get
+						the most delicious food on the table that doesn't
+						compromise your health!
 					<p></p>
 				</div>
 				<Link to='/customize'>
@@ -81,6 +85,8 @@ const KitchenKing = () => {
 								well-trained
 							</li>
 							<li>Vaccinated for safety</li>
+							<li style={{listStyle:'none'}}><br/></li>
+
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">
@@ -115,7 +121,7 @@ const KitchenKing = () => {
 							<li>
 								Access to all premium nutrition & workout plans
 							</li>
-							<li>5-star professional chef at home</li>
+							<li>5-star chef at home</li>
 							<li>Customizable gourmet meals</li>
 							<li>Get dietician once a month</li>
 						</ul>
