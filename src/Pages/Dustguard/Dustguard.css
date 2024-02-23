@@ -104,7 +104,7 @@ text-align: center;
 	color: #020202;
 	cursor: pointer;
 }
-.Kitchen-button {
+.Dust-button {
 	font-family: Montserrat;
 	position: absolute;
 	bottom: 3rem;
@@ -124,17 +124,17 @@ text-align: center;
 	position: relative;
 	z-index: 1;
 }
-.KitchenFeatures {
+.DustFeatures {
 	z-index: 1;
 	position: absolute;
 	margin-top: 5rem;
 	margin-left: 17rem;
 }
-.KitchenFeatures img {
+.DustFeatures img {
 	width: 700px;
 	height: auto;
 }
-.KitchenOptions {
+.DustOptions {
 	height: 100px;
 	width: auto;
 	position: absolute;
@@ -183,14 +183,21 @@ text-align: center;
 }
 
 /* =====================================================================*/
-@media(max-width:600px){
+@media only screen and (min-width: 200px) and  (max-width: 600px){
 	.DustGuard{
-		display: flex;
+		display: flex;	
 		height: 250vh;
 		margin-left: 2rem;
 	}
+	.DustGuardimg{
+		top:4rem
+	}
+	.Dust-button{
+		top: 40rem;
+		left: 7rem!important;
+	}
 	.DustGuard-Heading{
-		margin-top: 6rem;
+		margin-top: -1rem;
 		margin-left: 1rem;
 	}
 	.DustGuard-Heading h1{
@@ -210,25 +217,26 @@ text-align: center;
 	.mobileview {
 		display: block;
 	}
-	.DustGuard-content{
-		margin: 0;
-		
+	.DustGuard-content-m{
+		margin: 1rem!important;
+		height: max-content;
 		font-size: 12px;
 	}
 	.DustGuard-content p{
 		font-size: 12px;
 	}
-	.Kitchen-button{
-		left: 9rem;
+	.Dust-button{
+	
 		bottom: 17rem;
 	}
 	
-	.KitchenFeatures img{
+	.DustFeatures img{
+
 		height: 350px;
 		width: auto;
 	
 	}
-	.KitchenFeatures{
+	.DustFeatures{
 		position: absolute;
 		margin: 0rem;
 		padding: 0rem;
@@ -238,24 +246,133 @@ text-align: center;
 	.DustGuard-cards{
 		flex-direction: column;
 		left: 4rem;
-		gap:1rem
+		gap:2rem
 
 	
 	}
 	.DustGuard-card{
 		border: 2px solid #e23744;
-		height: 16rem;
+		height: 20rem;
 	}
 	.DustGuard-card li{
 		font-size: 12px;
 		line-height: 1.5rem;
 	}
 	.book-btn{
-		margin-top: 0 !important;
+		margin-top: -30rem !important;
 	}
 }
+@media only screen and (min-width: 601px) and  (max-width: 1080px){
+	.DustGuard-top{
+		margin-left: 2rem;
+		
+	}
+	
+	.DustGuard-top img{
+		margin-left: 1rem;
+		width: 95vw;
+		
+	}
+	
+	.DustGuard-bottom{
+		margin-left: 2rem;
+		
+	}
+	.DustGuard-bottom img{
+		margin-left: 1rem;
+		width: 95vw;
+		
+	}
 
-@media (max-width: 1280px) {
+	.DustGuard {	
+		margin-left: -2rem;
+	}
+	.DustGuard-Heading {
+		margin-top: -1rem;
+
+		margin-left: 24.5em;
+	}
+	.DustGuard-content {
+		top: 24rem;
+		width: 80vw;
+		margin-left: 6rem;
+	}
+	.DustGuard-Heading h1{
+		font-size: 38px;
+	}
+	.DustGuard-content {
+		top: 20rem;
+		color: white;
+		font-size: 16px;
+	}
+	.DustGuardimg img {
+		width: 95vw;
+		margin-top: -2.2rem;
+		display: block;
+		margin-left: 1rem;
+	}
+	.DustFeatures  {
+		top: 32rem;
+		margin-left: 15rem;
+	}
+	.DustFeatures img{
+		height: 150px;
+		width: auto;
+	}
+	.DustGuard-price {
+		/* top: 95rem; */
+		margin-top: 2rem;
+		font-size: 18px;
+		left: 7rem;
+	}
+	.book-now-btn {
+		margin-left: 22rem !important;
+	}
+	.checkout-plans {
+		font-size: 18px;
+		margin-left: 18rem !important;
+	}
+	.DustGuard-cards {
+		top: 73rem;
+		left: 5rem;
+		gap: 1rem;
+
+
+	}
+	.DustGuard-card ul {
+		margin-left: .5rem;
+		margin-top: 1rem;
+	}
+	.DustGuard-card h2{
+		text-align: center;
+
+	}
+	.DustGuard-card li {
+		line-height: 2rem;
+	}
+	.DustGuard-card {
+		height: 26rem;
+		width: 25vw;
+		margin-top: -20rem;
+	}
+	.middle {
+		display: none;
+	}
+	.book-btn {
+		margin-top: 1rem !important;
+		height: 2.5rem;
+		left: 0rem;
+	}
+	.Dust-button {
+		font-family: Montserrat;
+		position: absolute;
+		margin: 0rem;
+		bottom: 2rem!important;
+		left: 30rem;
+		z-index: 1;
+	}
+}
+@media only screen and (min-width: 1081px) and  (max-width: 1280px) {
 	.DustGuard-top{
 		margin-left: 2rem;
 		
@@ -328,7 +445,7 @@ text-align: center;
 		height: 2.5rem;
 		left: 0rem;
 	}
-	.Kitchen-button {
+	.Dust-button {
 		font-family: Montserrat;
 		position: absolute;
 		bottom: 3rem;

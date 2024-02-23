@@ -48,17 +48,17 @@ const hygiene = () => {
 					ensure restoring your restroom to pristine luxury.
 					<p></p>
 				</div>
-				<div className="connect-button Kitchen-button">BOOK NOW</div>
+				<div className="connect-button hygiene-button">BOOK NOW</div>
 			</div>
 			<div className="hygiene-bottom">
 				<div className="hygiene-lower-background">
 					<img className="desktopview" src={hygieneBorder} />
 				</div>
-				<div className="KitchenFeatures">
+				<div className="hygieneFeatures">
 					<img className="desktopview" src={HomyFeatures} alt="" />
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
-				<div className="KitchenOptions"></div>
+				<div className="hygieneOptions"></div>
 
 				<div className="hygiene-cards">
 					<div className="hygiene-card">

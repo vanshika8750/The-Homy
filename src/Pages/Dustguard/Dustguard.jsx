@@ -49,17 +49,17 @@ const DustGuard = () => {
 					ensure restoring your restroom to pristine luxury.
 					<p></p>
 				</div>
-				<div className="connect-button Kitchen-button">BOOK NOW</div>
+				<div className="connect-button Dust-button">BOOK NOW</div>
 			</div>
 			<div className="DustGuard-bottom">
 				<div className="DustGuard-lower-background">
 					<img className="desktopview" src={DustGuardBorder} />
 				</div>
-				<div className="KitchenFeatures">
+				<div className="DustFeatures">
 					<img className="desktopview" src={HomyFeatures} alt="" />
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
-				<div className="KitchenOptions"></div>
+				<div className="DustOptions"></div>
 
 				<div className="DustGuard-cards">
 					<div className="DustGuard-card">

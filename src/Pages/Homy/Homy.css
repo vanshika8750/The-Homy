@@ -174,7 +174,92 @@
 .mobileview {
 	display: none !important;
 }
-@media (max-width: 1080px) {
+@media only screen and (min-width: 200px) and  (max-width: 600px)
+ {
+	.KitchenKing-homy-top {
+		margin-left: 2rem !important;
+	}
+	.desktopview {
+		display: none !important;
+	}
+	.mobileview {
+		display: block !important;
+	}
+
+	.KitchenKing-homy-content {
+		font-size: 14px;
+		text-align: left;
+		margin-left: 1rem;
+		margin-top: 5rem;
+		width: 20rem;
+		top: 26rem;
+		/* bottom: rem; */
+	}
+	.KitchenKing-homy-features {
+		left: 2rem;
+	}
+	.KitchenKing-homy-price {
+		top: -90rem;
+		font-size: 18px;
+		left: 2rem;
+		/* text-align: center; */
+	}
+	.KitchenKing-homy-price ul {
+		gap: 4rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.KitchenKing-homyimg {
+		top: 4rem;
+	}	
+	.KitchenKing-homy-price-amount h3 {
+		margin-top: 3rem;
+		font-size: 22px;
+		text-align: center;
+		margin-left: -4rem !important;
+	}
+
+	.KitchenKing-homy-price-amount {
+		margin-left: 0rem;
+		margin-top: 2rem;
+	}
+	.KitchenKing-homy-Heading {
+		margin-left: 1rem;
+		margin-top: 0rem;
+	}
+	.KitchenKing-homy-Heading h1 {
+		font-size: 28px;
+	}
+	.book-now-btn {
+		margin-top: 1rem;
+		margin-left: 0rem !important ;
+	}
+
+	.KitchenKing-homy-cards {
+		top: -50rem;
+		left: -1rem;
+		flex-direction: column;
+	}
+	.KitchenKing-homy-card {
+		border: 2px solid #e23744;
+		width: 95%;
+		margin: 1rem auto;
+		height: 20rem;
+	}
+	.KitchenKing-homy-card li {
+		font-size: 12px;
+		line-height: 1.5rem;
+	}
+	.KitchenKing-homy {
+		height: 250vh;
+	}
+	.checkout-plans-homy {
+		font-size: 18px;
+		margin-left: -2rem !important;
+	}
+}
+@media only screen and (min-width: 601px) and  (max-width: 1080px)
+ {
 	.KitchenKing-homy {
 		margin-left: -2rem;
 	}
@@ -198,114 +283,35 @@
 		left: -10rem;
 	}
 	.KitchenKing-homy-price {
-		/* top: 95rem; */
+		margin: 0rem;
 		font-size: 18px;
 		left: 3rem;
 	}
 	.book-now-btn {
 		margin-left: 22rem !important;
 	}
-	.checkout-plans {
+	.checkout-plans-homy {
 		font-size: 18px;
 		margin-left: 18rem !important;
 	}
 	.KitchenKing-homy-cards {
-		top: 27rem;
-		left: 10rem;
+		top: 26rem;
+		left: 6rem;
+		width: 95%;
+		margin: -1 auto;
+		height: 20rem;
 	}
 	.KitchenKing-homy-card {
 		height: 16rem;
 		margin-top: -5rem;
 	}
-	.middle {
-		display: none;
-	}
+
 	.book-btn {
 		margin-top: 0rem !important;
 		height: 2.5rem;
 	}
 }
-@media (max-width: 600px) {
-	.KitchenKing-homy-top {
-		margin-left: 2rem !important;
-	}
-	.desktopview {
-		display: none !important;
-	}
-	.mobileview {
-		display: block !important;
-	}
-
-	.KitchenKing-homy-content {
-		font-size: 14px;
-		text-align: left;
-		margin-left: 1rem;
-		margin-top: 4rem;
-		width: 20rem;
-		top: 26rem;
-		/* bottom: rem; */
-	}
-	.KitchenKing-homy-features {
-		left: 2rem;
-	}
-	.KitchenKing-homy-price {
-		top: -95rem;
-		font-size: 18px;
-		left: 2rem;
-		/* text-align: center; */
-	}
-	.KitchenKing-homy-price ul {
-		gap: 4rem;
-		display: flex;
-		flex-direction: column;
-	}
-	.KitchenKing-homyimg {
-		top: 4rem;
-	}
-	.KitchenKing-homypro-price-amount h3 {
-		margin-top: 3rem;
-		font-size: 22px;
-		text-align: center;
-		margin-left: -4rem !important;
-	}
-	.KitchenKing-homy-price-amount {
-		margin-left: 0rem;
-		margin-top: 2rem;
-	}
-	.KitchenKing-homy-Heading {
-		margin-left: 1rem;
-		margin-top: 0rem;
-	}
-	.KitchenKing-homy-Heading h1 {
-		font-size: 28px;
-	}
-	.book-now-btn {
-		margin-top: 1rem;
-		margin-left: 0rem !important ;
-	}
-
-	.KitchenKing-homy-cards {
-		top: -55rem;
-		left: -1rem;
-		flex-direction: column;
-	}
-	.KitchenKing-homy-card {
-		border: 2px solid #e23744;
-		height: 16rem;
-	}
-	.KitchenKing-homy-card li {
-		font-size: 12px;
-		line-height: 1.5rem;
-	}
-	.KitchenKing-homy {
-		height: 250vh;
-	}
-	.checkout-plans {
-		font-size: 18px;
-		margin-left: -2rem !important;
-	}
-}
-@media (max-width: 1280px) {
+@media only screen and (min-width: 1081px) and  (max-width: 1280px){
 	.KitchenKing-homy {
 		
 		margin-left: -2rem;
@@ -314,6 +320,9 @@
 		margin-top: -1rem;
 
 		margin-left: 32rem;
+	}
+	.middle {
+		display: none;
 	}
 	.KitchenKing-homy-content {
 		margin-left: 18rem;
@@ -331,7 +340,7 @@
 		left: -10rem;
 	}
 	.KitchenKing-homy-price {
-		/* top: 95rem; */
+
 		margin-top: 2rem;
 		font-size: 18px;
 		left: 7rem;

@@ -69,7 +69,7 @@ text-align: center;
 	text-align: center;
 	position: absolute;
 }
-.KitchenKing-content p {
+.KitchenKing-content  {
 	font-size: 24px;
 	color: #ffffff;
 	font-family: Montserrat;
@@ -107,7 +107,7 @@ text-align: center;
 .Kitchen-button {
 	font-family: Montserrat;
 	position: absolute;
-	bottom: 3rem;
+	bottom:2rem;
 	left: 42rem;
 	z-index: 1;
 }
@@ -183,14 +183,21 @@ text-align: center;
 }
 
 /* =====================================================================*/
-@media(max-width:600px){
+@media only screen and (min-width: 200px) and  (max-width: 600px){
 	.KitchenKing{
-		display: flex;
+		display: flex;	
 		height: 250vh;
 		margin-left: 2rem;
 	}
+	.KitchenKingimg{
+		top:4rem
+	}
+	.Kitchen-button{
+		top: 40rem;
+		left: 7rem!important;
+	}
 	.KitchenKing-Heading{
-		margin-top: 6rem;
+		margin-top: -1rem;
 		margin-left: 1rem;
 	}
 	.KitchenKing-Heading h1{
@@ -210,20 +217,21 @@ text-align: center;
 	.mobileview {
 		display: block;
 	}
-	.KitchenKing-content{
-		margin: 0;
-		
+	.KitchenKing-content-m{
+		margin: 1rem!important;
+		height: max-content;
 		font-size: 12px;
 	}
 	.KitchenKing-content p{
 		font-size: 12px;
 	}
 	.Kitchen-button{
-		left: 9rem;
+	
 		bottom: 17rem;
 	}
 	
 	.KitchenFeatures img{
+
 		height: 350px;
 		width: auto;
 	
@@ -238,24 +246,133 @@ text-align: center;
 	.KitchenKing-cards{
 		flex-direction: column;
 		left: 4rem;
-		gap:1rem
+		gap:2rem
 
 	
 	}
 	.KitchenKing-card{
 		border: 2px solid #e23744;
-		height: 16rem;
+		height: 20rem;
 	}
 	.KitchenKing-card li{
 		font-size: 12px;
 		line-height: 1.5rem;
 	}
 	.book-btn{
-		margin-top: 0 !important;
+		margin-top: -30rem !important;
 	}
 }
+@media only screen and (min-width: 601px) and  (max-width: 1080px){
+	.KitchenKing-top{
+		margin-left: 2rem;
+		
+	}
+	
+	.KitchenKing-top img{
+		margin-left: 1rem;
+		width: 95vw;
+		
+	}
+	
+	.KitchenKing-bottom{
+		margin-left: 2rem;
+		
+	}
+	.KitchenKing-bottom img{
+		margin-left: 1rem;
+		width: 95vw;
+		
+	}
 
-@media (max-width: 1280px) {
+	.KitchenKing {	
+		margin-left: -2rem;
+	}
+	.KitchenKing-Heading {
+		margin-top: -1rem;
+
+		margin-left: 24.5em;
+	}
+	.KitchenKing-content {
+		top: 24rem;
+		width: 80vw;
+		margin-left: 6rem;
+	}
+	.KitchenKing-Heading h1{
+		font-size: 38px;
+	}
+	.KitchenKing-content {
+		top: 20rem;
+		color: white;
+		font-size: 16px;
+	}
+	.KitchenKingimg img {
+		width: 95vw;
+		margin-top: -2.2rem;
+		display: block;
+		margin-left: 1rem;
+	}
+	.KitchenFeatures  {
+		top: 32rem;
+		margin-left: 15rem;
+	}
+	.KitchenFeatures img{
+		height: 150px;
+		width: auto;
+	}
+	.KitchenKing-price {
+		/* top: 95rem; */
+		margin-top: 2rem;
+		font-size: 18px;
+		left: 7rem;
+	}
+	.book-now-btn {
+		margin-left: 22rem !important;
+	}
+	.checkout-plans {
+		font-size: 18px;
+		margin-left: 18rem !important;
+	}
+	.KitchenKing-cards {
+		top: 73rem;
+		left: 5rem;
+		gap: 1rem;
+
+
+	}
+	.KitchenKing-card ul {
+		margin-left: .5rem;
+		margin-top: 1rem;
+	}
+	.KitchenKing-card h2{
+		text-align: center;
+
+	}
+	.KitchenKing-card li {
+		line-height: 2rem;
+	}
+	.KitchenKing-card {
+		height: 26rem;
+		width: 25vw;
+		margin-top: -20rem;
+	}
+	.middle {
+		display: none;
+	}
+	.book-btn {
+		margin-top: 1rem !important;
+		height: 2.5rem;
+		left: 0rem;
+	}
+	.Kitchen-button {
+		font-family: Montserrat;
+		position: absolute;
+		margin: 0rem;
+		bottom: 4rem!important;
+		left: 30rem;
+		z-index: 1;
+	}
+}
+@media only screen and (min-width: 1081px) and  (max-width: 1280px) {
 	.KitchenKing-top{
 		margin-left: 2rem;
 		
