@@ -110,10 +110,9 @@
 	cursor: pointer;
 }
 .Kitchen-button {
+	font-size: 16px;
 	font-family: Montserrat;
-	position: absolute;
-	bottom: 2rem;
-	left: 42rem;
+	margin-top: 1rem;
 	z-index: 1;
 }
 
@@ -191,7 +190,7 @@
 @media only screen and (min-width: 200px) and (max-width: 600px) {
 	.KitchenKing {
 		display: flex;
-		height: 350vh;
+		height: 250vh;
 		margin-left: 2rem;
 	}
 	.KitchenKingimg {
@@ -202,8 +201,9 @@
 	}
 
 	.Kitchen-button {
-		top: 40rem;
-		left: 7rem !important;
+		font-family: Montserrat;
+		margin-top: 1rem;
+		z-index: 1;
 	}
 	.KitchenKing-Heading {
 		margin-top: -1rem;
@@ -235,7 +235,10 @@
 		font-size: 12px;
 	}
 	.Kitchen-button {
-		bottom: 17rem;
+		font-size: 12px !important;
+		font-family: Montserrat;
+		margin-top: 1rem;
+		z-index: 1;
 	}
 
 	.KitchenFeatures img {
@@ -377,7 +380,11 @@
 		left: 0rem;
 	}
 	.Kitchen-button {
-		display: none !important;
+		font-size: 12px !important;
+height: 2.5rem;
+		font-family: Montserrat;
+		margin-top: 1rem;
+		z-index: 1;
 	}
 }
 
@@ -483,11 +490,7 @@
 	}
 	.Kitchen-button {
 		font-family: Montserrat;
-		position: absolute;
-		margin: 0rem;
-		left: 25rem;
-		bottom: 10rem !important;
-		margin: auto;
+
 		z-index: 1;
 	}
 	.KitchenKing-card ul {
@@ -537,6 +540,8 @@
 		font-size: 48px;
 	}
 	.KitchenKing-content {
+		display: flex;
+		flex-direction: column;
 		top: 10rem;
 		margin-left: 3rem;
 		width: 90vw;
@@ -599,7 +604,7 @@
 		position: absolute;
 		display: flex;
 		flex-direction: row;
-		
+
 		top: 65rem;
 		width: 65rem;
 		left: 4rem;
@@ -614,9 +619,7 @@
 	}
 	.Kitchen-button {
 		font-family: Montserrat;
-		position: absolute;
-		bottom: 3rem;
-		left: 35rem;
+
 		z-index: 1;
 	}
 	.KitchenKing-card ul {

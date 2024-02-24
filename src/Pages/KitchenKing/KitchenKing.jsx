@@ -46,6 +46,12 @@ const KitchenKing = () => {
 					food, with a keen eye for detail, focus on nutrition and
 					calorie count, our chefs ensure you get the most delicious
 					food on the table that doesn't compromise your health!
+					<br />
+					<Link to="/customize">
+					<div className="connect-button Kitchen-button">
+						BOOK NOW
+					</div>
+				</Link>
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
@@ -55,13 +61,13 @@ const KitchenKing = () => {
 					food, with a keen eye for detail, focus on nutrition and
 					calorie count, our chefs ensure you get the most delicious
 					food on the table that doesn't compromise your health!
-					<p></p>
-				</div>
-				<Link to="/customize">
+					<Link to="/customize">
 					<div className="connect-button Kitchen-button">
 						BOOK NOW
 					</div>
 				</Link>
+				</div>
+				
 			</div>
 			<div className="KitchenKing-bottom">
 				<div className="KitchenKing-lower-background">

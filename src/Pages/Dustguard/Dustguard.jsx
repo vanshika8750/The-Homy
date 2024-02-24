@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Dustguard.css";
+import "./DustGuard.css";
 import DustGuardbg from "../../assets/KitchenKingbg.svg";
 import KithcenKingimg from "../../assets/KitchenKing.png";
 import DustGuardBorder from "../../assets/KitchenKingBorder.svg";
@@ -12,51 +12,78 @@ import { IoStarOutline } from "react-icons/io5";
 import HomyFeaturesMobile from "../../assets/HomyFeaturesMobile.png";
 import DustGuardMobile from "../../assets/KitchenKingMobile.png";
 import DustGuardBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
+import DustGuardbgmid from "../../assets/KitchenKingbgmid.svg";
+import DustGuardBordermid from "../../assets/KitchenKingBordermid.svg";
+
 const DustGuard = () => {
 	return (
 		<div className="DustGuard">
 			<div className="DustGuard-top">
 				<div className="DustGuard-upper-background">
-					<img className="desktopview" src={DustGuardbg} />
+					<img className="desktopviewkk" src={DustGuardbg} />
 					<img
 						className="mobileview"
 						src={DustGuardBorderMobile}
-				
 						alt=""
 					/>
+					<img className="midviewkk" src={DustGuardbgmid} alt="" />
 				</div>
 				<div className="DustGuardimg ">
-					<img className="desktopview" src={KithcenKingimg} />
+					<img
+						className="desktopviewkk midviewkk"
+						src={KithcenKingimg}
+					/>
 					<img className="mobileview" src={DustGuardMobile} alt="" />
 				</div>
 				<div className="DustGuard-Heading ">
-					<h1>Dust Guards</h1>
+					<h1>DUST GUARD</h1>
 				</div>
-				<div className="DustGuard-content desktopview">
-					<p>
-						Our skilled cleaners uphold the highest standards of
-						DustGuard and precision, leaving no tile unpolished and no
-						fixture untouched. With an unwavering commitment to
-						excellence, we ensure restoring your restroom to
-						pristine luxury.
-					</p>
+				<div className="DustGuard-content desktopviewkk midviewkk ">
+					Dust cleaning services goodbye to untidy spaces and the
+					headaches that come with them. Our team of professionals
+					ensures your abode is spotless and cleaned with the best
+					techniques and care. All of our staff is hygiene checked,
+					vaccinated, responsible and trustworthy. So, it's time to
+					relax and sit back, and let our experts make your home
+					shine!
+					<br />
+					<Link to="/customize">
+						<div className="connect-button Dust-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
 
 				<div className="DustGuard-content-m mobileview">
-					Our skilled cleaners uphold the highest standards of DustGuard
-					and precision, leaving no tile unpolished and no fixture
-					untouched. With an unwavering commitment to excellence, we
-					ensure restoring your restroom to pristine luxury.
-					<p></p>
+					Dust cleaning services goodbye to untidy spaces and the
+					headaches that come with them. Our team of professionals
+					ensures your abode is spotless and cleaned with the best
+					techniques and care. All of our staff is hygiene checked,
+					vaccinated, responsible and trustworthy. So, it's time to
+					relax and sit back, and let our experts make your home
+					shine!
+					<Link to="/customize">
+						<div className="connect-button Dust-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
-				<div className="connect-button Dust-button">BOOK NOW</div>
 			</div>
 			<div className="DustGuard-bottom">
 				<div className="DustGuard-lower-background">
-					<img className="desktopview" src={DustGuardBorder} />
+					<img className="desktopviewkk" src={DustGuardBorder} />
+					<img
+						className="midviewkk"
+						src={DustGuardBordermid}
+						alt=""
+					/>
 				</div>
 				<div className="DustFeatures">
-					<img className="desktopview" src={HomyFeatures} alt="" />
+					<img
+						className="desktopviewkk midviewkk"
+						src={HomyFeatures}
+						alt=""
+					/>
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
 				<div className="DustOptions"></div>
@@ -67,12 +94,17 @@ const DustGuard = () => {
 							<IoStarOutline /> HOMY
 						</h2>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li className="middle">Lorem ipsum dolor sit amet.</li>
+							<li>Well trained cleaner</li>
+							<li>Adaptable to all requirements</li>
+							<li>Professional & experienced</li>
+							<li>Verified for hygiene </li>
+							<li>Equipped with cleaning kit</li>
 						</ul>
-						<div className="connect-button book-btn">BOOK NOW</div>
+						<Link to="/homy">
+							<div className="connect-button book-btn">
+								BOOK NOW
+							</div>
+						</Link>
 					</div>
 					<div className="DustGuard-card">
 						<h2>
@@ -80,12 +112,17 @@ const DustGuard = () => {
 							<LiaCrownSolid /> HOMY PRO
 						</h2>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li >Lorem ipsum dolor sit amet.</li>
-							<li  className="middle">Lorem ipsum dolor sit amet.</li>
-						</ul>
-						<div className="connect-button book-btn">BOOK NOW</div>
+						<li>Well trained staff: 1 cleaner + 1 supervisor</li>
+						<li>Adaptable to all requirements</li>
+						<li>Equipped with cleaning kit</li>
+						<li>Professional & experienced</li>
+						<li>Vaccinated for safety</li>
+						</ul>{" "}
+						<Link to="/homypro">
+							<div className="connect-button book-btn">
+								BOOK NOW
+							</div>
+						</Link>
 					</div>
 					<div className="DustGuard-card">
 						<h2>
@@ -93,12 +130,17 @@ const DustGuard = () => {
 							<IoDiamondOutline /> HOMY PRO MAX
 						</h2>
 						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li className="middle">Lorem ipsum dolor sit amet.</li>
-							<li >Lorem ipsum dolor sit amet.</li>
+						<li>Well trained staff: 2 cleaner + 1 supervisor</li>
+						<li>Adaptable to all requirements</li>
+						<li>Equipped with cleaning kit</li>
+						<li>Professional & experienced</li>
+						<li>Vaccinated for safety</li>
 						</ul>
-						<div className="connect-button book-btn">BOOK NOW</div>
+						<Link to="/homypromax">
+							<div className="connect-button book-btn">
+								BOOK NOW
+							</div>
+						</Link>
 					</div>
 				</div>
 			</div>
