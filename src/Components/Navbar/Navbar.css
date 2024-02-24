@@ -1,13 +1,75 @@
 .logo {
 	padding-right: 9rem;
 }
-
+.profile-dropdown{
+	cursor: pointer;
+}
+.profile-btn{
+	border-radius: 0px !important;
+}
+.dropdown-content{
+	transition: opacity 0.7s ease;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+	background-color: #1E1E1E;
+padding: 15px 35px;
+right: 50px;
+top: 80px;
+border-radius: 10px;
+font-weight: 500;
+}
+.phone-nav{
+	display: flex;
+	flex-direction: column;
+}
+.logout-nav-phone{
+	width: fit-content;
+	padding: 0.5rem 1.5rem;
+	background-color: #e23744;
+	border-radius: 10px;
+	color: white;
+}
+.dash-link-phone{
+	text-decoration: none;
+	font-family: Montserrat;
+	color: black;
+	padding: 0.5rem;
+	padding-bottom: 0.8rem;
+}
+.line-nav{
+height: 1px;
+border-radius: 100%;
+background-color: #fff;
+margin: 10px -10px;
+}
+.dash-link{
+	transition: color 0.5s ease;
+	text-decoration: none;
+color: white;
+}
+.logout-nav{
+	transition: color 0.5s ease;
+}
+.dash-link:hover{
+	color: #e23744;
+}
+.logout-nav:hover{
+color: #e23744;
+}
 .logo img {
 	width: 20rem;
 	height: 3.5rem;
 	flex-shrink: 0;
 }
 .home-logo-nav{
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: max-content;
 	background-color: #e23744;
 	border-start-start-radius: 8px;
@@ -26,7 +88,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-
+height: 50px;
 	background-color: #e23744;
 	transition: all ease-in-out 0.3s;
 	margin-right: 1rem;

@@ -32,16 +32,16 @@ const Services = () => {
 
 				<div className="services-content">
 					<p>The luxury homecare services</p>
-					<p>
+					<div>
 						<p>Commitment, Quality and Trust</p>
-						<p>
+						<div>
 							We ensure utmost professionalism for every service
 							we offer, whether it's cooking, house cleaning or
 							toilet cleaning. So, now it's time to sit back and
 							relax while we finish your daily chores with
 							finesse.
-						</p>
-					</p>
+						</div>
+					</div>
 				</div>
 			</div>
 

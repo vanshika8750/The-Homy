@@ -10,11 +10,14 @@ import logo from "../../assets/logo.svg";
 import homelogo from "../../assets/home-logo.svg";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import profile from '../../assets/profile.svg'
 import { GoArrowUpRight } from "react-icons/go";
 
 function OffcanvasExample() {
 	const [userData, setUserData] = useState(null);
 	const [authenticated, setAuthenticated] = useState(false);
+    const [dropdownVisible, setDropdownVisible] = useState(false);
+
 	useEffect(() => {
 		const storedUserData = localStorage.getItem("userData");
 
@@ -32,15 +35,21 @@ function OffcanvasExample() {
 	}, []);
 console.log('userdata',userData);
 const handleLogout = () => {
-    localStorage.clear(); // Clear all data from localStorage
-    setUserData(null); // Clear user data state
-    setAuthenticated(false); // Set authenticated state to false
-    // Set the logout flag in localStorage to indicate successful logout
+    localStorage.clear(); 
+    setUserData(null); 
+    setAuthenticated(false); 
     localStorage.setItem('logoutSuccess', true);
-    // Redirect the user to the homepage
     window.location.href = "/";
+	setDropdownVisible(false);
 };
 
+const toggleDropdown = () => {
+	setDropdownVisible(prevState => !prevState);
+};
+
+const handleDashboardClick = () => {
+    setDropdownVisible(false);
+};
 
 	return (
 		<>
@@ -125,15 +134,17 @@ const handleLogout = () => {
 												Contact Us
 											</Link>
 
-											<Form className="d-flex connect-button justify-content-center align-items-center">
+											<Form>
 												{authenticated ? (
-													<div
-														onClick={handleLogout}
-														className="connect-btn"
-													>
-														Logout
-													</div>
+													 <div className="phone-nav">
+													 <Link className="dash-link-phone" to="/dashboard" onClick={handleDashboardClick}>Dashboard</Link>
+															 <span className="logout-nav-phone" onClick={handleLogout}>Log Out</span>
+														
+													 </div>
+													
 												) : (
+													<div  className="d-flex connect-button justify-content-center align-items-center">
+
 													<Link
 														to="/signup"
 														className="connect-btn"
@@ -141,6 +152,7 @@ const handleLogout = () => {
 														Connect
 														<GoArrowUpRight />
 													</Link>
+													</div>
 												)}
 											</Form>
 										</div>
@@ -150,32 +162,46 @@ const handleLogout = () => {
 						</Navbar.Offcanvas>
 
 						<div className="connect-btn-control">
-							{authenticated && (
-								<Link
-									to="/dashboard"
-									className="navbar-link-buttons4"
-								>
-									Profile
-								</Link>
-							)}
+							
 							<Link to="/">
 								<div className="home-logo-nav">
 									<img src={homelogo} alt="" />
 								</div>
 							</Link>
-							<Form className="d-flex connect-button justify-content-center align-items-center square">
+
+							{/* {authenticated && (
+            <div className="profile-dropdown">
+                <img className="square home-logo-nav" src={profile} alt="Profile" onClick={toggleDropdown} />
+                {dropdownVisible && (
+                    <div className="dropdown-content">
+                        <Link className="dash-link" to="/dashboard" onClick={handleDashboardClick}>Dashboard</Link>
+                        <span className="line-nav"></span>
+                        <span className="logout-nav" onClick={handleLogout}>Log Out</span>
+                    </div>
+                )}
+            </div>
+        )} */}
+
+							<Form>
 								{authenticated ? (
-									<div
-										onClick={handleLogout}
-										className="connect-btn "
-									>
-										Logout
-									</div>
+									 <div className="profile-dropdown">
+									 <img className="square home-logo-nav" src={profile} alt="Profile" onClick={toggleDropdown} />
+									 {dropdownVisible && (
+										 <div className="dropdown-content">
+											 <Link className="dash-link" to="/dashboard" onClick={handleDashboardClick}>Dashboard</Link>
+											 <span className="line-nav"></span>
+											 <span className="logout-nav" onClick={handleLogout}>Log Out</span>
+										 </div>
+									 )}
+								 </div>
 								) : (
+									<div  className="d-flex connect-button justify-content-center align-items-center square">
+
 									<Link to="/signup" className="connect-btn ">
 										Connect
 										<GoArrowUpRight />
 									</Link>
+									</div>
 								)}
 							</Form>{" "}
 						</div>
