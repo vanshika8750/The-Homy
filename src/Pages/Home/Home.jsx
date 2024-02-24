@@ -7,9 +7,57 @@ import Why from '../../Components/Why/Why'
 import Pricing from '../../Components/Pricing/Pricing'
 import Footer from '../../Components/Footer/Footer'
 import { Helmet } from 'react-helmet';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useLocation } from 'react-router-dom'
 
 const Home = () => {
+
+  useEffect(() => {
+    // Get signupSuccess from localStorage
+    const signupSuccess = localStorage.getItem("signupSuccess");
+    console.log('signupSuccess', signupSuccess);
+
+    // Check if signupSuccess is true
+    if (signupSuccess === "true") {
+        toast.success("Signup Successful");
+
+        // Clear the signupSuccess flag from localStorage after 5 seconds
+        setTimeout(() => {
+            localStorage.removeItem("signupSuccess");
+        }, 5000); // Adjust the time interval as needed (in milliseconds)
+    }
+}, []);
+
+
+useEffect(() => {
+  // Check if the loginSuccess flag is set in localStorage
+  const loginSuccess = localStorage.getItem('loginSuccess');
+
+  // Check if loginSuccess is true
+  if (loginSuccess === 'true') {
+    toast.success('Login Successful');
+
+    // Clear the loginSuccess flag from localStorage after 5 seconds
+    setTimeout(() => {
+      localStorage.removeItem('loginSuccess');
+    }, 5000); // Adjust the time interval as needed (in milliseconds)
+  }
+}, []);
+
+
+useEffect(() => {
+  // Check if the logoutSuccess flag is set in localStorage
+  const logoutSuccess = localStorage.getItem('logoutSuccess');
+  if (logoutSuccess) {
+      // Show a toast message indicating successful logout
+      toast.success('Logout Successful');
+      // Clear the logoutSuccess flag from localStorage after some time
+      setTimeout(() => {
+          localStorage.removeItem('logoutSuccess');
+      }, 3000); // Adjust the time as per your requirement
+  }
+}, []);
 
   return (
     <>

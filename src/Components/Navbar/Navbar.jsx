@@ -17,9 +17,12 @@ function OffcanvasExample() {
 	const [authenticated, setAuthenticated] = useState(false);
 	useEffect(() => {
 		const storedUserData = localStorage.getItem("userData");
+
+		console.log('storedUserData:',storedUserData)
 		if (storedUserData) {
 			try {
 				const userDataJSON = JSON.parse(storedUserData);
+				console.log('userdatajson',userDataJSON)
 				setUserData(userDataJSON);
 				setAuthenticated(true);
 			} catch (error) {
@@ -27,12 +30,17 @@ function OffcanvasExample() {
 			}
 		}
 	}, []);
+console.log('userdata',userData);
+const handleLogout = () => {
+    localStorage.clear(); // Clear all data from localStorage
+    setUserData(null); // Clear user data state
+    setAuthenticated(false); // Set authenticated state to false
+    // Set the logout flag in localStorage to indicate successful logout
+    localStorage.setItem('logoutSuccess', true);
+    // Redirect the user to the homepage
+    window.location.href = "/";
+};
 
-	const handleLogout = () => {
-		localStorage.clear();
-		setUserData(null);
-		setAuthenticated(false);
-	};
 
 	return (
 		<>
