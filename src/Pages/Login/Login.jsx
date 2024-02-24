@@ -44,15 +44,15 @@ const Login = () => {
                         const { token } = data;
     
                         // Now you can use the token as needed
-                        console.log('Access Token:', token.access);
-                        console.log('Refresh Token:', token.refresh);
-    
+                        // console.log('Access Token:', token.access);
+                        // console.log('Refresh Token:', token.refresh);
+                        await fetchProfileData(token.access);
                        
                         setFormData({
                             email: '',
                             password: ''
                         });
-                        decodeToken(token.access);
+                      
                         // Redirect the user to the desired page after login
                         // window.location.href = '/dashboard';
                     } else {
@@ -74,13 +74,32 @@ const Login = () => {
         setIsSubmitting(true);
     };
 
-    const decodeToken = (accessToken) => {
-        const decoded = jwtDecode(accessToken);
-        console.log('Decoded Token:', decoded);
-        console.log(JSON.stringify(decoded.user_id))
-//         console.log(decoded.email)
-//         const decodedHeader = jwtDecode(accessToken, { header: true });
-// console.log(decodedHeader);
+
+
+    const fetchProfileData = async (accessToken) => {
+        try {
+            const profileResponse = await fetch('http://3.27.122.168/api/user/profile/', {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`,
+                    'Content-Type': 'application/json',
+                },
+            });
+    
+            if (profileResponse.ok) {
+                const userData = await profileResponse.json();
+                console.log('User Data:', userData);
+                localStorage.setItem('userData', JSON.stringify(userData));
+                // Process user data as needed
+                localStorage.setItem('loginSuccess', 'true');
+
+                window.location.href = '/';
+            } else {
+                console.log('Failed to fetch profile data');
+            }
+        } catch (error) {
+            console.error('Error fetching profile data:', error);
+        }
     };
 
 

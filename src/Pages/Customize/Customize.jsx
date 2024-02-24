@@ -71,19 +71,34 @@ const Customize = () => {
     });
     };
 
-    // const [formData, setFormData] = useState({
-    //     plan: userSelectedOption,
-    //     time: selectedOption,
-    //     foodway: selectedFoodWay,
-    //     spicy: data,
-    //     Calorimeter: caldata,
-    //     timingoptions: selectedOptionTiming,
-    //     timings: selectedTimings
-    // });
 
     const handleContinue = () => {
         console.log("Form Data:", formData);
+        // Call the API to send formData
+        sendDataToAPI(formData);
     };
+
+    const sendDataToAPI = (data) => {
+        // Make the API call to send data
+        // Replace 'your-api-endpoint' with your actual API endpoint
+        fetch('http://13.210.189.186/api/customize', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Handle success response from the API
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Handle error response from the API
+            });
+    };
+
 
     return (
         <div className="customize-page">
