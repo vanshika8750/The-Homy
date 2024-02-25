@@ -6,25 +6,27 @@ import "./Homypro.css";
 import { IoDiamondOutline } from "react-icons/io5";
 import { LiaCrownSolid } from "react-icons/lia";
 import { IoStarOutline } from "react-icons/io5";
+import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
+import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import { Link } from "react-router-dom";
-
 
 const Homypro = () => {
 	return (
 		<div className="KitchenKing-homypro">
 			<div className="KitchenKing-homypro-top">
 				<div className="KitchenKing-homypro-upper-background">
-					<img className="desktopview" src={KitchenKingbg} />
+					<img className="desktopviewh" src={KitchenKingbg} />
 					<img
 						className="mobileview"
 						src={KitchenKingBorderMobile}
 						alt=""
 					/>
+					<img className="midviewkkh" src={KitchenKingbgmid} alt="" />
 				</div>
 				<div className="KitchenKing-homyproimg">
-					<img className="desktopview" src={KithcenKingimg} />
+					<img className="desktopviewh midviewkkh" src={KithcenKingimg} />
 					<img
 						className="mobileview"
 						src={KitchenKingMobile}
@@ -59,7 +61,8 @@ const Homypro = () => {
 			</div>
 			<div className="KitchenKing-homypro-bottom">
 				<div className="KitchenKing-homypro-lower-background">
-					<img className="desktopview" src={KitchenKingBorder} />
+					<img className="desktopviewh" src={KitchenKingBorder} />
+					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypro-price">
 					<ul>

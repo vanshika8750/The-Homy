@@ -29,7 +29,10 @@ const KitchenKing = () => {
 					<img className="midviewkk" src={KitchenKingbgmid} alt="" />
 				</div>
 				<div className="KitchenKingimg ">
-					<img className="desktopviewkk midviewkk" src={KithcenKingimg} />
+					<img
+						className="desktopviewkk midviewkk"
+						src={KithcenKingimg}
+					/>
 					<img
 						className="mobileview"
 						src={KitchenKingMobile}
@@ -48,10 +51,10 @@ const KitchenKing = () => {
 					food on the table that doesn't compromise your health!
 					<br />
 					<Link to="/customize">
-					<div className="connect-button Kitchen-button">
-						BOOK NOW
-					</div>
-				</Link>
+						<div className="connect-button Kitchen-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
@@ -62,24 +65,23 @@ const KitchenKing = () => {
 					calorie count, our chefs ensure you get the most delicious
 					food on the table that doesn't compromise your health!
 					<Link to="/customize">
-					<div className="connect-button Kitchen-button">
-						BOOK NOW
-					</div>
-				</Link>
+						<div className="connect-button Kitchen-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
-				
 			</div>
 			<div className="KitchenKing-bottom">
 				<div className="KitchenKing-lower-background">
 					<img className="desktopviewkk" src={KitchenKingBorder} />
-					<img
-						className="midviewkk"
-						src={KitchenKingBordermid}
-						alt=""
-					/>
+					<img className="midviewkk" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenFeatures">
-					<img className="desktopviewkk midviewkk" src={HomyFeatures} alt="" />
+					<img
+						className="desktopviewkk midviewkk"
+						src={HomyFeatures}
+						alt=""
+					/>
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
 				<div className="KitchenOptions"></div>
@@ -97,7 +99,6 @@ const KitchenKing = () => {
 								well-trained
 							</li>
 							<li>Vaccinated for safety</li>
-							
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">
