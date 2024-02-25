@@ -9,21 +9,24 @@ import { Link } from "react-router-dom";
 import { IoStarOutline } from "react-icons/io5";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
+import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
+import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
 
 const Homypromax = () => {
 	return (
 		<div className="KitchenKing-homypromax">
 			<div className="KitchenKing-homypromax-top">
 				<div className="KitchenKing-homypromax-upper-background">
-					<img className="desktopview" src={KitchenKingbg} />
+					<img className="desktopviewh" src={KitchenKingbg} />
 					<img
 						className="mobileview"
 						src={KitchenKingBorderMobile}
 						alt=""
 					/>
+					<img className="midviewkkh" src={KitchenKingbgmid} alt="" />
 				</div>
 				<div className="KitchenKing-homypromaximg">
-					<img className="desktopview" src={KithcenKingimg} />
+					<img className="desktopviewh" src={KithcenKingimg} />
 					<img
 						className="mobileview"
 						src={KitchenKingMobile}
@@ -58,7 +61,8 @@ const Homypromax = () => {
 			</div>
 			<div className="KitchenKing-homypromax-bottom">
 				<div className="KitchenKing-homypromax-lower-background">
-					<img className="desktopview" src={KitchenKingBorder} />
+					<img className="desktopviewh" src={KitchenKingBorder} />
+					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypromax-price">
 					<ul>

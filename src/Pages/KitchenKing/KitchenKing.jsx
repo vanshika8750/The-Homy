@@ -12,20 +12,27 @@ import { IoStarOutline } from "react-icons/io5";
 import HomyFeaturesMobile from "../../assets/HomyFeaturesMobile.png";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
+import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
+import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
+
 const KitchenKing = () => {
 	return (
 		<div className="KitchenKing">
 			<div className="KitchenKing-top">
 				<div className="KitchenKing-upper-background">
-					<img className="desktopview" src={KitchenKingbg} />
+					<img className="desktopviewkk" src={KitchenKingbg} />
 					<img
 						className="mobileview"
 						src={KitchenKingBorderMobile}
 						alt=""
 					/>
+					<img className="midviewkk" src={KitchenKingbgmid} alt="" />
 				</div>
 				<div className="KitchenKingimg ">
-					<img className="desktopview" src={KithcenKingimg} />
+					<img
+						className="desktopviewkk midviewkk"
+						src={KithcenKingimg}
+					/>
 					<img
 						className="mobileview"
 						src={KitchenKingMobile}
@@ -35,39 +42,46 @@ const KitchenKing = () => {
 				<div className="KitchenKing-Heading ">
 					<h1>KITCHEN KING</h1>
 				</div>
-				<div className="KitchenKing-content desktopview">
-					
-						Our chefs are trained and experienced in curating
-						exquisite meals tailored to your preferences. Whether
-						it's a five-course gourmet experience or your favorite
-						comfort food, with a keen eye for detail, focus on
-						nutrition and calorie count, our chefs ensure you get
-						the most delicious food on the table that doesn't
-						compromise your health!
-					
+				<div className="KitchenKing-content desktopviewkk midviewkk ">
+					Our chefs are trained and experienced in curating exquisite
+					meals tailored to your preferences. Whether it's a
+					five-course gourmet experience or your favorite comfort
+					food, with a keen eye for detail, focus on nutrition and
+					calorie count, our chefs ensure you get the most delicious
+					food on the table that doesn't compromise your health!
+					<br />
+					<Link to="/customize">
+						<div className="connect-button Kitchen-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
-				Our chefs are trained and experienced in curating
-						exquisite meals tailored to your preferences. Whether
-						it's a five-course gourmet experience or your favorite
-						comfort food, with a keen eye for detail, focus on
-						nutrition and calorie count, our chefs ensure you get
-						the most delicious food on the table that doesn't
-						compromise your health!
-					<p></p>
+					Our chefs are trained and experienced in curating exquisite
+					meals tailored to your preferences. Whether it's a
+					five-course gourmet experience or your favorite comfort
+					food, with a keen eye for detail, focus on nutrition and
+					calorie count, our chefs ensure you get the most delicious
+					food on the table that doesn't compromise your health!
+					<Link to="/customize">
+						<div className="connect-button Kitchen-button">
+							BOOK NOW
+						</div>
+					</Link>
 				</div>
-				<Link to='/customize'>
-				<div className="connect-button Kitchen-button">BOOK NOW</div>
-
-				</Link>
 			</div>
 			<div className="KitchenKing-bottom">
 				<div className="KitchenKing-lower-background">
-					<img className="desktopview" src={KitchenKingBorder} />
+					<img className="desktopviewkk" src={KitchenKingBorder} />
+					<img className="midviewkk" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenFeatures">
-					<img className="desktopview" src={HomyFeatures} alt="" />
+					<img
+						className="desktopviewkk midviewkk"
+						src={HomyFeatures}
+						alt=""
+					/>
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
 				<div className="KitchenOptions"></div>
@@ -85,8 +99,6 @@ const KitchenKing = () => {
 								well-trained
 							</li>
 							<li>Vaccinated for safety</li>
-							<li style={{listStyle:'none'}}><br/></li>
-
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">
