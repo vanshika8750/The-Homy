@@ -81,7 +81,7 @@ const Customize = () => {
     const sendDataToAPI = (data) => {
         // Make the API call to send data
         // Replace 'your-api-endpoint' with your actual API endpoint
-        fetch('http://13.210.189.186/api/customize', {
+        fetch('http://127.0.0.1:8000/api/customize/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
