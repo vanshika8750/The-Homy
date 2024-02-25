@@ -12,6 +12,7 @@ import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
 import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
 import { IoStarOutline } from "react-icons/io5";
 
+
 const Homy = () => {
 	return (
 		<div className="KitchenKing-homy">

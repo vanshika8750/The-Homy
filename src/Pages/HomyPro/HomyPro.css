@@ -35,10 +35,15 @@
 }
 
 .KitchenKing-homypro-Heading {
+	width: 95vw;
 	position: absolute;
 	padding-top: 0rem;
 	top: 6.5rem;
-	margin-left: 36rem;
+	left: 0;
+	margin-left: 0rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	
 }
 .KitchenKing-homypro-Heading h1 {
@@ -199,7 +204,15 @@
 	.midviewkkh{
 		display: none;
 	}
-
+	.KitchenKing-homypro-Heading {
+		width: auto;
+		top: 5rem;
+		left: 2rem;
+	}
+	.KitchenKing-Heading h1 {
+		margin-left: 1rem;
+		font-size: 28px;
+	}
 	.KitchenKing-homypro-content {
 		font-size: 14px;
 		text-align: left;
