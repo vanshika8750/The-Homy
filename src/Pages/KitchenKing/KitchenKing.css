@@ -19,7 +19,6 @@
 	position: relative;
 	background-color: rgba(255, 255, 255, 0);
 	/* margin-left: 8.7rem; */
-
 	background: linear-gradient(
 		180deg,
 		rgba(255, 255, 255, 0) 0%,
@@ -64,7 +63,7 @@
 }
 
 .KitchenKing-content {
-	bottom: 10rem;
+	bottom: 8rem;
 	z-index: 2;
 	width: 50%;
 	margin-left: 18rem;
@@ -190,7 +189,7 @@
 @media only screen and (min-width: 200px) and (max-width: 600px) {
 	.KitchenKing {
 		display: flex;
-		height: 250vh;
+		height: 2200px;
 		margin-left: 2rem;
 	}
 	.KitchenKingimg {
@@ -381,14 +380,14 @@
 	}
 	.Kitchen-button {
 		font-size: 12px !important;
-height: 2.5rem;
+		height: 2.5rem;
 		font-family: Montserrat;
 		margin-top: 1rem;
 		z-index: 1;
 	}
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1080px) {
+@media only screen and (min-width: 901px) and (max-width: 1080px) {
 	.KitchenKing-top {
 		margin-left: 2rem;
 	}
@@ -416,8 +415,15 @@ height: 2.5rem;
 	}
 	.KitchenKing-Heading {
 		margin-top: -1rem;
-
 		margin-left: 24.5em;
+	}
+	.KitchenKing-Heading {
+		width: 100vw;
+		margin: -1rem auto;
+		text-align: center;
+	}
+	.KitchenKing-Heading h1 {
+		font-size: 32px;
 	}
 	.KitchenKing-content {
 		top: 24rem;
@@ -542,7 +548,7 @@ height: 2.5rem;
 	.KitchenKing-content {
 		display: flex;
 		flex-direction: column;
-		top: 10rem;
+		top: 20rem;
 		margin-left: 3rem;
 		width: 90vw;
 		display: flex;
