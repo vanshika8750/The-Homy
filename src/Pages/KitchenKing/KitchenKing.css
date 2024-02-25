@@ -1,12 +1,13 @@
 .KitchenKing {
 	display: flex;
+	justify-content:center ;
 	flex-direction: column;
 }
 .KitchenKing-top {
 	display: flex;
 	flex-direction: column;
-	margin-left: 5rem;
-	top: 0;
+	margin:auto;
+
 }
 .midviewkk {
 	display: none;
@@ -118,7 +119,7 @@
 .KitchenKing-bottom {
 	display: flex;
 	flex-direction: column;
-	margin-left: 5rem;
+	margin:auto;	
 	top: 0;
 }
 .KitchenKing-lower-background {
@@ -195,6 +196,9 @@
 	.KitchenKingimg {
 		top: 4rem;
 	}
+	.KitchenKingimg{
+		height: auto;
+	}
 	.midviewkk {
 		display: none;
 	}
@@ -217,17 +221,22 @@
 		margin-left: 0;
 	}
 	.KitchenKing-upper-background {
+		top: 0rem;
+		position: absolute;
 		height: 400px;
 	}
 	.desktopviewkk {
 		display: none;
 	}
 	.mobileview {
+		top: 0;
 		display: block;
 	}
 	.KitchenKing-content-m {
-		margin: 1rem !important;
+		margin: 2rem !important;
 		height: max-content;
+		position: absolute;
+		top: 30rem;
 		font-size: 12px;
 	}
 	.KitchenKing-content p {
@@ -241,6 +250,8 @@
 	}
 
 	.KitchenFeatures img {
+		position: absolute;
+		top: 19rem;
 		height: 350px;
 		width: auto;
 	}
@@ -249,7 +260,7 @@
 		margin: 0rem;
 		padding: 0rem;
 		left: 4rem;
-		top: 45rem;
+		top: 27rem;
 	}
 	.KitchenKing-cards {
 		flex-direction: column;
@@ -315,6 +326,7 @@
 		font-size: 16px;
 	}
 	.KitchenKingimg img {
+		
 		width: 95vw;
 		margin-top: -2.2rem;
 		display: block;
