@@ -39,10 +39,7 @@ export default function App() {
 						<img src={logo} alt="" />
 					</Link>
 					<div className="download">
-						<Link
-							to="https://i.pinimg.com/originals/36/bc/74/36bc74ebbedaa9566a0e343b83fee876.png"
-							target="_blank"
-						>
+						<Link to="/maintenance">
 							<img src={ps} alt="" />
 						</Link>
 					</div>
