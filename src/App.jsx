@@ -22,6 +22,7 @@ import Homypro from './Pages/HomyPro/HomyPro'
 import Homypromax from './Pages/HomyProMax/HomyProMax'
 import Dustguard from './Pages/Dustguard/Dustguard'
 import Hygiene from './Pages/Hygiene/Hygiene'
+import Maintenance from './Pages/Maintenance/Maintenance'
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
          <Route exact path='/homypromax' element={<Homypromax/>}/>
          <Route exact path='/dustguard' element={<Dustguard/>}/>
          <Route exact path='/Hygiene' element={<Hygiene/>}/>
+         <Route exact path='/maintenance' element={<Maintenance/>}/>
          
          
 
