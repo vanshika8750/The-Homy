@@ -65,24 +65,35 @@ const Homypro = () => {
 					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypro-price">
-					<ul>
-						<li>DAILY</li>
-						<li>WEEKLY</li>
-						<li>MONTHLY</li>
-						<li>HALF YEARLY</li>
-						<li>YEARLY&nbsp;&nbsp;&nbsp;</li>
-					</ul>
-				</div>
-				<div className="KitchenKing-homypro-price KitchenKing-homypro-price-amount ">
-					<ul>
-						<li>499&nbsp;&nbsp;</li>
-						<li>2,099&nbsp;&nbsp;</li>
-						<li>4,499&nbsp;&nbsp;&nbsp;&nbsp;</li>
-						<li>22,499 &nbsp;&nbsp;</li>
-						<li>35,999</li>
-					</ul>
-					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3 className="checkout-plans">
+				<div className="KitchenKing-homypromax-table">
+						<div className="pricecard">
+							DAILY
+							<br />
+							<span className="red">499</span>
+						</div>
+						<div className="pricecard">
+							WEEKLY
+							<br />
+							<span className="red">2,099</span>
+						</div>
+						<div className="pricecard">
+							MONTHLY
+							<br />
+							<span className="red">4,499</span>
+						</div>
+						<div className="pricecard">
+							HALF YEARLY
+							<br />
+							<span className="red">22,499</span>
+						</div>
+						<div className="pricecard">
+							YEARLY
+							<br />
+							<span className="red">35,999</span>
+						</div>
+					</div>
+					<div className="connect-button book-now-btnh">BOOK NOW</div>
+					<h3 className="checkout-plansh">
 						Check our other beneficial plans{" "}
 					</h3>
 				</div>

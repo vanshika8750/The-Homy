@@ -38,7 +38,7 @@ const Homypromax = () => {
 				</div>
 				<div className="KitchenKing-homypromax-content">
 					<p>
-					Our chefs are trained and experienced in curating
+						Our chefs are trained and experienced in curating
 						exquisite meals tailored to your preferences. Whether
 						it's a five-course gourmet experience or your favorite
 						comfort food, with a keen eye for detail, focus on
@@ -47,10 +47,12 @@ const Homypromax = () => {
 						compromise your health!
 					</p>
 					<div className="KitchenKing-homypromax-features">
-						<p style={{ color: "red"  }}>Kitchen King</p>
+						<p style={{ color: "red" }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>Well trained staff: 2 cleaner + 1 supervisor </li>
+							<li>
+								Well trained staff: 2 cleaner + 1 supervisor{" "}
+							</li>
 							<li>Professional & experienced </li>
 							<li>Equipped with cleaning kit </li>
 							<li>Professional & experienced</li>
@@ -65,28 +67,41 @@ const Homypromax = () => {
 					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypromax-price">
-					<ul>
-						<li>DAILY</li>
-						<li>WEEKLY</li>
-						<li>MONTHLY</li>
-						<li>HALF YEARLY</li>
-						<li>YEARLY&nbsp;&nbsp;&nbsp;</li>
-					</ul>
-				</div>
-				<div className="KitchenKing-homypromax-price KitchenKing-homypromax-price-amount ">
-					<ul>
-						<li>499&nbsp;&nbsp;</li>
-						<li>2,099&nbsp;&nbsp;</li>
-						<li>4,499&nbsp;&nbsp;&nbsp;&nbsp;</li>
-						<li>22,499 &nbsp;&nbsp;</li>
-						<li>35,999</li>
-					</ul>
-					<div className="connect-button book-now-btn">BOOK NOW</div>
-					<h3 className="checkout-plans">Check our other beneficial plans </h3>
+					<div className="KitchenKing-homypromax-table">
+						<div className="pricecard">
+							DAILY
+							<br />
+							<span className="red">499</span>
+						</div>
+						<div className="pricecard">
+							WEEKLY
+							<br />
+							<span className="red">2,099</span>
+						</div>
+						<div className="pricecard">
+							MONTHLY
+							<br />
+							<span className="red">4,499</span>
+						</div>
+						<div className="pricecard">
+							HALF YEARLY
+							<br />
+							<span className="red">22,499</span>
+						</div>
+						<div className="pricecard">
+							YEARLY
+							<br />
+							<span className="red">35,999</span>
+						</div>
+					</div>
+					<div className="connect-button book-now-btnh">BOOK NOW</div>
+					<h3 className="checkout-plansh">
+						Check our other beneficial plans{" "}
+					</h3>
 				</div>
 
 				<div className="KitchenKing-homypromax-cards">
-				<div className="KitchenKing-homypromax-card">
+					<div className="KitchenKing-homypromax-card">
 						<h2>
 							{" "}
 							<IoDiamondOutline /> HOMY
@@ -96,8 +111,12 @@ const Homypromax = () => {
 								Access to all premium nutrition & workout plans
 							</li>
 							<li>5-star professional chef at home</li>
-							<li className="middle">Customizable gourmet meals</li>
-							<li className="middle">Get dietician once a month</li>
+							<li className="middle">
+								Customizable gourmet meals
+							</li>
+							<li className="middle">
+								Get dietician once a month
+							</li>
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">
