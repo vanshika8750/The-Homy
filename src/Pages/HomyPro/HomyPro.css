@@ -239,6 +239,7 @@
 	}
 	.KitchenKing-homypro-Heading {
 		width: auto;
+		justify-self:flex-start ;
 		top: 5rem;
 		left: 0rem;
 	}
