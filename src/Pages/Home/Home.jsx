@@ -89,7 +89,7 @@ useEffect(() => {
         <Description/>
         <FeatureBanner/>
         <Why/>
-        {/* <Ourservices/> */}
+        <Ourservices/>
         <Pricing/>
        
 
