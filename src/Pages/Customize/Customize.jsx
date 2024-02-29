@@ -140,7 +140,7 @@ const Customize = () => {
 
                     <div className="first-col-div-customize">
                         <div className="your-plan">Your Plan</div>
-
+                        {selectedPlan?.services}
                         {selectedPlan?.plans}
                         {selectedPlan?.planoptions}
                     </div>

@@ -47,11 +47,11 @@ const DustGuard = () => {
 					relax and sit back, and let our experts make your home
 					shine!
 					<br />
-					<Link to="/customize">
+					{/* <Link to="/customize">
 						<div className="connect-button Dust-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 
 				<div className="DustGuard-content-m mobileview">
@@ -100,7 +100,7 @@ const DustGuard = () => {
 							<li>Verified for hygiene </li>
 							<li>Equipped with cleaning kit</li>
 						</ul>
-						<Link to="/homy">
+						<Link to="/dustguard/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -118,7 +118,7 @@ const DustGuard = () => {
 						<li>Professional & experienced</li>
 						<li>Vaccinated for safety</li>
 						</ul>{" "}
-						<Link to="/homypro">
+						<Link to="/dustguard/homypro">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -136,7 +136,7 @@ const DustGuard = () => {
 						<li>Professional & experienced</li>
 						<li>Vaccinated for safety</li>
 						</ul>
-						<Link to="/homypromax">
+						<Link to="/dustguard/homypromax">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>

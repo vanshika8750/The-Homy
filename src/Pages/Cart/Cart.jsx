@@ -104,7 +104,7 @@ Fill in the details here 👉</div>
                 <div className="prod-no">
 
                     <div className="prodname">
-                       {selectedPlan?.plans}-{selectedPlan?.planoptions}
+                       {selectedPlan?.services}-{selectedPlan?.plans}-{selectedPlan?.planoptions}
                     </div>
 
                     <div className="no-prod">
