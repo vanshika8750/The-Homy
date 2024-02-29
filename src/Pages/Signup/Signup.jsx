@@ -30,7 +30,7 @@ const Signup = () => {
       if (isSubmitting) {
         try {
           const response = await fetch(
-            "http://3.27.122.168/api/user/register/",
+            "http://13.236.85.77/api/user/register/",
             {
               method: "POST",
               headers: {
@@ -70,7 +70,17 @@ const Signup = () => {
             // Redirect to the home page
             window.location.href = "/";
         
-          } else {
+          } 
+          else if (response.status === 400) {
+            // User might already exist or there is a validation error
+            const errorData = await response.json();
+            if (errorData.errors && errorData.errors.email) {
+              toast.error(errorData.errors.email[0]);
+            } else {
+              toast.error("Signup failed. Please check your details");
+            }
+          }
+          else {
             console.log("Signup failed");
             toast.error('Signup Failed');
           }
@@ -94,12 +104,12 @@ const Signup = () => {
   const fetchProfileData = async (accessToken) => {
     try {
       const profileResponse = await fetch(
-        "http://3.27.122.168/api/user/profile/",
+        "http://13.236.85.77/api/user/profile/",
         {
           method: "GET",
           headers: {
-            Authorization: `Bearer ${accessToken}`,
-            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authorization": `Bearer ${accessToken}`,
           },
         }
       );

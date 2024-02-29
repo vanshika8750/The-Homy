@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import KitchenKingbg from "../../assets/KitchenKingbg.svg";
 import KithcenKingimg from "../../assets/KitchenKing.png";
 import KitchenKingBorder from "../../assets/KitchenKingBorder.svg";
@@ -13,6 +13,36 @@ import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import { Link } from "react-router-dom";
 
 const Homypro = () => {
+
+	const [dataFetched, setDataFetched] = useState(false);
+	const [subscriptionPlans, setSubscriptionPlans] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("http://13.236.85.77/api/subcriptionplan/");
+                if (response.ok) {
+                    const res = await response.json();
+                    const data = res.data;
+                    setSubscriptionPlans(data); // Set fetched data in state
+					setDataFetched(true);
+				} else {
+                    console.error("Failed to fetch data");
+                }
+            } catch (error) {
+                console.error("Error occurred while fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+	// console.log(subscriptionPlans[0].planoptions)
+	 // Render loading message if data is not fetched yet
+	 if (!dataFetched) {
+        return <div>Loading...</div>;
+    }
+
 	return (
 		<div className="KitchenKing-homypro">
 			<div className="KitchenKing-homypro-top">
@@ -67,29 +97,39 @@ const Homypro = () => {
 				<div className="KitchenKing-homypro-price">
 				<div className="KitchenKing-homypromax-table">
 						<div className="pricecard">
-							DAILY
+							{subscriptionPlans[1].planoptions}
 							<br />
-							<span className="red">499</span>
+							<span className="red">
+							{subscriptionPlans[1].prices}
+							</span>
 						</div>
 						<div className="pricecard">
-							WEEKLY
+						{subscriptionPlans[1].planoptions}
 							<br />
-							<span className="red">2,099</span>
+							<span className="red">
+							{subscriptionPlans[1].prices}
+							</span>
 						</div>
 						<div className="pricecard">
-							MONTHLY
+						{subscriptionPlans[1].planoptions}
 							<br />
-							<span className="red">4,499</span>
+							<span className="red">
+							{subscriptionPlans[1].prices}
+							</span>
 						</div>
 						<div className="pricecard">
-							HALF YEARLY
+						{subscriptionPlans[1].planoptions}
 							<br />
-							<span className="red">22,499</span>
+							<span className="red">
+							{subscriptionPlans[1].prices}
+							</span>
 						</div>
 						<div className="pricecard">
-							YEARLY
+						{subscriptionPlans[1].planoptions}
 							<br />
-							<span className="red">35,999</span>
+							<span className="red">
+							{subscriptionPlans[1].prices}
+							</span>
 						</div>
 					</div>
 					<div className="connect-button book-now-btnh">BOOK NOW</div>

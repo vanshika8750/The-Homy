@@ -11,18 +11,19 @@ import customizationhead from "../../assets/customizationhead.svg"
 import cusbgmobile from "../../assets/cusbgmobile.svg"
 import { useCustomizationContext} from '../../Components/Context/CustomizationContext'
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 const Customize = () => {
     const { data, caldata, selectedOptionTiming, selectedTimings } = useCustomizationContext();
+    const user_id=JSON.parse(localStorage.userData).id
     
     const [formData, setFormData] = useState({
-        plan: '',
-        time: '',
-        foodway: '',
-        spicy: '',
-        Calorimeter: '',
-        timingoptions: '',
+       user:user_id,
+        mealchoices: '',
+        spicymeter: '',
+        calories: '',
+        mealtimigs: '',
         timings: ''
     });
 
@@ -30,9 +31,9 @@ const Customize = () => {
         // Update formData whenever data changes
         setFormData(prevState => ({
             ...prevState,
-            spicy: data,
-            Calorimeter: caldata,
-            timingoptions: selectedOptionTiming,
+            spicymeter: data,
+            calories: caldata,
+            mealtimigs: selectedOptionTiming,
             timings: selectedTimings
         }));
     }, [data, caldata, selectedOptionTiming, selectedTimings]);
@@ -64,12 +65,13 @@ const Customize = () => {
 
     const handleFoodWayChange = (e) => {
         const selectedFood = e.target.value;
-    setSelectedFoodWay(selectedFood);
-    setFormData({
-        ...formData,
-        foodway: selectedFood // Update foodway in formData
-    });
+        setSelectedFoodWay(selectedFood);
+        setFormData({
+            ...formData,
+            mealchoices: selectedFood // Update foodway in formData
+        });
     };
+    
 
 
     const handleContinue = () => {
@@ -81,7 +83,7 @@ const Customize = () => {
     const sendDataToAPI = (data) => {
         // Make the API call to send data
         // Replace 'your-api-endpoint' with your actual API endpoint
-        fetch('http://127.0.0.1:8000/api/customize/', {
+        fetch('http://13.236.85.77/api/customize/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -90,6 +92,7 @@ const Customize = () => {
         })
             .then(response => response.json())
             .then(data => {
+                toast.success('customization api called');
                 console.log('Success:', data);
                 // Handle success response from the API
             })
@@ -98,7 +101,6 @@ const Customize = () => {
                 // Handle error response from the API
             });
     };
-
 
     return (
         <div className="customize-page">
@@ -211,8 +213,8 @@ const Customize = () => {
                                     <input
                                         type="radio"
                                         name="foodWay"
-                                        value="vegetarian"
-                                        checked={selectedFoodWay === "vegetarian"}
+                                        value="Vegetarian"
+                                        checked={selectedFoodWay === "Vegetarian"}
                                         onChange={handleFoodWayChange}
                                     />
                                     Vegetarian
@@ -222,8 +224,8 @@ const Customize = () => {
                                     <input
                                         type="radio"
                                         name="foodWay"
-                                        value="nonvegetarian"
-                                        checked={selectedFoodWay === "nonvegetarian"}
+                                        value="Non-Vegetarian"
+                                        checked={selectedFoodWay === "Non-Vegetarian"}
                                         onChange={handleFoodWayChange}
                                     />
                                     Non Vegetarian

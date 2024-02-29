@@ -3,12 +3,14 @@ import mobileview from '../../assets/mobileview.svg';
 import desktopview from '../../assets/ourservicesbackground.svg';
 import aboutimg from '../../assets/feature.jpg';
 import './Contactus.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contactus = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const [formData, setFormData] = useState({
-        f_name: '',
+        name: '',
         phone_number: '',
         email: '',
         message: ''
@@ -23,7 +25,7 @@ const Contactus = () => {
         const submitForm = async () => {
             if (isSubmitting) {
                 try {
-                    const response = await fetch('http://3.27.122.168/api/contact', {
+                    const response = await fetch('http://13.236.85.77/api/contact/ ', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -33,18 +35,21 @@ const Contactus = () => {
 
                     if (response.ok) {
                         console.log(formData)
-                        console.log('Contact us successful');
                         setFormData({
-                            f_name: '',
+                            name: '',
                             phone_number: '',
                             email: '',
                             message: ''
                         });
+                        localStorage.setItem('contactSuccess', 'true');
+                        window.location.href ='/';
                     } else {
                         console.log('Contact us failed');
+                        toast.error('There was a problem sending your message');
                     }
                 } catch (error) {
                     console.error('Error occurred:', error);
+                    toast.error('There was a problem sending your message');
                 } finally {
                     setIsSubmitting(false);
                 }

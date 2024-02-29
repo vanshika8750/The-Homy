@@ -59,6 +59,19 @@ useEffect(() => {
   }
 }, []);
 
+useEffect(() => {
+  // Check if the logoutSuccess flag is set in localStorage
+  const contactSuccess = localStorage.getItem('contactSuccess');
+  if (contactSuccess) {
+      // Show a toast message indicating successful logout
+      toast.success('Your message was sent successfully');
+      // Clear the logoutSuccess flag from localStorage after some time
+      setTimeout(() => {
+          localStorage.removeItem('contactSuccess');
+      }, 3000); // Adjust the time as per your requirement
+  }
+}, []);
+
   return (
     <>
 

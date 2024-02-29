@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { FaPhone, FaGoogle } from "react-icons/fa";
 import "./Login.css";
 import {jwtDecode} from 'jwt-decode';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -27,7 +29,7 @@ const Login = () => {
         if (isSubmitting) {
             const loginUser = async () => {
                 try {
-                    const response = await fetch('http://3.27.122.168/api/user/login/', {
+                    const response = await fetch('http://13.236.85.77/api/user/login/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -55,11 +57,26 @@ const Login = () => {
                       
                         // Redirect the user to the desired page after login
                         // window.location.href = '/dashboard';
-                    } else {
+                    }
+                    else if (response.status === 404) {
+                        // User might not exist or there is a validation error
+                        const errorData = await response.json();
+                        console.log('errordata')
+                        if (errorData.errors && errorData.errors.non_field_errors) {
+                            toast.error(errorData.errors.non_field_errors[0]);
+                        } else if (errorData.errors && errorData.errors.email) {
+                            toast.error(errorData.errors.email[0]);
+                        } else {
+                            toast.error('Login failed. Please check your credentials');
+                        }
+                    }
+                    else {
                         console.log('Login failed');
+                        toast.error('Login Failed');
                     }
                 } catch (error) {
                     console.error('Error occurred:', error);
+                    toast.error('An error occurred');
                 } finally {
                     setIsSubmitting(false);
                 }
@@ -78,11 +95,11 @@ const Login = () => {
 
     const fetchProfileData = async (accessToken) => {
         try {
-            const profileResponse = await fetch('http://3.27.122.168/api/user/profile/', {
+            const profileResponse = await fetch('http://13.236.85.77/api/user/profile/', {
                 method: 'GET',
                 headers: {
+                    'Accept': 'application/json',
                     'Authorization': `Bearer ${accessToken}`,
-                    'Content-Type': 'application/json',
                 },
             });
     

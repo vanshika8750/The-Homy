@@ -8,12 +8,8 @@ export const CustomizationProvider = ({ children }) => {
     const [userSelectedOption, setUserSelectedOption] = useState('');
     const [data,setData] = useState(0)
     const [caldata, setCalData] = useState(1000); // Initial value set to 1000
-    const [selectedOptionTiming, setSelectedOptionTiming] = useState([]);
-    const [selectedTimings, setSelectedTimings] = useState({
-        breakfast: [],
-        lunch: [],
-        dinner: []
-    });
+    const [selectedOptionTiming, setSelectedOptionTiming] = useState('');
+    const [selectedTimings, setSelectedTimings] = useState('');
 
 
     return (

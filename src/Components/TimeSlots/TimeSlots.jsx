@@ -1,142 +1,151 @@
-import React, { useState } from "react";
+import React from "react";
 import './TimeSlots.css';
 import { useCustomizationContext } from "../Context/CustomizationContext";
 
 function TimeSlot() {
-    const {selectedOptionTiming, setSelectedOptionTiming} = useCustomizationContext([]);
-    const {selectedTimings, setSelectedTimings} = useCustomizationContext({
-        breakfast: [],
-        lunch: [],
-        dinner: []
-    });
+    const {selectedOptionTiming, setSelectedOptionTiming} = useCustomizationContext();
+    const {selectedTimings, setSelectedTimings} = useCustomizationContext('');
 
     const handleMealClick = (meal) => {
-        if (selectedOptionTiming.includes(meal)) {
-            setSelectedOptionTiming(selectedOptionTiming.filter(item => item !== meal));
-        } else {
-            setSelectedOptionTiming([...selectedOptionTiming, meal]);
-        }
+        setSelectedOptionTiming(meal);
+        // Reset selected timings when a new meal is clicked
+        setSelectedTimings('');
     };
 
-    const handleTimingClick = (meal, timing) => {
-        if (selectedTimings[meal].includes(timing)) {
-            setSelectedTimings({
-                ...selectedTimings,
-                [meal]: selectedTimings[meal].filter(item => item !== timing)
-            });
-        } else {
-            setSelectedTimings({
-                ...selectedTimings,
-                [meal]: [...selectedTimings[meal], timing]
-            });
-        }
+    const handleTimingClick = (timing) => {
+        setSelectedTimings(timing);
     };
-
 
     return (
         <div className="meal-container">
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptionTiming.includes('breakfast') ? 'selected' : ''}`}
-                    onClick={() => handleMealClick('breakfast')}
+                    className={`option-button ${selectedOptionTiming === 'Breakfast' ? 'selected' : ''}`}
+                    onClick={() => handleMealClick('Breakfast')}
                 >
                     Breakfast
                 </button>
-                {selectedOptionTiming.includes('breakfast') && (
+                {selectedOptionTiming === 'Breakfast' && (
                     <div className="timing-options">
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['breakfast'].includes('7am-9am')}
-                                onChange={() => handleTimingClick('breakfast', '7am-9am')}
+                                type="radio"
+                                checked={selectedTimings === '7am - 8am'}
+                                onChange={() => handleTimingClick('7am - 8am')}
                             />
-                            7am - 9am
+                            7am - 8am
                         </label>
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['breakfast'].includes('9am-11am')}
-                                onChange={() => handleTimingClick('breakfast', '9am-11am')}
+                                type="radio"
+                                checked={selectedTimings === '8am - 9am'}
+                                onChange={() => handleTimingClick('8am - 9am')}
                             />
-                            9am - 11am
+                            8am - 9am
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                checked={selectedTimings === '9am - 10am'}
+                                onChange={() => handleTimingClick('9am - 10am')}
+                            />
+                            9am - 10am
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                checked={selectedTimings === '10am - 11am'}
+                                onChange={() => handleTimingClick('10am - 11am')}
+                            />
+                            10am - 11am
                         </label>
                     </div>
                 )}
             </div>
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptionTiming.includes('lunch') ? 'selected' : ''}`}
-                    onClick={() => handleMealClick('lunch')}
+                    className={`option-button ${selectedOptionTiming === 'Lunch' ? 'selected' : ''}`}
+                    onClick={() => handleMealClick('Lunch')}
                 >
                     Lunch
                 </button>
-                {selectedOptionTiming.includes('lunch') && (
+                {selectedOptionTiming === 'Lunch' && (
                     <div className="timing-options">
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['lunch'].includes('11am-1pm')}
-                                onChange={() => handleTimingClick('lunch', '11am-1pm')}
+                                type="radio"
+                                checked={selectedTimings === '12pm - 1pm'}
+                                onChange={() => handleTimingClick('12pm - 1pm')}
                             />
-                            11am - 1pm
+                            12pm - 1pm
                         </label>
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['lunch'].includes('1pm-3pm')}
-                                onChange={() => handleTimingClick('lunch', '1pm-3pm')}
+                                type="radio"
+                                checked={selectedTimings === '1pm - 2pm'}
+                                onChange={() => handleTimingClick('1pm - 2pm')}
                             />
-                            1pm - 3pm
+                            1pm - 2pm
                         </label>
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['lunch'].includes('3pm-5pm')}
-                                onChange={() => handleTimingClick('lunch', '3pm-5pm')}
+                                type="radio"
+                                checked={selectedTimings === '2pm - 3pm'}
+                                onChange={() => handleTimingClick('2pm - 3pm')}
                             />
-                            3pm - 5pm
+                            2pm - 3pm
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                checked={selectedTimings === '3pm - 4pm'}
+                                onChange={() => handleTimingClick('3pm - 4pm')}
+                            />
+                            3pm - 4pm
                         </label>
                     </div>
                 )}
             </div>
             <div className="meal-options">
                 <button
-                    className={`option-button ${selectedOptionTiming.includes('dinner') ? 'selected' : ''}`}
-                    onClick={() => handleMealClick('dinner')}
+                    className={`option-button ${selectedOptionTiming === 'Dinner' ? 'selected' : ''}`}
+                    onClick={() => handleMealClick('Dinner')}
                 >
                     Dinner
                 </button>
-                {selectedOptionTiming.includes('dinner') && (
+                {selectedOptionTiming === 'Dinner' && (
                     <div className="timing-options">
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['dinner'].includes('6pm-7pm')}
-                                onChange={() => handleTimingClick('dinner', '6pm-7pm')}
+                                type="radio"
+                                checked={selectedTimings === '7pm - 8pm'}
+                                onChange={() => handleTimingClick('7pm - 8pm')}
                             />
-                            6pm - 7pm
+                            7pm - 8pm
                         </label>
                         <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['dinner'].includes('7pm-8pm')}
-                                onChange={() => handleTimingClick('dinner', '7pm-8pm')}
-                            />
-                            7pm - 8pm
-                        </label><label>
-                            <input
-                                type="checkbox"
-                                checked={selectedTimings['dinner'].includes('8pm-9pm')}
-                                onChange={() => handleTimingClick('dinner', '8pm-9pm')}
+                                type="radio"
+                                checked={selectedTimings === '8pm - 9pm'}
+                                onChange={() => handleTimingClick('8pm - 9pm')}
                             />
                             8pm - 9pm
-                        </label><label>
+                        </label>
+                        <label>
                             <input
-                                type="checkbox"
-                                checked={selectedTimings['dinner'].includes('9pm-10pm')}
-                                onChange={() => handleTimingClick('dinner', '9pm-10pm')}
+                                type="radio"
+                                checked={selectedTimings === '9pm - 10pm'}
+                                onChange={() => handleTimingClick('9pm - 10pm')}
                             />
                             9pm - 10pm
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                checked={selectedTimings === '10pm - 11pm'}
+                                onChange={() => handleTimingClick('10pm - 11pm')}
+                            />
+                            10pm - 11pm
                         </label>
                     </div>
                 )}
