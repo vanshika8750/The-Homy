@@ -18,6 +18,17 @@ const Customize = () => {
     const { data, caldata, selectedOptionTiming, selectedTimings } = useCustomizationContext();
     const user_id=JSON.parse(localStorage.userData).id
     
+    const [selectedPlan, setSelectedPlan] = useState(null);
+
+    useEffect(() => {
+        // Retrieve the selected plan data from local storage
+        const storedPlan = localStorage.getItem('selectedPlan');
+        if (storedPlan) {
+            setSelectedPlan(JSON.parse(storedPlan));
+        }
+    }, []);
+    console.log(selectedPlan)
+
     const [formData, setFormData] = useState({
        user:user_id,
         mealchoices: '',
@@ -130,7 +141,7 @@ const Customize = () => {
                         <div className="your-plan">Your Plan</div>
 
 
-                        <div className="homy-types-cus">
+                        {/* <div className="homy-types-cus">
                             <div
                                 style={{
                                     cursor: 'pointer',
@@ -179,12 +190,12 @@ const Customize = () => {
                                     Homy Pro Max
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
 
 
 
-                        <div >
+                        {/* <div >
                             <select className="options-cus" value={selectedOption} onChange={handleChange}>
                                 <option value="">Select</option>
                                 <option value="Daily">Daily</option>
@@ -193,7 +204,7 @@ const Customize = () => {
                                 <option value="Half Yearly">Half Yearly</option>
                                 <option value="Yearly">Yearly</option>
                             </select>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -232,8 +243,6 @@ const Customize = () => {
                                 </label>
                             </div>
                         </div>
-
-
 
                         <div className="row-cus" >
                             <div className="head-cus-right">Spicy Meter</div>

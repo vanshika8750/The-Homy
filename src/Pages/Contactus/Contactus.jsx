@@ -25,7 +25,7 @@ const Contactus = () => {
         const submitForm = async () => {
             if (isSubmitting) {
                 try {
-                    const response = await fetch('http://13.236.85.77/api/contact/ ', {
+                    const response = await fetch('http://13.236.85.77/api/contact/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

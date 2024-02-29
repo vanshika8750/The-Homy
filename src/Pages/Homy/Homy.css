@@ -1,3 +1,8 @@
+.KitchenKing-homypromax-table .selected{
+	border: 2px solid white;
+}
+
+
 .KitchenKing-homy {
 	display: flex;
 	max-width: 100%;

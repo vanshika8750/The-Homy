@@ -16,6 +16,7 @@ const Homypromax = () => {
 
 	const [dataFetched, setDataFetched] = useState(false);
 	const [subscriptionPlans, setSubscriptionPlans] = useState([]);
+	const [selectedPlan, setSelectedPlan] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,7 +25,8 @@ const Homypromax = () => {
                 if (response.ok) {
                     const res = await response.json();
                     const data = res.data;
-                    setSubscriptionPlans(data); // Set fetched data in state
+                    const filteredPlans = data.filter(plan => plan.id >= 11 && plan.id <= 15);
+					setSubscriptionPlans(filteredPlans); // Set fetched data in state
 					setDataFetched(true);
 				} else {
                     console.error("Failed to fetch data");
@@ -42,6 +44,19 @@ const Homypromax = () => {
 	 if (!dataFetched) {
         return <div>Loading...</div>;
     }
+
+	const handleSelectPlan = (plan) => {
+        setSelectedPlan(plan);
+    };
+
+    // Function to handle booking a plan
+    const handleBookNow = () => {
+        if (selectedPlan) {
+            console.log("Selected Plan:", selectedPlan);
+        } else {
+            console.log("Please select a plan before booking.");
+        }
+    };
 
 	return (
 		<div className="KitchenKing-homypromax">
@@ -97,44 +112,29 @@ const Homypromax = () => {
 					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypromax-price">
-					<div className="KitchenKing-homypromax-table">
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-					</div>
-					<div className="connect-button book-now-btnh">BOOK NOW</div>
+
+<div className="KitchenKing-homypromax-table">
+                      
+                        {subscriptionPlans.map((plan, index) => (
+                            <div
+                                key={index}
+                                className={`pricecard ${selectedPlan === plan ? "selected" : ""}`}
+                                onClick={() => handleSelectPlan(plan)}
+                            >
+                                {plan.planoptions}
+                                <br />
+                                <span className="red">{plan.prices}</span>
+                            </div>
+                        ))}
+                    </div>
+                    {/* Single "BOOK NOW" button */}
+                    <div
+                        className="connect-button book-now-btnh"
+                        onClick={handleBookNow}
+                        style={{ cursor: "pointer", marginTop: "20px" }}
+                    >
+                        BOOK NOW
+                    </div>
 					<h3 className="checkout-plansh">
 						Check our other beneficial plans{" "}
 					</h3>

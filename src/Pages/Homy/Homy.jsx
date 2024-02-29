@@ -16,6 +16,8 @@ import { IoStarOutline } from "react-icons/io5";
 const Homy = () => {
 	const [dataFetched, setDataFetched] = useState(false);
 	const [subscriptionPlans, setSubscriptionPlans] = useState([]);
+	const [selectedPlan, setSelectedPlan] = useState(null);
+	const user_id=JSON.parse(localStorage.userData).id
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,7 +26,8 @@ const Homy = () => {
                 if (response.ok) {
                     const res = await response.json();
                     const data = res.data;
-                    setSubscriptionPlans(data); // Set fetched data in state
+					const filteredPlans = data.filter(plan => plan.id >= 1 && plan.id <= 5);
+					setSubscriptionPlans(filteredPlans); // Set fetched data in state
 					setDataFetched(true);
 				} else {
                     console.error("Failed to fetch data");
@@ -42,6 +45,46 @@ const Homy = () => {
 	 if (!dataFetched) {
         return <div>Loading...</div>;
     }
+	const handleSelectPlan = (plan) => {
+        setSelectedPlan(plan);
+    };
+
+    // Function to handle booking a plan
+    const handleBookNow = () => {
+		if (selectedPlan) {
+			localStorage.setItem('selectedPlan', JSON.stringify(selectedPlan));
+			const mappedPlan = {
+				user:user_id,
+				order_service:selectedPlan.id,
+				order_planoption:selectedPlan.id,
+				order_plan:selectedPlan.id,
+				order_price:selectedPlan.id
+			};
+
+			
+            // Make the API call to post the selected plan data
+            fetch('http://13.236.85.77/api/createorder/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(mappedPlan),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Selected plan data posted successfully:', data);
+				// Redirect to the customization page
+			window.location.href = '/customize';
+            })
+            .catch((error) => {
+                console.error('Error posting selected plan data:', error);
+                // Handle error response from the API
+            });
+
+        } else {
+            console.log("Please select a plan before booking.");
+        }
+    };
 
 	return (
 		<div className="KitchenKing-homy">
@@ -94,44 +137,29 @@ const Homy = () => {
 					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homy-price">
-				<div className="KitchenKing-homypromax-table">
-						<div className="pricecard">
-						{subscriptionPlans[0].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[0].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-							{subscriptionPlans[1].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[1].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[1].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[1].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[1].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[1].prices}
-							</span>
-						</div>
-						<div className="pricecard">
-						{subscriptionPlans[1].planoptions}
-							<br />
-							<span className="red">
-							{subscriptionPlans[1].prices}
-							</span>
-						</div>
-					</div>
-					<div className="connect-button book-now-btnh">BOOK NOW</div>
+			
+<div className="KitchenKing-homypromax-table">
+                      
+                        {subscriptionPlans.map((plan, index) => (
+                            <div
+                                key={index}
+                                className={`pricecard ${selectedPlan === plan ? "selected" : ""}`}
+                                onClick={() => handleSelectPlan(plan)}
+                            >
+                                {plan.planoptions}
+                                <br />
+                                <span className="red">{plan.prices}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <div
+                        className="connect-button book-now-btnh"
+                        onClick={handleBookNow}
+                        style={{ cursor: "pointer", marginTop: "20px" }}
+                    >
+                        BOOK NOW
+                    </div>
+
 					<h3 className="checkout-plansh">
 						Check our other beneficial plans{" "}
 					</h3>
