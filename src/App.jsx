@@ -47,9 +47,9 @@ function App() {
          <Route exact path='/dashboard' element={<Dashboard/>}/>
          <Route exact path='/cart' element={<Cart/>}/>
          <Route exact path='/admin' element={<AdminDashboard/>}/>
-         <Route exact path='/homy' element={<Homy/>}/>
-         <Route exact path='/homypro' element={<Homypro/>}/>
-         <Route exact path='/homypromax' element={<Homypromax/>}/>
+         <Route exact path='/kitchenking/homy' element={<Homy/>}/>
+         <Route exact path='/kitchenking/homypro' element={<Homypro/>}/>
+         <Route exact path='/kitchenking/homypromax' element={<Homypromax/>}/>
          <Route exact path='/dustguard' element={<Dustguard/>}/>
          <Route exact path='/Hygiene' element={<Hygiene/>}/>
          <Route exact path='/maintenance' element={<Maintenance/>}/>

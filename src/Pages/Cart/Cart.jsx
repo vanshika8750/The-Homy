@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import customizebg from "../../assets/customizebg.svg";
 import "./Cart.css";
 import cusbgmobile from "../../assets/cusbgmobile.svg"
@@ -10,6 +10,16 @@ import rightarrcart from '../../assets/right-arr-cart.svg'
 
 
 const Cart = () => {
+    const [selectedPlan, setSelectedPlan] = useState(null);
+
+    useEffect(() => {
+        // Retrieve the selected plan data from local storage
+        const storedPlan = localStorage.getItem('selectedPlan');
+        if (storedPlan) {
+            setSelectedPlan(JSON.parse(storedPlan));
+        }
+    }, []);
+    console.log(selectedPlan)
     const { userSelectedOption,selectedOption} = useCustomizationContext();
 
     const [count, setCount] = useState(1);
@@ -55,7 +65,7 @@ const Cart = () => {
       const option = selectedOption;
       const price = findPrice(category, option);
       
-      const priceprod = count*price;
+      const priceprod = count*selectedPlan?.prices;
 
   return (
   
@@ -94,7 +104,7 @@ Fill in the details here 👉</div>
                 <div className="prod-no">
 
                     <div className="prodname">
-                       {userSelectedOption}-{selectedOption}
+                       {selectedPlan?.plans}-{selectedPlan?.planoptions}
                     </div>
 
                     <div className="no-prod">

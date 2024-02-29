@@ -180,7 +180,7 @@ const Homy = () => {
 							</li>
 							<li className="middle">Vaccinated for safety</li>
 						</ul>{" "}
-						<Link to="/homypro">
+						<Link to="/kitchenking/homypro">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -203,7 +203,7 @@ const Homy = () => {
 								Get dietician once a month
 							</li>
 						</ul>
-						<Link to="/homypromax">
+						<Link to="/kitchenking/homypromax">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>

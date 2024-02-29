@@ -106,6 +106,7 @@ const Customize = () => {
                 toast.success('customization api called');
                 console.log('Success:', data);
                 // Handle success response from the API
+                window.location.href='/cart'
             })
             .catch((error) => {
                 console.error('Error:', error);
@@ -140,71 +141,8 @@ const Customize = () => {
                     <div className="first-col-div-customize">
                         <div className="your-plan">Your Plan</div>
 
-
-                        {/* <div className="homy-types-cus">
-                            <div
-                                style={{
-                                    cursor: 'pointer',
-                                    backgroundColor: userSelectedOption === 'Homy' ? 'black' : '#1e1e1e',
-                                    border: userSelectedOption === 'Homy' ? '2px solid white' : 'none'
-                                }}
-                                className="homy-cus"
-                                onClick={() => handleSelect('Homy')}
-                            >
-                                <div>
-                                    <img className="star" src={vectorstar} alt="" />
-                                </div>
-                                <div>
-                                    Homy
-                                </div>
-                            </div>
-                            <div
-                                style={{
-                                    cursor: 'pointer',
-                                    backgroundColor: userSelectedOption === 'Homy Pro' ? 'black' : '#1e1e1e',
-                                    border: userSelectedOption === 'Homy Pro' ? '2px solid white' : 'none'
-                                }}
-                                className="homypro-cus"
-                                onClick={() => handleSelect('Homy Pro')}
-                            >
-                                <div>
-                                    <img src={homypro} alt="" />
-                                </div>
-                                <div>
-                                    Homy Pro
-                                </div>
-                            </div>
-                            <div
-                                style={{
-                                    cursor: 'pointer',
-                                    backgroundColor: userSelectedOption === 'Homy Pro Max' ? 'black' : '#1e1e1e',
-                                    border: userSelectedOption === 'Homy Pro Max' ? '2px solid white' : 'none'
-                                }}
-                                className="homypromax-cus"
-                                onClick={() => handleSelect('Homy Pro Max')}
-                            >
-                                <div>
-                                    <img src={homypromax} alt="" />
-                                </div>
-                                <div>
-                                    Homy Pro Max
-                                </div>
-                            </div>
-                        </div> */}
-
-
-
-
-                        {/* <div >
-                            <select className="options-cus" value={selectedOption} onChange={handleChange}>
-                                <option value="">Select</option>
-                                <option value="Daily">Daily</option>
-                                <option value="Weekly">Weekly</option>
-                                <option value="Monthly">Monthly</option>
-                                <option value="Half Yearly">Half Yearly</option>
-                                <option value="Yearly">Yearly</option>
-                            </select>
-                        </div> */}
+                        {selectedPlan?.plans}
+                        {selectedPlan?.planoptions}
                     </div>
                 </div>
 

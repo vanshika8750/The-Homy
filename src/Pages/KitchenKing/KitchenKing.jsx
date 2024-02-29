@@ -50,11 +50,11 @@ const KitchenKing = () => {
 					calorie count, our chefs ensure you get the most delicious
 					food on the table that doesn't compromise your health!
 					<br />
-					<Link to="/customize">
+					{/* <Link to="/customize">
 						<div className="connect-button Kitchen-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
@@ -100,7 +100,7 @@ const KitchenKing = () => {
 							</li>
 							<li>Vaccinated for safety</li>
 						</ul>
-						<Link to="/homy">
+						<Link to="/kitchenking/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -118,7 +118,7 @@ const KitchenKing = () => {
 							<li>Equipped with kitchen kits</li>
 							<li>Vaccinated for safety</li>
 						</ul>{" "}
-						<Link to="/homypro">
+						<Link to="/kitchenking/homypro">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -137,7 +137,7 @@ const KitchenKing = () => {
 							<li>Customizable gourmet meals</li>
 							<li>Get dietician once a month</li>
 						</ul>
-						<Link to="/homypromax">
+						<Link to="/kitchenking/homypromax">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>

@@ -17,6 +17,7 @@ const Homypromax = () => {
 	const [dataFetched, setDataFetched] = useState(false);
 	const [subscriptionPlans, setSubscriptionPlans] = useState([]);
 	const [selectedPlan, setSelectedPlan] = useState(null);
+	const user_id=JSON.parse(localStorage.userData).id
 
     useEffect(() => {
         const fetchData = async () => {
@@ -39,8 +40,6 @@ const Homypromax = () => {
         fetchData();
     }, []);
 
-	// console.log(subscriptionPlans[0].planoptions)
-	 // Render loading message if data is not fetched yet
 	 if (!dataFetched) {
         return <div>Loading...</div>;
     }
@@ -49,10 +48,34 @@ const Homypromax = () => {
         setSelectedPlan(plan);
     };
 
-    // Function to handle booking a plan
-    const handleBookNow = () => {
-        if (selectedPlan) {
-            console.log("Selected Plan:", selectedPlan);
+   const handleBookNow = () => {
+		if (selectedPlan) {
+			localStorage.setItem('selectedPlan', JSON.stringify(selectedPlan));
+			const mappedPlan = {
+				user:user_id,
+				order_service:selectedPlan.id,
+				order_planoption:selectedPlan.id,
+				order_plan:selectedPlan.id,
+				order_price:selectedPlan.id
+			};
+
+			
+            fetch('http://13.236.85.77/api/createorder/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(mappedPlan),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Selected plan data posted successfully:', data);
+			window.location.href = '/customize';
+            })
+            .catch((error) => {
+                console.error('Error posting selected plan data:', error);
+            });
+
         } else {
             console.log("Please select a plan before booking.");
         }
@@ -127,7 +150,6 @@ const Homypromax = () => {
                             </div>
                         ))}
                     </div>
-                    {/* Single "BOOK NOW" button */}
                     <div
                         className="connect-button book-now-btnh"
                         onClick={handleBookNow}
@@ -158,7 +180,7 @@ const Homypromax = () => {
 								Get dietician once a month
 							</li>
 						</ul>
-						<Link to="/homy">
+						<Link to="/kitchenking/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -178,7 +200,7 @@ const Homypromax = () => {
 							</li>
 							<li className="middle">Vaccinated for safety</li>
 						</ul>{" "}
-						<Link to="/homypro">
+						<Link to="/kitchenking/homypro">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
