@@ -33,7 +33,17 @@
 	padding-right: 1rem;
 	padding-top: 0.5rem;
 }
-
+@media only screen and (max-width:950px) and (min-width:600px){
+.img-trust{
+	margin-top: 10px;
+}
+.Whygoforhomy{
+	text-align: center;
+}
+.headline-inner::after {
+	border-bottom: 5px solid black; /* Set the thickness and color of the underline */
+	}
+}
 @media (max-width: 600px) {
 	.why1 img {
 		padding-top: 1rem;

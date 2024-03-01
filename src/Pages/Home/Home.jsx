@@ -10,6 +10,7 @@ import { Helmet } from 'react-helmet';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom'
+import Combos from '../../Components/Combos/Combos'
 
 const Home = () => {
 
@@ -90,6 +91,7 @@ useEffect(() => {
         <FeatureBanner/>
         <Why/>
         <Ourservices/>
+        <Combos/>
         <Pricing/>
        
 

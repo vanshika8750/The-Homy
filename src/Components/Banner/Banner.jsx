@@ -26,7 +26,7 @@ const Banner = () => {
 				>
 					<Link
 						to="/Maintenance"
-						className="connect-btn"
+						className="connect-btn get-app-home"
 						style={{ textDecoration: "none" }}
 					>
 						Get the app now

@@ -24,7 +24,7 @@ const Why = () => {
 
     <div className="why1" >
     <img src={why1} alt="" />
-    <img src={why2} alt="" />
+    <img className='img-trust' src={why2} alt="" />
     </div>
     <div className="why2 pt-1" >
     <img src={why3} alt="" />

@@ -17,7 +17,7 @@ const Ourservices = () => {
 			</div>
 
 			<div className="ourservices-cards">
-				<Link to="/KitchenKing">
+				<Link className="link-services" to="/Kitchenking">
 					<div className="cardo">
 						<img src={card} alt="" />
 
@@ -27,19 +27,7 @@ const Ourservices = () => {
 						</p>
 					</div>
 				</Link>{" "}
-				<Link to="/KitchenKing">
-					<div className="cardo">
-						<img src={card} alt="" />
-
-						<p>
-							Mr. Hygiene <br />{" "}
-							<span className="ourservices-span"style={{textDecoration:'none'}}>
-								Toilet Cleaner
-							</span>{" "}
-						</p>
-					</div>
-				</Link>{" "}
-				<Link to="/KitchenKing">
+				<Link className="link-services"  to="/dustguard">
 					<div className="cardo">
 						<img src={card} alt="" />
 
@@ -51,7 +39,19 @@ const Ourservices = () => {
 						</p>
 					</div>
 				</Link>{" "}
-				<Link to="/KitchenKing">
+				<Link className="link-services"  to="/hygiene">
+					<div className="cardo">
+						<img src={card} alt="" />
+
+						<p>
+							Mr. Hygiene <br />{" "}
+							<span className="ourservices-span">
+								Toilet Cleaner
+							</span>{" "}
+						</p>
+					</div>
+				</Link>{" "}
+				<Link className="link-services"  to="/KitchenKing">
 					<div className="cardo">
 						<img src={card} alt="" />
 

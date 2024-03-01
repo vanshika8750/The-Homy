@@ -32,7 +32,7 @@ import HygieneHomypromax from './Pages/HomyProMax/HygieneHomyProMax'
 import PrivacyPolicy from './Pages/Policies/PrivacyPolicy'
 import RefundPolicy from './Pages/Policies/RefundPolicy'
 import TermAndConditions from './Pages/Policies/TermAndConditions'
-
+import CustomizePro from './Pages/Customize/CustomizePro'
 function App() {
 
   return (
@@ -50,7 +50,7 @@ function App() {
          <Route exact path='/signup' element={<Signup/>}/>
          <Route exact path='/login' element={<Login/>}/>
          <Route exact path='/kitchenking' element={<KitchenKing/>}/>
-         <Route exact path='/customize' element={<Customize/>}/>
+         <Route exact path='/kitchenking/customize' element={<Customize/>}/>
          <Route exact path='/otp' element={<Otp/>}/>
          <Route exact path='/forgotPassword' element={<ForgotPassword/>}/>
          <Route exact path='/dashboard' element={<Dashboard/>}/>
@@ -60,7 +60,7 @@ function App() {
          <Route exact path='/kitchenking/homypro' element={<Homypro/>}/>
          <Route exact path='/kitchenking/homypromax' element={<Homypromax/>}/>
          <Route exact path='/dustguard' element={<Dustguard/>}/>
-         <Route exact path='/Hygiene' element={<Hygiene/>}/>
+         <Route exact path='/hygiene' element={<Hygiene/>}/>
          <Route exact path='/maintenance' element={<Maintenance/>}/>
          <Route exact path='/dustguard/homy' element={<DustGuardHomy/>}/>
          <Route exact path='/dustguard/homypro' element={<DustguardHomypro/>}/>
@@ -71,7 +71,8 @@ function App() {
         <Route exact path='/privacypolicy' element={<PrivacyPolicy/>}/>
         <Route exact path='/refundpolicy' element={<RefundPolicy/>}/>
         <Route exact path='/termsandconditions' element={<TermAndConditions/>}/>
-        
+        <Route exact path='/customizePro' element={<CustomizePro/>}/>
+
 
        </Routes>    
        <Footer/>

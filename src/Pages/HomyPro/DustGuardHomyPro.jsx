@@ -69,7 +69,7 @@ const DustguardHomypro = () => {
             .then(response => response.json())
             .then(data => {
                 console.log('Selected plan data posted successfully:', data);
-			window.location.href = '/customize';
+			window.location.href = '/customizePro';
             })
             .catch((error) => {
                 console.error('Error posting selected plan data:', error);

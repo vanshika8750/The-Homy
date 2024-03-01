@@ -32,19 +32,6 @@ const DashboardOptions = () => {
 
             <div className="container-dash">
                 <div className="left">
-                    <div className="head">Edit Your Address</div>
-                    <div className="below-head">
-                        Get more info 
-                    </div>
-                </div>
-
-                <div className="right">
-                    <img src={command1} alt="" />
-                </div>
-            </div>
-
-            <div className="container-dash">
-                <div className="left">
                     <div className="head">Contact Us</div>
                     <div className="below-head">
                         Get more info 
@@ -62,28 +49,14 @@ const DashboardOptions = () => {
 
         <div className="container-dash">
                 <div className="left">
-                    <div className="head">Previous Orders</div>
+                    <div className="head">Edit Your Address</div>
                     <div className="below-head">
                         Get more info 
                     </div>
                 </div>
 
                 <div className="right">
-                    <img src={codepen} alt="" />
-                </div>
-            </div>
-
-
-            <div className="container-dash">
-                <div className="left">
-                    <div className="head">Payment Options</div>
-                    <div className="below-head">
-                        Get more info 
-                    </div>
-                </div>
-
-                <div className="right">
-                    <img src={creditcard} alt="" />
+                    <img src={command1} alt="" />
                 </div>
             </div>
 

@@ -1,0 +1,185 @@
+.combo-page{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 5rem;
+    background-color: #020202;
+    overflow-x: hidden;
+    color: white;
+}
+.img-combo{
+    width: 92vw;
+}
+.img-combo-mob{
+    display: none;
+    width: 92vw;
+}
+.content-div-combo{
+    position:absolute;
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     /* height: 100%; */
+     align-items: flex-start;
+     justify-content: space-between;
+     /* margin-top: 5rem; */
+     color: white;
+     padding: 20px;
+}
+.combo-head-head{
+    margin-left: 20px;
+}
+.combo-head{
+    font-size: 65px;
+   width: 100%;
+   font-weight: 500;
+   letter-spacing: -1px;
+   display: flex;
+   justify-content: center;
+align-items: center;
+}
+.content-combo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.homy-combo,.homypro-combo,.homypromax-combo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.content-combo .head{
+color: #E23744;
+font-size: 45px;
+}
+.content-combo .desc{
+    width: 90%;
+    margin: 20px 0px;
+    height: 50px;
+}
+.content-combo .price-head{
+font-size: 20px;
+color: #E23744;
+}
+.price-flex{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.percentage{
+    font-size: 14px;
+margin-left: 10px;
+color: #E23744;
+}
+.priceonetime,.pricetwotime{
+    margin: 20px 0px;
+}
+.cont-combo button{
+    padding: 5px 20px;
+    background:none;
+    color: white;
+    border: 1px solid #E23744;
+    margin: 20px 0px;
+}
+.cont-combo button:hover{
+    background-color: #E23744;
+
+}
+@media only screen and (max-width:1360px){
+    .content-combo .head{
+        font-size: 35px;
+        }
+}
+@media only screen and (max-width:1200px){
+    .homy-combo,.homypro-combo,.homypromax-combo{
+        margin-top: 0px;
+        width: 30%;
+    }
+    .combo-head{
+        font-size: 50px;
+    }
+    .cont-combo button{
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width:1100px){
+.pricetwotime{
+    margin: 10px 0px;
+}
+.homy-combo,.homypro-combo,.homypromax-combo{
+    margin-top: 0px;
+    width: 33%;
+}
+}
+@media only screen and (max-width:1000px){
+    .pricetwotime{
+        margin: 0px 0px;
+    }
+    .content-combo .desc{
+        margin: 12px 0px;
+    }
+    .content-div-combo{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width:880px){
+    .content-combo{
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+    }
+    .homy-combo,.homypro-combo,.homypromax-combo{
+        width: 90%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .content-combo .head{
+        font-size: 40px;
+    }
+    /* .combo-head{
+        flex-direction: column;
+        text-align: center;
+    } */
+    /* .combo-head-head{
+        margin-left: 0px;
+    } */
+    .content-combo .desc{
+        font-size: 20px;
+    }
+    .homy-combo{
+        margin-top: 2rem;
+    }
+    .content-combo desc{
+        width: 100%;
+    }
+    .img-combo{
+        display: none;
+    }
+    .content-div-combo{
+        position:static;
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         /* height: 100%; */
+         align-items: flex-start;
+         justify-content: space-between;
+         /* margin-top: 5rem; */
+         color: white;
+         padding: 0px;
+    }
+    .combo-page{
+        padding: 0rem;
+    }
+}
+@media only screen and (max-width:560px){
+    .content-combo .desc{
+        height: 80px;
+    }
+}
+

@@ -107,8 +107,7 @@
 .app-button .connect-btn:hover {
 	color: black;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	.E-letter {
 		font-size: 1.5rem;
 	}

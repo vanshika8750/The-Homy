@@ -23,7 +23,7 @@ function TimeSlot() {
                     className={`option-button ${selectedOptionTiming === 'Breakfast' ? 'selected' : ''}`}
                     onClick={() => handleMealClick('Breakfast')}
                 >
-                    Breakfast
+                    Morning
                 </button>
                 {selectedOptionTiming === 'Breakfast' && (
                     <div className="timing-options">
@@ -67,7 +67,7 @@ function TimeSlot() {
                     className={`option-button ${selectedOptionTiming === 'Lunch' ? 'selected' : ''}`}
                     onClick={() => handleMealClick('Lunch')}
                 >
-                    Lunch
+                    Noon
                 </button>
                 {selectedOptionTiming === 'Lunch' && (
                     <div className="timing-options">
@@ -111,7 +111,7 @@ function TimeSlot() {
                     className={`option-button ${selectedOptionTiming === 'Dinner' ? 'selected' : ''}`}
                     onClick={() => handleMealClick('Dinner')}
                 >
-                    Dinner
+                    Evening
                 </button>
                 {selectedOptionTiming === 'Dinner' && (
                     <div className="timing-options">

@@ -74,7 +74,7 @@ const Homy = () => {
             .then(data => {
                 console.log('Selected plan data posted successfully:', data);
 				// Redirect to the customization page
-			window.location.href = '/customize';
+			window.location.href = '/kitchenking/customize';
             })
             .catch((error) => {
                 console.error('Error posting selected plan data:', error);
