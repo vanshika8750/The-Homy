@@ -11,8 +11,16 @@ import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
 const Homypro = () => {
+	const [selectedButton, setSelectedButton] = useState(null);
+	const selectButton = (buttonNumber) => {
+		if (selectedButton !== null) {
+			setSelectedButton(null);
+		}
+		setSelectedButton(buttonNumber);
+	};
 	return (
 		<div className="KitchenKing-homypro">
 			<div className="KitchenKing-homypro-top">
@@ -26,7 +34,10 @@ const Homypro = () => {
 					<img className="midviewkkh" src={KitchenKingbgmid} alt="" />
 				</div>
 				<div className="KitchenKing-homyproimg">
-					<img className="desktopviewh midviewkkh" src={KithcenKingimg} />
+					<img
+						className="desktopviewh midviewkkh"
+						src={KithcenKingimg}
+					/>
 					<img
 						className="mobileview"
 						src={KitchenKingMobile}
@@ -38,7 +49,7 @@ const Homypro = () => {
 				</div>
 				<div className="KitchenKing-homypro-content">
 					<p>
-					Our chefs are trained and experienced in curating
+						Our chefs are trained and experienced in curating
 						exquisite meals tailored to your preferences. Whether
 						it's a five-course gourmet experience or your favorite
 						comfort food, with a keen eye for detail, focus on
@@ -65,28 +76,55 @@ const Homypro = () => {
 					<img className="midviewkkh" src={KitchenKingBordermid} />
 				</div>
 				<div className="KitchenKing-homypro-price">
-				<div className="KitchenKing-homypromax-table">
-						<div className="pricecard">
+					<div className="KitchenKing-homypromax-table">
+						<div
+							// className={classNames('pricecard,{selectedButton === 1 ? "selected" : ""})}
+							// onClick={() => selectButton(1)}
+							className={classNames("pricecard", {
+								selected: selectedButton === 1,
+							})}
+							onClick={() => selectButton(1)}
+						>
 							DAILY
 							<br />
 							<span className="red">499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 2,
+							})}
+							onClick={() => selectButton(2)}
+						>
 							WEEKLY
 							<br />
 							<span className="red">2,099</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 3,
+							})}
+							onClick={() => selectButton(3)}
+						>
 							MONTHLY
 							<br />
 							<span className="red">4,499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 4,
+							})}
+							onClick={() => selectButton(4)}
+						>
 							HALF YEARLY
 							<br />
 							<span className="red">22,499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 5,
+							})}
+							onClick={() => selectButton(5)}
+						>
 							YEARLY
 							<br />
 							<span className="red">35,999</span>
@@ -99,7 +137,7 @@ const Homypro = () => {
 				</div>
 
 				<div className="KitchenKing-homypro-cards">
-				<div className="KitchenKing-homypro-card">
+					<div className="KitchenKing-homypro-card">
 						<h2>
 							{" "}
 							<IoDiamondOutline /> HOMY
@@ -109,8 +147,12 @@ const Homypro = () => {
 								Access to all premium nutrition & workout plans
 							</li>
 							<li>5-star professional chef at home</li>
-							<li className='middle'>Customizable gourmet meals</li>
-							<li className="middle">Get dietician once a month</li>
+							<li className="middle">
+								Customizable gourmet meals
+							</li>
+							<li className="middle">
+								Get dietician once a month
+							</li>
 						</ul>
 						<Link to="/homy">
 							<div className="connect-button book-btn">
@@ -128,8 +170,12 @@ const Homypro = () => {
 								Access to all premium nutrition & workout plans
 							</li>
 							<li>5-star professional chef at home</li>
-							<li className="middle">Customizable gourmet meals</li>
-							<li className="middle">Get dietician once a month</li>
+							<li className="middle">
+								Customizable gourmet meals
+							</li>
+							<li className="middle">
+								Get dietician once a month
+							</li>
 						</ul>
 						<Link to="/homypromax">
 							<div className="connect-button book-btn">

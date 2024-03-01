@@ -111,12 +111,27 @@
 	/* border: 2px solid white; */
 }
 .pricecard:hover {
+	cursor: pointer;
 	/* background-color: #dddddd; */
 	/* color: black; */
 	transition: 0.4s ease-in-out;
 	border: 1px solid #fff;
 	transform: scale(1.1);
 }
+.selected {
+	transform: scale(1.1);
+	border: 1px solid #e23744;
+	background-color: #e8e4e4;
+	color: #000;
+
+  }
+  .selected:hover{
+	border: 1px solid #e23744;
+
+  }
+  .selected .red{
+	color: #e23744;
+  }
 .pricecard:hover .red {
 	transition: 0.5s ease-in-out;
 

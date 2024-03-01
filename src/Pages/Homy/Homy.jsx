@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import KitchenKingbg from "../../assets/KitchenKingbg.svg";
 import KithcenKingimg from "../../assets/KitchenKing.png";
 import KitchenKingBorder from "../../assets/KitchenKingBorder.svg";
@@ -10,10 +10,19 @@ import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import { Link } from "react-router-dom";
 import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
 import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
+import classNames from "classnames";
 import { IoStarOutline } from "react-icons/io5";
 
 
 const Homy = () => {
+
+	const [selectedButton, setSelectedButton] = useState(null);
+	const selectButton = (buttonNumber) => {
+		if (selectedButton !== null) {
+			setSelectedButton(null);
+		}
+		setSelectedButton(buttonNumber);
+	};
 	return (
 		<div className="KitchenKing-homy">
 			<div className="KitchenKing-homy-top">
@@ -66,27 +75,59 @@ const Homy = () => {
 				</div>
 				<div className="KitchenKing-homy-price">
 				<div className="KitchenKing-homypromax-table">
-						<div className="pricecard">
+				<div
+							// className={classNames('pricecard,{selectedButton === 1 ? "selected" : ""})}
+							// onClick={() => selectButton(1)}
+							className={classNames("pricecard", {
+								selected: selectedButton === 1,
+							})}
+							onClick={() => selectButton(1)}
+						>
 							DAILY
 							<br />
 							<span className="red">499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 2,
+							})}
+							onClick={() => selectButton(2)}
+
+						>
 							WEEKLY
 							<br />
 							<span className="red">2,099</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 3,
+							})}
+							onClick={() => selectButton(3)}
+
+						>
 							MONTHLY
 							<br />
 							<span className="red">4,499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 4,
+								
+							})}
+							onClick={() => selectButton(4)}
+
+						>
 							HALF YEARLY
 							<br />
 							<span className="red">22,499</span>
 						</div>
-						<div className="pricecard">
+						<div
+							className={classNames("pricecard", {
+								selected: selectedButton === 5,
+							})}
+							onClick={() => selectButton(5)}
+
+						>
 							YEARLY
 							<br />
 							<span className="red">35,999</span>
