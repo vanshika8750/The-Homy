@@ -78,9 +78,9 @@ const Contactus = () => {
                         <div>
                             <input
                                 type="text"
-                                id="f_name"
-                                name="f_name"
-                                value={formData.f_name}
+                                id="name"
+                                name="name"
+                                value={formData.name}
                                 onChange={handleChange}
                                 placeholder="Name"
                                 required

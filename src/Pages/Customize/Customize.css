@@ -1,4 +1,18 @@
 
+.your-plan-plan{
+  background-color: #020202;
+  color: #E23744;
+  font-weight: 500;
+  width: fit-content;
+  padding: 5px 25px;
+  font-size: 20px;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+}
+.your-plan-service{
+font-size: 25px;
+font-weight: 500;
+}
 .customize-page{
     display: flex;
     align-items: start;

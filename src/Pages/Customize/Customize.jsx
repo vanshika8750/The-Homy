@@ -140,9 +140,16 @@ const Customize = () => {
 
                     <div className="first-col-div-customize">
                         <div className="your-plan">Your Plan</div>
-                        {selectedPlan?.services}
+                        <div className="your-plan-plan">
+                            <img src={homypro} alt="" />&nbsp;
                         {selectedPlan?.plans}
+                        </div>
+                       <div className="your-plan-service">
+                       {selectedPlan?.services}
+                       </div>
+                        <div style={{fontSize:"18px"}}>
                         {selectedPlan?.planoptions}
+                        </div>
                     </div>
                 </div>
 

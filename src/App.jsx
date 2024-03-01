@@ -26,6 +26,12 @@ import Maintenance from './Pages/Maintenance/Maintenance'
 import DustGuardHomy from './Pages/Homy/DustGuardHomy'
 import DustguardHomypro from './Pages/HomyPro/DustGuardHomyPro'
 import DustguardHomypromax from './Pages/HomyProMax/DustGuardHomyProMax'
+import HygieneHomy from './Pages/Homy/HygieneHomy'
+import HygieneHomypro from './Pages/HomyPro/HygieneHomyPro'
+import HygieneHomypromax from './Pages/HomyProMax/HygieneHomyProMax'
+import PrivacyPolicy from './Pages/Policies/PrivacyPolicy'
+import RefundPolicy from './Pages/Policies/RefundPolicy'
+import TermAndConditions from './Pages/Policies/TermAndConditions'
 
 function App() {
 
@@ -59,7 +65,13 @@ function App() {
          <Route exact path='/dustguard/homy' element={<DustGuardHomy/>}/>
          <Route exact path='/dustguard/homypro' element={<DustguardHomypro/>}/>
          <Route exact path='/dustguard/homypromax' element={<DustguardHomypromax/>}/>
-
+          <Route exact path='/hygiene/homy' element={<HygieneHomy/>}/>
+          <Route exact path='/hygiene/homypro' element={<HygieneHomypro/>}/>
+        <Route exact path='/hygiene/homypromax' element={<HygieneHomypromax/>}/>
+        <Route exact path='/privacypolicy' element={<PrivacyPolicy/>}/>
+        <Route exact path='/refundpolicy' element={<RefundPolicy/>}/>
+        <Route exact path='/termsandconditions' element={<TermAndConditions/>}/>
+        
 
        </Routes>    
        <Footer/>

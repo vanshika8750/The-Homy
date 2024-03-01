@@ -150,7 +150,7 @@ export default function App() {
 									</Link>
 
 									<Link
-										to="/termsandcondition"
+										to="/termsandconditions"
 										style={{
 											textDecorationLine: "none",
 											color: "White",

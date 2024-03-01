@@ -44,11 +44,11 @@ const hygiene = () => {
 					untouched. With an unwavering commitment to excellence, we
 					ensure restoring your restroom to pristine luxury.
 					<br />
-					<Link to="/customize">
+					{/* <Link to="/customize">
 						<div className="connect-button hygiene-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 
 				<div className="hygiene-content-m mobileview">
@@ -56,11 +56,11 @@ const hygiene = () => {
 					and precision, leaving no tile unpolished and no fixture
 					untouched. With an unwavering commitment to excellence, we
 					ensure restoring your restroom to pristine luxury.
-					<Link to="/customize">
+					{/* <Link to="/customize">
 						<div className="connect-button hygiene-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 			<div className="hygiene-bottom">
@@ -90,7 +90,7 @@ const hygiene = () => {
 							<li>Vaccinated for safety</li>
 							<li>Equipped with toilet cleaner kit</li>
 						</ul>
-						<Link to="/homy">
+						<Link to="/hygiene/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -110,7 +110,7 @@ const hygiene = () => {
 							{/* <li>Vaccinated for safety</li> */}
 							<li>Equipped with toilet cleaner kit</li>
 						</ul>{" "}
-						<Link to="/homypro">
+						<Link to="/hygiene/homypro">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
@@ -128,7 +128,7 @@ const hygiene = () => {
 							{/* <li>Vaccinated for safety</li> */}
 							<li>Equipped with toilet cleaner kit</li>
 						</ul>
-						<Link to="/homypromax">
+						<Link to="/hygiene/homypromax">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>

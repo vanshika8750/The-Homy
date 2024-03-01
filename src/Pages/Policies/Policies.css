@@ -1,0 +1,32 @@
+.policy{
+    color: white;
+    padding: 3rem;
+}
+.head-policy{
+    width: 250px;
+    text-align: center;
+}
+.head-policy .head{
+    font-weight: 500;
+font-size: 40px;
+letter-spacing: -1px;
+}
+.head-policy .line{
+    margin: 7px 0px;
+    background-color: #e23744;
+    height: 10px;
+}
+.head-policy-tc{
+    width: 350px;
+}
+.policy .para {
+    margin: 25px 0px;
+}
+.para .head-div{
+    text-decoration: underline;
+}
+@media only screen and (max-width:600px){
+    .policy{
+        padding: 2rem;
+    }
+}
