@@ -11,14 +11,26 @@ import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
 import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
 import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Homypromax = () => {
 
 	const [dataFetched, setDataFetched] = useState(false);
 	const [subscriptionPlans, setSubscriptionPlans] = useState([]);
 	const [selectedPlan, setSelectedPlan] = useState(null);
-	const user_id=JSON.parse(localStorage.userData).id
-
+	const user_id = localStorage.userData ? JSON.parse(localStorage.userData).id : null;
+	useEffect(() => {
+		// Check if the loginSuccess flag is set in localStorage
+		const loginSuccess = localStorage.getItem('loginStatus');
+	  console.log(loginSuccess)
+		// Check if loginSuccess is true
+		if (loginSuccess == 'true') {
+		}
+		else{
+			toast.error('Please login');
+			window.location.href='/login'
+		}
+	  }, []);
     useEffect(() => {
         const fetchData = async () => {
             try {

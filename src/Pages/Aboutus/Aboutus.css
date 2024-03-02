@@ -24,7 +24,7 @@
 
     display: flex;
     width: 80%;
-    height: 20rem;
+    height: max-content;
     flex-direction: column;
     align-items: center;
     gap: 12.8px;
@@ -98,7 +98,18 @@ line-height: 4rem;
       display: none;
   }
 
+@media only screen and (max-width:1150px){
+    .aboutus-headline{
+        right: 2rem;
+    }
+}
 
+@media only screen and (max-width:850px){
+    .aboutus-headline{
+        right: 2rem;
+        font-size: 30px;
+    }
+}
 
   @media (max-width:600px) {
 

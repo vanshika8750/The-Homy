@@ -12,6 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
+    const [isLoggedIn,setIsLoggedIn]=useState(false);
 
     const [formData, setFormData] = useState({
         email: '',
@@ -39,6 +40,7 @@ const Login = () => {
     
                     if (response.ok) {
                         console.log('Login successful');
+
                         const data = await response.json();
                         console.log(data);
     
@@ -54,6 +56,7 @@ const Login = () => {
                             email: '',
                             password: ''
                         });
+
                       
                         // Redirect the user to the desired page after login
                         // window.location.href = '/dashboard';
@@ -109,7 +112,7 @@ const Login = () => {
                 localStorage.setItem('userData', JSON.stringify(userData));
                 // Process user data as needed
                 localStorage.setItem('loginSuccess', 'true');
-
+                localStorage.setItem('loginStatus','true')
                 window.location.href = '/';
             } else {
                 console.log('Failed to fetch profile data');

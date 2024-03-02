@@ -170,7 +170,8 @@ Fill in the details here 👉</div>
                
                 <div>18%</div>
                 <div>.............</div>
-                <div>{priceprod+(priceprod*0.18)}</div>
+                <div>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
+
             </div>
           </div>
 
@@ -181,7 +182,7 @@ Fill in the details here 👉</div>
                     Amount to be paid
                 </div>
 
-                <div>{priceprod+(priceprod*0.18)}</div>
+                <div>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
             </div>
 
 

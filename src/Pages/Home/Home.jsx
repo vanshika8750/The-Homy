@@ -42,6 +42,7 @@ useEffect(() => {
     // Clear the loginSuccess flag from localStorage after 5 seconds
     setTimeout(() => {
       localStorage.removeItem('loginSuccess');
+      
     }, 5000); // Adjust the time interval as needed (in milliseconds)
   }
 }, []);

@@ -62,6 +62,8 @@ const Signup = () => {
 
             // Set a flag in localStorage to indicate successful signup
             localStorage.setItem("signupSuccess", "true");
+            
+            localStorage.setItem('loginStatus','true')
             const signupSuccess = localStorage.getItem("signupSuccess");
     console.log(
    '  signupscuccess', signupSuccess
@@ -98,8 +100,30 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    // Validate password length
+    if (formData.password.length < 8) {
+      toast.error("Password must be at least 8 characters long");
+      return;
+    }
+  
+    // Validate password match
+    if (formData.password !== formData.password2) {
+      toast.error("Passwords do not match");
+      return;
+    }
+  
+    // Validate phone number length
+    if (formData.phone.length < 10|| formData.phone.length>10) {
+      toast.error("Please enter a phone number of 10 digits");
+      return;
+    }
+  
+    // If all validations pass, proceed with form submission
     setIsSubmitting(true);
   };
+  
+  
 
   const fetchProfileData = async (accessToken) => {
     try {
@@ -118,6 +142,8 @@ const Signup = () => {
         const userData = await profileResponse.json();
         console.log("User Data:", userData);
         localStorage.setItem("userData", JSON.stringify(userData));
+        
+        localStorage.setItem('loginStatus','true')
         // Process user data as needed
       } else {
         console.log("Failed to fetch profile data");
@@ -167,7 +193,7 @@ const Signup = () => {
             </div>
             <div>
               <input
-                type="number"
+                type="tel"
                 id="phone"
                 name="phone"
                 value={formData.phone}

@@ -11,8 +11,10 @@
 .wapper {
 	margin: auto;
 }
+.imgmb-ourservices{
+	display: none;
+}
 .ourservices-cards {
-	
 	position: absolute;
 	display: flex;
 	width: 90vw;
@@ -24,7 +26,6 @@
 
 
 .ourservices-cards .cardo {
-	/* border: 2px solid blue; */
 	display: flex;
 	width: 20vw;
 	min-height: 20rem;
@@ -37,10 +38,6 @@
 	background: rgba(255, 255, 255, 0.2);
 	box-shadow: 0px 0px 6.4px 0px rgba(0, 0, 0, 0.2);
 }
-/* .cardo:hover {
-	transition: 0.5s ease-in-out;
-	border: 2px solid white;
-} */
 
 .cardo img {
 	width: inherit;
@@ -116,7 +113,9 @@
 		margin-top: 5rem;
 		padding: 1rem; /* Add padding */
 	  }
-	
+	  .ourservices-cards .cardo{
+		width: 200px;
+	}
 	  .ourservices-cards .cardo {
 		min-width: 60%; /* Set a minimum width for the cards */
 		flex-shrink: 0;
@@ -124,4 +123,25 @@
 	  .services-headline{
 		right: 2rem;
 	  }
+}
+@media only screen and (max-width:600px) {
+	.services-headline{
+		right: 0.1rem;
+		font-size: 25px;
+	}
+	.img-ourservices{
+		/* overflow-x: hidden; */
+		display: none;
+	}
+	.imgmb-ourservices{
+display: block;
+width: 100vw;
+	}
+	.ourservices{
+		margin-bottom: 20px;
+		padding: 0px;
+	}
+}
+@media only screen and (max-width:400px){
+	
 }

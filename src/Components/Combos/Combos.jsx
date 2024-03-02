@@ -37,7 +37,7 @@ const Combos = () => {
   console.log(comboHomyProMax);
 
   return (
-    <div className="combo-page">
+    <div className="combo-page" id="comboo">
       <div>
         <img className="img-combo" src={ComboFrame} alt="" />
         <img className="img-combo-mob" src={combomobile} alt="" />

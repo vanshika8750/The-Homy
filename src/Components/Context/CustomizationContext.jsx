@@ -11,9 +11,10 @@ export const CustomizationProvider = ({ children }) => {
     const [selectedOptionTiming, setSelectedOptionTiming] = useState('');
     const [selectedTimings, setSelectedTimings] = useState('');
 
+    const [isLoggedIn,setIsLoggedIn]=useState(false);
 
     return (
-        <CustomizationContext.Provider value={{ selectedOptionTiming,setSelectedOptionTiming,selectedTimings,setSelectedTimings,selectedOption, setSelectedOption,userSelectedOption,setUserSelectedOption,data,setData,caldata,setCalData }}>
+        <CustomizationContext.Provider value={{isLoggedIn,setIsLoggedIn, selectedOptionTiming,setSelectedOptionTiming,selectedTimings,setSelectedTimings,selectedOption, setSelectedOption,userSelectedOption,setUserSelectedOption,data,setData,caldata,setCalData }}>
             {children}
         </CustomizationContext.Provider>
     );

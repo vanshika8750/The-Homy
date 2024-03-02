@@ -6,22 +6,26 @@
 	align-items: center;
 	padding-top: 5rem;
 	margin-bottom: 10rem;
+	overflow-x: hidden;
 }
 .service-headline {
 	position: absolute;
 }
 
 .service-headline h1 {
+	overflow-x: hidden;
 	color: #fff;
 	font-family: montserrat;
 	position: absolute;
 	text-align: center;
+	/* right: 0rem; */
+	left: 15rem;
 	width: 90%;
 	/* font-family: Anton; */
 	font-size: 54px;
 	font-style: normal;
 	font-weight: 600;
-	margin-left: 15rem;
+	/* margin-left: 15rem; */
 	padding-top: 0.8rem;
 	line-height: 100%; /* 69.36px */
 	letter-spacing: 0.58px;
@@ -114,6 +118,9 @@
 	color: white;
 	transition: all ease-in-out 0.3s;
 }
+.services-upper-background,.services-lower-background{
+	overflow-x: hidden;
+}
 
 .Customize-button .Customize-btn:hover {
 	color: #020202;
@@ -122,9 +129,52 @@
 .service-image img {
 	border-radius: 0.5rem;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width:1200px) {
+	.service-headline h1 {
+		
+		left: 11rem;
+		width: 90%;
+		font-size: 44px;
+		font-style: normal;
+		font-weight: 600;
+		padding-top: 0.8rem;
+		line-height: 100%; 
+		letter-spacing: 0.58px;
+	}
+}
+@media only screen and (max-width:900px) {
+	.service-headline h1 {
+	left: 8rem;
+	}
+	.service-image img{
+		display: none;
+	}
+	.Services{
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+}
+@media only screen and (max-width:650px) {
+	.service-headline h1 {
+		left: 6rem;
+		font-size: 32px;
+		}
+		.service-image img{
+			display: none;
+		}
+		.Services{
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+		}
+}
+@media only screen and (max-width:600px) {
+	.service1 .service-image img {
+		height: 6rem;
+	}
+}
+/* @media (max-width: 600px) {
 	.Services {
-		height: 110vh;
+		height: 90vh;
 		background-color: black;
 		display: flex;
 		flex-direction: column;
@@ -156,7 +206,7 @@
 		font-weight: 600;
 		margin-left: 4.5rem;
 		padding-top: 0.5rem;
-		line-height: 100%; /* 69.36px */
+		line-height: 100%;
 		letter-spacing: 0.48px;
 	}
 
@@ -214,7 +264,7 @@
 		font-size: 12px;
 		font-style: normal;
 		font-weight: 300;
-		line-height: 80%; /* 12.8px */
+		line-height: 80%; 
 		letter-spacing: -0.32px;
 		text-decoration: none;
 		color: white;
@@ -248,4 +298,4 @@
 		display: none;
 	}
 	
-}
+} */

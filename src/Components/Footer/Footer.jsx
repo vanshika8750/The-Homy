@@ -94,7 +94,7 @@ export default function App() {
 											color: "White",
 										}}
 									>
-										<li>Toilet Cleaners</li>
+										<li>Washroom Cleaners</li>
 									</Link>
 
 									<Link
