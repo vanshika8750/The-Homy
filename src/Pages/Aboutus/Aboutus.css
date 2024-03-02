@@ -122,6 +122,7 @@ line-height: 4rem;
     }
 
     .aboutus{
+        margin-bottom: -10rem;
         display: flex;
         align-items: center;
         justify-content: center;

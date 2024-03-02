@@ -187,3 +187,8 @@ align-items: center;
         padding: 1rem;
     }
 }
+@media only screen and (max-width:600px){
+    .dashboard{
+        margin-bottom: -10rem;
+    }
+}

@@ -5,6 +5,9 @@
 	padding: 3rem;
 	background-color: #020202;
 }
+.cardo img{
+	height: 300px;
+}
 .link-services{
 	text-decoration: none;
 }
@@ -142,6 +145,16 @@ width: 100vw;
 		padding: 0px;
 	}
 }
-@media only screen and (max-width:400px){
-	
+@media only screen and (max-width:450px){
+	.cardo img{
+		height: 250px;
+	}
+}
+@media only screen and (max-width:400px) {
+	.cardo img{
+		height: 220px;
+	}
+	.cardo{
+		padding-bottom: -20px;
+	}
 }

@@ -5,7 +5,6 @@
     padding: 5rem;
     background-color: #020202;
 }
-
 .contactus-cards{
     position:absolute;
      display: flex;
@@ -14,14 +13,7 @@
      justify-content: space-evenly;
      margin-top: 5rem;
 }
-
-
-
-
 .contactus-cards .card{
-
-
-
     display: flex;
     width: 100%;
     height: 20rem;
@@ -36,15 +28,11 @@
     text-align: center;
     justify-content: center;
 }
-
 .card img{
     border-top-right-radius: 22.4px;
     border-top-left-radius: 22.4px;
 }
-
-
 .card p{
-  
    color: #FFF;
 font-family: Inter;
 font-size: 20.05px;
@@ -52,9 +40,7 @@ font-style: normal;
 font-weight: 200;
 line-height: 35.88px; /* 134.194% */
 }
-
-.card .first-para{
-  
+.card .first-para{ 
     color: #FFF;
  font-family: Inter;
  font-size: 25.05px;
@@ -62,15 +48,10 @@ line-height: 35.88px; /* 134.194% */
  font-weight: 200;
  line-height: 35.88px; /* 134.194% */
  }
-
-
-
 .contactus-headline{
-   
     position:absolute;
     right: 7rem;
     padding-top: 1rem;
-
     color: #ffffff;
 font-family: Inter;
 font-size: 50px;
@@ -78,10 +59,6 @@ font-style: normal;
 font-weight: 800;
 line-height: 4rem;
 }
-
-
-
-
 .contactus-headline::after {
     content: "";
     display: block;
@@ -90,35 +67,22 @@ line-height: 4rem;
     width: 10.5rem;
     /* border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem; */
-
   }
-
-
   .mobileview{
       display: none;
   }
-
   .contactus-cards img{
       height: 20rem;
       margin-top: .5rem;
       border-radius: .6rem;
   }
-
   .submit-btn{
-
     color: grey;
     transition: all ease-in-out 0.3s;
-
   }
-
   .submit-btn:hover{
-
     color: #E23744;
-
   }
-
-
-
 /* ------------------------------ */
 .contactus-img img{
     height: 20rem;
@@ -126,8 +90,6 @@ line-height: 4rem;
   margin-bottom: 2rem;
   border-radius: .5rem;
 }
-
-
 .contactus-form input{
     background-color: #1E1E1E;
     outline: none;
@@ -137,10 +99,8 @@ line-height: 4rem;
     margin-top: 1rem;
     border-radius: 6px;
     border: none;
-    color: white;
-    
+    color: white;   
 }
-
 .contactus-form textarea{
   background-color: #1E1E1E;
   outline: none;
@@ -151,18 +111,13 @@ line-height: 4rem;
   color: white;
   margin-top: 1rem;
   border-radius: 6px;
-
-  
 }
-
 .contactus-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-
 .submit-btn{
     border: 1px solid white;
     margin-left: 17rem;
@@ -172,10 +127,7 @@ line-height: 4rem;
     padding-right: 1.5rem;
     border-radius: 6px;
     background: #FFF;
-
     color: #1E1E1E;
-
-
 font-family: Verdana;
 font-size: 20px;
 font-style: normal;
@@ -186,8 +138,58 @@ letter-spacing: -0.48px;
 }
 /* ----------------------------------------- */
 
+@media only screen and (max-width:1320px){
+.contactus{
+padding: 5rem 2rem;
+}
+.contactus-cards{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0rem 1rem;
+}
 
 
+}
+@media only screen and (max-width:1160px)
+{
+    .contactus-form input{
+        width: 30rem;
+        }
+        .contactus-form textarea{
+            width: 30rem;
+        }
+}
+@media only screen and (max-width:1000px)
+{
+    .contactus-form input{
+        width: 40rem;
+        }
+        .contactus-form textarea{
+            width: 40rem;
+        }
+        .aboutusimg{
+            display: none;
+        }
+        .contactus-form{
+            width: 100vw;
+        }
+        .contactus-headline{
+            font-size: 40px;
+            right: 3rem;
+        }
+}
+@media only screen and (max-width:680px){
+    .contactus-form input{
+        width: 30rem;
+        }
+        .contactus-form textarea{
+            width: 30rem;
+        }
+        .contactus-headline{
+            font-size: 30px;
+            right: 2rem;
+        }
+}
   @media (max-width:600px) {
 
     .desktopview{
@@ -204,6 +206,7 @@ letter-spacing: -0.48px;
         justify-content: center;
         padding: .12rem;
         background-color: #020202;
+        margin-bottom: -10rem;
     }
 
     .wapper{
@@ -350,6 +353,17 @@ margin-left: 9rem;
 }
 
       
+  }
+  @media only screen and (max-width:430px){
+    .contactus-form{
+        width: 100vw;
+    }
+    .contactus-form input{
+        width: 20rem;
+        }
+        .contactus-form textarea{
+            width:20rem;
+        }
   }
 
 

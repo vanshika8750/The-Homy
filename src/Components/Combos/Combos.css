@@ -50,7 +50,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 5rem;
 }
 .content-combo .head{
 color: #E23744;
@@ -97,7 +97,7 @@ color: #E23744;
 }
 @media only screen and (max-width:1200px){
     .homy-combo,.homypro-combo,.homypromax-combo{
-        margin-top: 0px;
+        margin-top: 3rem;
         width: 30%;
     }
     .combo-head{
@@ -111,8 +111,11 @@ color: #E23744;
 .pricetwotime{
     margin: 10px 0px;
 }
+.priceonetime{
+    margin: 25px 0px;
+}
 .homy-combo,.homypro-combo,.homypromax-combo{
-    margin-top: 0px;
+    margin-top: 2rem;
     width: 33%;
 }
 }
@@ -180,6 +183,15 @@ color: #E23744;
 @media only screen and (max-width:560px){
     .content-combo .desc{
         height: 80px;
+    }
+    .combo-head{
+        font-size: 40px;
+    }
+    .content-combo .head{
+        font-size: 30px;
+    }
+    .priceonetime{
+        /* margin: 10px 0px; */
     }
 }
 

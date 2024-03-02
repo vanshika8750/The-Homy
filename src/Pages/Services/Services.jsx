@@ -11,7 +11,9 @@ import { GoArrowUpRight } from "react-icons/go";
 import cleanicon from "../../assets/cleanicon.svg";
 import toileticon from "../../assets/toileticon.svg";
 import servicesreactmobile from "../../assets/servicesreactmobile.svg";
-
+import serviceskitchen from '../../assets/serviceskitchen.svg'
+import servicesdustguard from '../../assets/servicesdustguard.svg'
+import serviceshygiene from '../../assets/serviceshygiene.svg'
 import { Link } from "react-router-dom";
 
 const Services = () => {
@@ -80,7 +82,7 @@ const Services = () => {
 					</div>
 
 					<div className="service-image">
-						<img src={servicesimg} alt="" />
+						<img src={serviceskitchen} alt="" />
 					</div>
 				</div>
 
@@ -118,7 +120,7 @@ const Services = () => {
 					</div>
 
 					<div className="service-image">
-						<img src={servicesimg} alt="" />
+						<img src={servicesdustguard} alt="" />
 					</div>
 				</div>
 
@@ -156,7 +158,7 @@ const Services = () => {
 					</div>
 
 					<div className="service-image">
-						<img src={servicesimg} alt="" />
+						<img src={serviceshygiene} alt="" />
 					</div>
 				</div>
 			</div>

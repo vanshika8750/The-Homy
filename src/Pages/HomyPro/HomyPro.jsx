@@ -64,12 +64,12 @@ const Homypro = () => {
 		if (selectedPlan) {
 			localStorage.setItem('selectedPlan', JSON.stringify(selectedPlan));
 			const mappedPlan = {
-				user:user_id,
-				order_service:selectedPlan.id,
-				order_planoption:selectedPlan.id,
-				order_plan:selectedPlan.id,
-				order_price:selectedPlan.id
-			};
+				user: user_id,
+				order_service: selectedPlan.services,
+				order_planoption: selectedPlan.planoptions,
+				order_plan: selectedPlan.plans,
+				order_price: selectedPlan.prices,
+			  };
 
             fetch('http://13.236.85.77/api/createorder/', {
                 method: 'POST',

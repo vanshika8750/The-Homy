@@ -3,11 +3,15 @@ import "./Combos.css";
 import ComboFrame from "../../assets/comboframe.svg";
 import combomobile from '../../assets/combomobile.svg'
 
+
 const Combos = () => {
+
   const [combosData, setCombosData] = useState([]);
   const [comboHomy, setComboHomy] = useState({});
   const [comboHomyPro, setComboHomyPro] = useState({});
   const [comboHomyProMax, setComboHomyProMax] = useState({});
+  
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -36,6 +40,7 @@ const Combos = () => {
   console.log(comboHomyPro);
   console.log(comboHomyProMax);
 
+
   return (
     <div className="combo-page" id="comboo">
       <div>
@@ -55,7 +60,7 @@ const Combos = () => {
 
             <div className="desc">{comboHomy?.description}</div>
 
-            <div className="priceonetime">
+            <div className="priceonetime" >
               <div className="price-head">For 1 time cook</div>
               <div className="price-flex">
                 <div>only @</div>
@@ -64,7 +69,7 @@ const Combos = () => {
               </div>
             </div>
 
-            <div className="pricetwotime">
+            <div className="pricetwotime" >
               <div className="price-head">For 2 time cook</div>
               <div className="price-flex">
                 <div>only @</div>
@@ -73,9 +78,9 @@ const Combos = () => {
               </div>
             </div>
 
-            <div className="cont-combo">
+            {/* <div className="cont-combo">
               <button>CONTINUE</button>
-            </div>
+            </div> */}
           </div>
 
 
@@ -86,7 +91,7 @@ const Combos = () => {
 
             <div className="desc">{comboHomyPro?.description}</div>
 
-            <div className="priceonetime">
+            <div className="priceonetime" >
               <div className="price-head">For 1 time cook</div>
               <div className="price-flex">
                 <div>only @</div>
@@ -95,7 +100,7 @@ const Combos = () => {
               </div>
             </div>
 
-            <div className="pricetwotime">
+            <div className="pricetwotime" >
               <div className="price-head">For 2 time cook</div>
               <div className="price-flex">
                 <div>only @</div>
@@ -104,9 +109,9 @@ const Combos = () => {
               </div>
             </div>
 
-            <div className="cont-combo">
+            {/* <div className="cont-combo">
               <button>CONTINUE</button>
-            </div>
+            </div> */}
 
           </div>
 
@@ -135,9 +140,9 @@ const Combos = () => {
               </div>
             </div>
 
-            <div className="cont-combo">
+            {/* <div className="cont-combo">
               <button>CONTINUE</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

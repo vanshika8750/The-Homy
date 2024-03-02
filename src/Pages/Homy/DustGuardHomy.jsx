@@ -1,12 +1,12 @@
 import React, { useEffect ,useState} from "react";
 import KitchenKingbg from "../../assets/KitchenKingbg.svg";
-import KithcenKingimg from "../../assets/KitchenKing.png";
+import KithcenKingimg from "../../assets/dustguardimg.png";
 import KitchenKingBorder from "../../assets/KitchenKingBorder.svg";
 import "./Homy.css";
 import { IoDiamondOutline } from "react-icons/io5";
 import { LiaCrownSolid } from "react-icons/lia";
 import KitchenKingBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
-import KitchenKingMobile from "../../assets/KitchenKingMobile.png";
+import KitchenKingMobile from "../../assets/dustguardimgmobile.png";
 import { Link } from "react-router-dom";
 import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
 import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
@@ -67,12 +67,12 @@ const DustGuardHomy = () => {
 		if (selectedPlan) {
 			localStorage.setItem('selectedPlan', JSON.stringify(selectedPlan));
 			const mappedPlan = {
-				user:user_id,
-				order_service:selectedPlan.id,
-				order_planoption:selectedPlan.id,
-				order_plan:selectedPlan.id,
-				order_price:selectedPlan.id
-			};
+				user: user_id,
+				order_service: selectedPlan.services,
+				order_planoption: selectedPlan.planoptions,
+				order_plan: selectedPlan.plans,
+				order_price: selectedPlan.prices,
+			  };
 
 			
             fetch('http://13.236.85.77/api/createorder/', {

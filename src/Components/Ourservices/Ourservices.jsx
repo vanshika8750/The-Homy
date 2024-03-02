@@ -2,6 +2,9 @@ import React from "react";
 import img from "../../assets/ourservicesbackground.svg";
 import "./ourservices.css";
 import card from "../../assets/servicescard.svg";
+import kitchenhomeservice from '../../assets/kitchenhomeservice.svg'
+import dustguardhomeservice from '../../assets/dustguardhomeservice.svg'
+import hygienehomeservice from '../../assets/hygienehomeservice.svg'
 import { Link } from "react-router-dom";
 import ourservicesbgmb from '../../assets/ourservicesbg.svg'
 
@@ -22,7 +25,7 @@ const Ourservices = () => {
       <div className="ourservices-cards">
         <Link className="link-services" to="/Kitchenking">
           <div className="cardo">
-            <img src={card} alt="" />
+            <img src={kitchenhomeservice} alt="" />
 
             <p>
               Kitchen king <br />{" "}
@@ -37,10 +40,10 @@ const Ourservices = () => {
         </Link>{" "}
         <Link className="link-services" to="/dustguard">
           <div className="cardo">
-            <img src={card} alt="" />
+            <img src={dustguardhomeservice} alt="" />
 
             <p>
-              Dust Gards <br />{" "}
+              Dust Guards <br />{" "}
               <span
                 className="ourservices-span"
                 style={{ textDecoration: "none" }}
@@ -52,7 +55,7 @@ const Ourservices = () => {
         </Link>{" "}
         <Link className="link-services" to="/hygiene">
           <div className="cardo">
-            <img src={card} alt="" />
+            <img src={hygienehomeservice} alt="" />
 
             <p>
               Mr. Hygiene <br />{" "}
@@ -62,7 +65,7 @@ const Ourservices = () => {
         </Link>{" "}
         <a className="link-services" href="#comboo">
           <div className="cardo">
-            <img src={card} alt="" />
+            <img src={kitchenhomeservice} alt="" />
 
             <p>
               {" "}

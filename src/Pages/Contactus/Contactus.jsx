@@ -72,7 +72,9 @@ const Contactus = () => {
                 <img src={desktopview} alt="" className="desktopview" />
             </div>
             <div className="contactus-cards">
+                <div>
                 <img src={aboutimg} alt="" className="aboutusimg" />
+                </div>
                 <div className="contactus-form">
                     <form>
                         <div>
