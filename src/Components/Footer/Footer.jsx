@@ -122,7 +122,7 @@ export default function App() {
 
                 <ul className="list-unstyled mb-0">
                   <Link
-                    to="/Services"
+                    to="/kitchenking"
                     style={{
                       textDecorationLine: "none",
                       color: "White",
@@ -132,7 +132,7 @@ export default function App() {
                   </Link>
 
                   <Link
-                    to="/Services"
+                    to="/hygiene"
                     style={{
                       textDecorationLine: "none",
                       color: "White",
@@ -142,7 +142,7 @@ export default function App() {
                   </Link>
 
                   <Link
-                    to="/Services"
+                    to="/dustguard"
                     style={{
                       textDecorationLine: "none",
                       color: "White",

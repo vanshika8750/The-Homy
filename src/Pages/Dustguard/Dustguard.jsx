@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./DustGuard.css";
+import "../KitchenKing/KitchenKing.css";
 import DustGuardbg from "../../assets/KitchenKingbg.svg";
-import KithcenKingimg from "../../assets/KitchenKing.png";
+import KithcenKingimg from "../../assets/dustguardimg.png";
 import DustGuardBorder from "../../assets/KitchenKingBorder.svg";
 import Pricing from "../../Components/Pricing/Pricing";
 import HomyFeatures from "../../assets/HomyFeatures.png";
@@ -10,16 +10,16 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { LiaCrownSolid } from "react-icons/lia";
 import { IoStarOutline } from "react-icons/io5";
 import HomyFeaturesMobile from "../../assets/HomyFeaturesMobile.png";
-import DustGuardMobile from "../../assets/KitchenKingMobile.png";
+import DustGuardMobile from "../../assets/dustguardimgmobile.png";
 import DustGuardBorderMobile from "../../assets/KitchenKingBorderMobile.svg";
 import DustGuardbgmid from "../../assets/KitchenKingbgmid.svg";
 import DustGuardBordermid from "../../assets/KitchenKingBordermid.svg";
 
 const DustGuard = () => {
 	return (
-		<div className="DustGuard">
-			<div className="DustGuard-top">
-				<div className="DustGuard-upper-background">
+		<div className="KitchenKing">
+			<div className="KitchenKing-top">
+				<div className="KitchenKing-upper-background">
 					<img className="desktopviewkk" src={DustGuardbg} />
 					<img
 						className="mobileview"
@@ -28,17 +28,17 @@ const DustGuard = () => {
 					/>
 					<img className="midviewkk" src={DustGuardbgmid} alt="" />
 				</div>
-				<div className="DustGuardimg ">
+				<div className="KitchenKingimg ">
 					<img
 						className="desktopviewkk midviewkk"
 						src={KithcenKingimg}
 					/>
 					<img className="mobileview" src={DustGuardMobile} alt="" />
 				</div>
-				<div className="DustGuard-Heading ">
+				<div className="KitchenKing-Heading ">
 					<h1>DUST GUARD</h1>
 				</div>
-				<div className="DustGuard-content desktopviewkk midviewkk ">
+				<div className="KitchenKing-content desktopviewkk midviewkk ">
 					Dust cleaning services goodbye to untidy spaces and the
 					headaches that come with them. Our team of professionals
 					ensures your abode is spotless and cleaned with the best
@@ -54,7 +54,7 @@ const DustGuard = () => {
 					</Link> */}
 				</div>
 
-				<div className="DustGuard-content-m mobileview">
+				<div className="KitchenKing-content-m mobileview">
 					Dust cleaning services goodbye to untidy spaces and the
 					headaches that come with them. Our team of professionals
 					ensures your abode is spotless and cleaned with the best
@@ -62,15 +62,15 @@ const DustGuard = () => {
 					vaccinated, responsible and trustworthy. So, it's time to
 					relax and sit back, and let our experts make your home
 					shine!
-					<Link to="/customize">
+					{/* <Link to="/customize">
 						<div className="connect-button Dust-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
-			<div className="DustGuard-bottom">
-				<div className="DustGuard-lower-background">
+			<div className="KitchenKing-bottom">
+				<div className="KitchenKing-lower-background">
 					<img className="desktopviewkk" src={DustGuardBorder} />
 					<img
 						className="midviewkk"
@@ -78,7 +78,7 @@ const DustGuard = () => {
 						alt=""
 					/>
 				</div>
-				<div className="DustFeatures">
+				<div className="KitchenFeatures">
 					<img
 						className="desktopviewkk midviewkk"
 						src={HomyFeatures}
@@ -86,10 +86,10 @@ const DustGuard = () => {
 					/>
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
-				<div className="DustOptions"></div>
+				<div className="KitchenOptions"></div>
 
-				<div className="DustGuard-cards">
-					<div className="DustGuard-card">
+				<div className="KitchenKing-cards">
+					<div className="KitchenKing-card">
 						<h2>
 							<IoStarOutline /> HOMY
 						</h2>
@@ -100,13 +100,13 @@ const DustGuard = () => {
 							<li>Verified for hygiene </li>
 							<li>Equipped with cleaning kit</li>
 						</ul>
-						<Link to="/dustguard/homy">
+						<Link to="/KitchenKing/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>
 						</Link>
 					</div>
-					<div className="DustGuard-card">
+					<div className="KitchenKing-card">
 						<h2>
 							{" "}
 							<LiaCrownSolid /> HOMY PRO
@@ -124,7 +124,7 @@ const DustGuard = () => {
 							</div>
 						</Link>
 					</div>
-					<div className="DustGuard-card">
+					<div className="KitchenKing-card">
 						<h2>
 							{" "}
 							<IoDiamondOutline /> HOMY PRO MAX

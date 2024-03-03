@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./hygiene.css";
+import "../KitchenKing/KitchenKing.css";
 import hygienebg from "../../assets/KitchenKingbg.svg";
 import KithcenKingimg from "../../assets/hygieneimg.png";
 import hygieneBorder from "../../assets/KitchenKingBorder.svg";
@@ -17,9 +17,9 @@ import hygieneBordermid from "../../assets/KitchenKingBordermid.svg";
 
 const hygiene = () => {
 	return (
-		<div className="hygiene">
-			<div className="hygiene-top">
-				<div className="hygiene-upper-background">
+		<div className="KitchenKing">
+			<div className="KitchenKing-top">
+				<div className="KitchenKing-upper-background">
 					<img className="desktopviewkk" src={hygienebg} />
 					<img
 						className="mobileview"
@@ -28,17 +28,17 @@ const hygiene = () => {
 					/>
 					<img className="midviewkk" src={hygienebgmid} alt="" />
 				</div>
-				<div className="hygieneimg ">
+				<div className="KitchenKingimg">
 					<img
 						className="desktopviewkk midviewkk"
 						src={KithcenKingimg}
 					/>
 					<img className="mobileview" src={hygieneMobile} alt="" />
 				</div>
-				<div className="hygiene-Heading ">
+				<div className="KitchenKing-Heading ">
 					<h1>MR. HYGIENE</h1>
 				</div>
-				<div className="hygiene-content desktopviewkk midviewkk ">
+				<div className="KitchenKing-content desktopviewkk midviewkk ">
 					Our skilled cleaners uphold the highest standards of hygiene
 					and precision, leaving no tile unpolished and no fixture
 					untouched. With an unwavering commitment to excellence, we
@@ -51,7 +51,7 @@ const hygiene = () => {
 					</Link> */}
 				</div>
 
-				<div className="hygiene-content-m mobileview">
+				<div className="KitchenKing-content-m mobileview">
 					Our skilled cleaners uphold the highest standards of hygiene
 					and precision, leaving no tile unpolished and no fixture
 					untouched. With an unwavering commitment to excellence, we
@@ -63,12 +63,12 @@ const hygiene = () => {
 					</Link> */}
 				</div>
 			</div>
-			<div className="hygiene-bottom">
-				<div className="hygiene-lower-background">
+			<div className="KitchenKing-bottom">
+				<div className="KitchenKing-lower-background">
 					<img className="desktopviewkk" src={hygieneBorder} />
 					<img className="midviewkk" src={hygieneBordermid} alt="" />
 				</div>
-				<div className="hygieneFeatures">
+				<div className="KitchenFeatures">
 					<img
 						className="desktopviewkk midviewkk"
 						src={HomyFeatures}
@@ -76,10 +76,10 @@ const hygiene = () => {
 					/>
 					<img src={HomyFeaturesMobile} className="mobileview" />
 				</div>
-				<div className="hygieneOptions"></div>
+				<div className="KitchenOptions"></div>
 
-				<div className="hygiene-cards">
-					<div className="hygiene-card">
+				<div className="KitchenKing-cards">
+					<div className="KitchenKing-card">
 						<h2>
 							<IoStarOutline /> HOMY
 						</h2>
@@ -96,7 +96,7 @@ const hygiene = () => {
 							</div>
 						</Link>
 					</div>
-					<div className="hygiene-card">
+					<div className="KitchenKing-card">
 						<h2>
 							{" "}
 							<LiaCrownSolid /> HOMY PRO
@@ -116,7 +116,7 @@ const hygiene = () => {
 							</div>
 						</Link>
 					</div>
-					<div className="hygiene-card">
+					<div className="KitchenKing-card">
 						<h2>
 							{" "}
 							<IoDiamondOutline /> HOMY PRO MAX

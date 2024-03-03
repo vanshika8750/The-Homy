@@ -8,7 +8,7 @@ import "./Login.css";
 import {jwtDecode} from 'jwt-decode';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import login from '../../assets/login.png'
 
 const Login = () => {
 
@@ -132,7 +132,10 @@ const Login = () => {
                 <img src={desktopview} alt="" className='desktopview' />
             </div>
             <div className="login-cards">
-                <img src={aboutimg} alt="" className='aboutusimg' />
+                <div>
+                <img src={login} alt="" className='loginimg' />
+
+                </div>
                 <div className="login-form">
                     <form onSubmit={handleSubmit}>
                         <div className="Signup-link">

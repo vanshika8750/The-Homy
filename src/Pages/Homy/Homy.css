@@ -1,8 +1,6 @@
 .KitchenKing-homypromax-table .selected{
 	border: 2px solid white;
 }
-
-
 .KitchenKing-homy {
 	display: flex;
 	max-width: 100%;
@@ -211,14 +209,16 @@
 	.midviewkkh {
 		display: none;
 	}
-
+.KitchenKing-homy{
+	margin-bottom: -10rem;
+}
 	.KitchenKing-homy-content {
 		font-size: 14px;
 		text-align: left;
 		margin-left: 1rem;
 		margin-top: 5rem;
 		width: 20rem;
-		top: 26rem;
+		top: 29rem;
 		/* bottom: rem; */
 	}
 	.KitchenKing-homy-features {
@@ -290,6 +290,7 @@
 		margin-left: -2rem !important;
 	}
 }
+
 @media only screen and (min-width: 601px) and (max-width: 900px) {
 	.desktopviewh {
 		display: none;

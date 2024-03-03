@@ -236,6 +236,9 @@
 	.midviewkkh {
 		display: none;
 	}
+	.KitchenKing-homypromax{
+		margin-bottom: -10rem;
+	}
 	.KitchenKing-homypromax-table {
 		flex-direction: column;
 		margin-left: -4rem;
@@ -252,7 +255,7 @@
 		margin-left: 1rem;
 		margin-top: 5rem;
 		width: 20rem;
-		top: 26rem;
+		top: 29rem;
 		/* bottom: rem; */
 	}
 	.KitchenKing-homypromax-features {

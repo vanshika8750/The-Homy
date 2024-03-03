@@ -43,12 +43,7 @@ const KitchenKing = () => {
 					<h1>KITCHEN KING</h1>
 				</div>
 				<div className="KitchenKing-content desktopviewkk midviewkk ">
-					Our chefs are trained and experienced in curating exquisite
-					meals tailored to your preferences. Whether it's a
-					five-course gourmet experience or your favorite comfort
-					food, with a keen eye for detail, focus on nutrition and
-					calorie count, our chefs ensure you get the most delicious
-					food on the table that doesn't compromise your health!
+				Our chefs are trained and experienced in curating exquisite meals tailored to your preferences. Whether it's a five-course gourmet experience or your favorite comfort food, with a keen eye for detail, focus on nutrition and calorie count, our chefs ensure you get the most delicious food on the table that doesn't compromise your health!
 					<br />
 					{/* <Link to="/customize">
 						<div className="connect-button Kitchen-button">
@@ -58,17 +53,12 @@ const KitchenKing = () => {
 				</div>
 
 				<div className="KitchenKing-content-m mobileview">
-					Our chefs are trained and experienced in curating exquisite
-					meals tailored to your preferences. Whether it's a
-					five-course gourmet experience or your favorite comfort
-					food, with a keen eye for detail, focus on nutrition and
-					calorie count, our chefs ensure you get the most delicious
-					food on the table that doesn't compromise your health!
-					<Link to="/customize">
+				Our chefs are trained and experienced in curating exquisite meals tailored to your preferences. Whether it's a five-course gourmet experience or your favorite comfort food, with a keen eye for detail, focus on nutrition and calorie count, our chefs ensure you get the most delicious food on the table that doesn't compromise your health!
+					{/* <Link to="/customize">
 						<div className="connect-button Kitchen-button">
 							BOOK NOW
 						</div>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 			<div className="KitchenKing-bottom">

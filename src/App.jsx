@@ -1,6 +1,7 @@
 import './App.css'
 
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
+import ScrollToTop from './Components/ScrollToTop'
 import Home from './Pages/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
 import Aboutus from './Pages/Aboutus/Aboutus'
@@ -37,9 +38,10 @@ function App() {
 
   return (
 
-    <div style={{overflowX:'hidden'}}>
+    <div style={{overflowX:'hidden',overflowY:'hidden'}}>
       <CustomizationProvider >
           <Router>
+          <ScrollToTop /> 
     <Navbar/>
        <Routes>
 

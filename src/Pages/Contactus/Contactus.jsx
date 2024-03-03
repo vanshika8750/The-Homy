@@ -5,6 +5,7 @@ import aboutimg from '../../assets/feature.jpg';
 import './Contactus.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import contactus from '../../assets/contactus.png'
 
 const Contactus = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -73,7 +74,7 @@ const Contactus = () => {
             </div>
             <div className="contactus-cards">
                 <div>
-                <img src={aboutimg} alt="" className="aboutusimg" />
+                <img src={contactus} alt="" className="aboutusimg" />
                 </div>
                 <div className="contactus-form">
                     <form>

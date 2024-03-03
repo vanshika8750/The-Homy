@@ -64,3 +64,8 @@
     width: calc(100% - 200px);
 }
 }
+@media only screen and (max-width:600px){
+    .maintenance__container{
+        margin-bottom: -10rem;
+    }
+}

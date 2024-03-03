@@ -33,7 +33,7 @@ const Services = () => {
 				<h1>What we provide?</h1>
 
 				<div className="services-content">
-					<p>The luxury homecare services</p>
+					<p>The luxury homecare services for your peaceful living. </p>
 					<div>
 						<p>Commitment, Quality and Trust</p>
 						<div>
@@ -48,7 +48,7 @@ const Services = () => {
 			</div>
 
 			<div className="services-box">
-				<div className="service1">
+				<div className="service1 first-service">
 					<div className="service-title" style={{ padding: ".5rem" }}>
 						<h2>Kitchen King</h2>
 						<div className="service-icon">
@@ -124,7 +124,7 @@ const Services = () => {
 					</div>
 				</div>
 
-				<div className="service1 ">
+				<div className="service1 last-service">
 					<div className="service-title" style={{ padding: ".5rem" }}>
 						<h2>Mr. Hygiene</h2>
 						<div className="service-icon">

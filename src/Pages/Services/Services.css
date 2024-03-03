@@ -1,12 +1,13 @@
 .Services {
-	min-height: 270vh;
+	height: max-content;
 	background-color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 5rem;
-	margin-bottom: 10rem;
+	margin-bottom: rem;
 	overflow-x: hidden;
+	width: 100%;
 }
 .service-headline {
 	position: absolute;
@@ -129,6 +130,7 @@
 .service-image img {
 	border-radius: 0.5rem;
 }
+
 @media only screen and (max-width:1200px) {
 	.service-headline h1 {
 		
@@ -141,6 +143,7 @@
 		line-height: 100%; 
 		letter-spacing: 0.58px;
 	}
+	
 }
 @media only screen and (max-width:900px) {
 	.service-headline h1 {
@@ -153,6 +156,17 @@
 		padding-bottom: 0px;
 		margin-bottom: 0px;
 	}
+	.last-service{
+		padding-bottom: -3rem;
+	}
+	.services-lower-background .desktopview{
+		height:85rem ;
+		margin-bottom: 3rem;
+	}
+	.service1{
+		padding-top: 2rem;
+	}
+
 }
 @media only screen and (max-width:650px) {
 	.service-headline h1 {
@@ -166,10 +180,55 @@
 			padding-bottom: 0px;
 			margin-bottom: 0px;
 		}
+		.service-title h2{
+			font-size: 40px;
+		}
+		.services-lower-background .desktopview{
+			height:75rem ;
+			margin-bottom: 3rem;
+		}
 }
 @media only screen and (max-width:600px) {
 	.service1 .service-image img {
 		height: 6rem;
+	}
+	.first-service{
+		margin-top: 5rem;
+	}
+	.services-lower-background .mobileview{
+		height:68rem ;
+		margin-bottom: 0rem;
+	}
+	.Services{
+		margin-bottom: -7rem;
+	}
+}
+@media only screen and (max-width:480px){
+	.services-lower-background .mobileview{
+		height:73rem ;
+		margin-bottom: 0rem;
+	}
+	.service-headline h1{
+		left: 1rem;
+	}
+	.Services{
+		margin-bottom: -8rem;
+	}
+	.services-content p{
+		font-size: 25px !important;
+		font-weight: 500 !important;
+	}
+}
+@media only screen and (max-width:365px){
+	.services-lower-background .mobileview{
+		height:77rem ;
+		margin-bottom: 0rem;
+	}
+}
+@media only screen and (max-width:335px){
+	.services-lower-background .mobileview{
+		height:85rem ;
+		margin-bottom: 0rem;
 	}
 }
 /* @media (max-width: 600px) {

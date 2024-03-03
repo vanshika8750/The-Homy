@@ -1,6 +1,8 @@
 .DustGuard {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 2rem;
+	justify-content: center;
 }
 .DustGuard-top {
 	display: flex;
@@ -12,7 +14,8 @@
 	display: none;
 }
 .DustGuard-upper-background {
-	width: max-content;
+	margin: auto;
+	width: 100%;
 	z-index: 1;
 	/* changed */
 
@@ -45,7 +48,7 @@
 }
 
 .DustGuardimg {
-	/* width: 100%; */
+	width: inherit;
 	height: 100%;
 	position: absolute;
 	top: 11rem;
@@ -167,11 +170,12 @@
 	background-color: #1e1e1e;
 	color: #ffffff;
 	font-family: Montserrat;
-	height: 28rem;
+	height: 29rem;
 }
 .DustGuard-card ul {
 	margin-left: 0.5rem;
 	margin-top: 1rem;
+	height: 18rem;
 }
 .DustGuard-card li {
 	line-height: 3rem;

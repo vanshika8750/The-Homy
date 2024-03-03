@@ -5,6 +5,7 @@ import desktopview from '../../assets/ourservicesbackground.svg'
 import './aboutus.css'
 import aboutimg from '../../assets/feature.jpg'
 
+
 const Aboutus = () => {
   return (
     <div className="aboutus" >

@@ -33,7 +33,7 @@ const Ourservices = () => {
                 className="ourservices-span"
                 style={{ textDecoration: "none" }}
               >
-                Cooks
+                Pro-chef
               </span>{" "}
             </p>
           </div>
@@ -48,7 +48,7 @@ const Ourservices = () => {
                 className="ourservices-span"
                 style={{ textDecoration: "none" }}
               >
-                House cleaner
+                Cleaning expert
               </span>{" "}
             </p>
           </div>

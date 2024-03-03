@@ -261,7 +261,32 @@ letter-spacing: -0.48px;
 
 
 }
-
+@media only screen and (max-width:1260px){
+    .login-form input{
+        width: 30rem;
+    
+    }
+    .login-headline{
+        right: 4rem;
+    }
+    .login-form{
+        width: 50%;
+        justify-content: center;
+    }
+    .login-cards{
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .loginimg{
+        display: none;
+    }
+    .login-form{
+        width: 100%;
+    }
+}
 
 
   @media (max-width:600px) {
@@ -280,6 +305,7 @@ letter-spacing: -0.48px;
         justify-content: center;
         padding: .12rem;
         background-color: #020202;
+        margin-bottom: -10rem;
     }
 
     .wapper{
@@ -441,4 +467,9 @@ margin-left: 9.5rem;
       
   }
 
-
+@media only screen and (max-width:440px){
+    .login-form input{
+        width: 90vw;
+    }
+    
+}

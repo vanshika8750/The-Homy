@@ -126,7 +126,7 @@ line-height: 4rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: .12rem;
+        padding: 0rem;
         background-color: #020202;
     }
 
@@ -178,7 +178,7 @@ line-height: 4rem;
   
     width: 100%;
     height: 28rem;
-    padding: .3rem;
+    padding: .2rem;
    
 }
 
@@ -217,4 +217,19 @@ line-height: normal;
 }
 
       
+  }
+  @media only screen and (max-width:450px) {
+    .aboutus-cards .card{
+        background:none !important;
+        box-shadow:none !important;
+        border: none;
+    }
+  }
+  @media only screen and (max-width:380px){
+    .aboutus-cards .card{
+        margin-top:3rem;
+    }
+    .aboutus-headline{
+        right: 1px;
+    }
   }

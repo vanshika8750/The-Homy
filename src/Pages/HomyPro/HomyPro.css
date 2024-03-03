@@ -237,6 +237,9 @@
 	.midviewkkh{
 		display: none;
 	}
+	.KitchenKing-homypro{
+		margin-bottom: -10rem;
+	}
 	.KitchenKing-homypro-Heading {
 		width: auto;
 		justify-self:flex-start ;
@@ -253,7 +256,7 @@
 		margin-left: 1rem;
 		margin-top: 5rem;
 		width: 20rem;
-		top: 26rem;
+		top: 29rem;
 		/* bottom: rem; */
 	}
 	.KitchenKing-homypro-features {

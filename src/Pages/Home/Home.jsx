@@ -75,7 +75,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <>
+    <div style={{overflow:'hidden'}}>
 
     {/* <Helmet>
                 <title>The Homy</title>
@@ -100,7 +100,7 @@ useEffect(() => {
 
     
     
-    </>
+    </div>
   )
 }
 

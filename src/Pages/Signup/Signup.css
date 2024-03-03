@@ -17,15 +17,9 @@
 }
 .signup-img{
     display: flex;
-    margin-top: -5rem;
+    /* margin-top: -5rem; */
 }
-
-
-
 .signup-cards .card{
-
-
-
     display: flex;
     width: 100%;
     height: 20rem;
@@ -95,8 +89,6 @@ line-height: 4rem;
     border-bottom-right-radius: 2rem; */
 
   }
-
-
   .mobileview{
       display: none;
   }
@@ -285,6 +277,7 @@ width: 25rem;
     .signup-headline{
         font-size: 17px;
     }
+    
 }
 
 @media (max-width:600px) {
@@ -303,6 +296,7 @@ width: 25rem;
         justify-content: center;
         padding: .12rem;
         background-color: #020202;
+        margin-bottom: -10rem;
     }
 
     .wapper{
@@ -453,7 +447,7 @@ margin-left: 9rem;
   }
   @media only screen and (max-width:500px){
     .signup-form input,textarea{
-        margin-left: -10px;
+        margin-left: -0px;
 width: 23rem;
     }
     .signup-headline{
@@ -477,14 +471,16 @@ width: 23rem;
 
   @media only screen and (max-width:400px){
     .signup-form input,textarea{
-        margin-left: -10px;
-width: 23rem;
+        /* margin-left: -10px; */
+width: 20rem;
     }
     .signup-headline{
-        right: 20px;
+        right: 10px;
     }
     .signup-form{
        display: flex;
+       margin: auto;
+       margin-top: 60px;
        justify-content: center;
     }
     .signup-cards{
@@ -496,5 +492,8 @@ width: 23rem;
 }
     .signup-headline{
         font-size: 13px;
+    }
+    .submit-btn{
+        margin-top: -12px !important;
     }
   }

@@ -6,7 +6,7 @@ import aboutimg from "../../assets/feature.jpg";
 import "./Signup.css";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import signupimg from '../../assets/signup.png'
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -165,7 +165,7 @@ const Signup = () => {
       </div>
       <div className="signup-cards">
         <div className="signup-img">
-          <img src={aboutimg} alt="" className="aboutusimg" />
+          <img src={signupimg} alt="" className="aboutusimg" />
         </div>
         <div className="signup-form">
           <form>
