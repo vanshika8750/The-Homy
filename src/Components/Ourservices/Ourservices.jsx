@@ -7,7 +7,7 @@ import dustguardhomeservice from '../../assets/dustguardhomeservice.svg'
 import hygienehomeservice from '../../assets/hygienehomeservice.svg'
 import { Link } from "react-router-dom";
 import ourservicesbgmb from '../../assets/ourservicesbg.svg'
-
+import servicescombo from '../../assets/servicescombo.png'
 const Ourservices = () => {
   return (
     <div className="ourservices">
@@ -65,7 +65,7 @@ const Ourservices = () => {
         </Link>{" "}
         <a className="link-services" href="#comboo">
           <div className="cardo">
-            <img src={kitchenhomeservice} alt="" />
+            <img src={servicescombo} alt="" />
 
             <p>
               {" "}
