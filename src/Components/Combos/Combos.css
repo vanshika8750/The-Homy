@@ -144,6 +144,9 @@ color: #E23744;
     }
     .homy-combo,.homypro-combo,.homypromax-combo{
         width: 90%;
+        border: 1px solid grey;
+        padding: 2rem 0px;
+        border-radius: 5px;
         text-align: center;
         margin: 1rem auto;
     }
