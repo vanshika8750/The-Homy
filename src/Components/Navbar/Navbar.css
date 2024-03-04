@@ -1,5 +1,6 @@
 .logo {
 	padding-right: 9rem;
+	cursor: pointer;
 }
 .profile-dropdown{
 	cursor: pointer;

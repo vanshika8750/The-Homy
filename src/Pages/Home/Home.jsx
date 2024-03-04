@@ -7,6 +7,7 @@ import Why from '../../Components/Why/Why'
 import Pricing from '../../Components/Pricing/Pricing'
 import Footer from '../../Components/Footer/Footer'
 import { Helmet } from 'react-helmet';
+import './Home.css'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom'
@@ -75,7 +76,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div style={{overflow:'hidden'}}>
+    <div className='home-page' style={{overflow:'hidden'}}>
 
     {/* <Helmet>
                 <title>The Homy</title>

@@ -107,7 +107,7 @@ function OffcanvasExample() {
                             <Offcanvas.Body>
                                 <Nav className="justify-content-center flex-grow-1 pe-1">
                                     <Navbar.Brand to="#" className="logo">
-                                        <img src={logo} alt="Thehomy" />
+                                        <Link to='/'><img src={logo} alt="Thehomy" /></Link>
                                     </Navbar.Brand>
 
                                     <div className="hamburger-links-outer">

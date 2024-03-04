@@ -172,17 +172,18 @@
 	background-color: #1e1e1e;
 	color: #ffffff;
 	font-family: Montserrat;
-	height: 28rem;
+	height: 29rem;
 }
 .KitchenKing-card ul {
 	margin-left: 0.5rem;
-	margin-top: 1rem;
+	margin-top: 0.6rem;
+	height: 18rem !important;
 }
 .KitchenKing-card li {
 	line-height: 3rem;
 }
 .book-btn {
-	margin-top: 2rem;
+	margin-top: 1rem;
 }
 .desktopviewkk {
 	display: block;

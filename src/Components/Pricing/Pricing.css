@@ -162,6 +162,6 @@ ul.pcard__bullets {
 }
 @media only screen and (max-width:600px){
 	.pricepage{
-		margin-bottom: -12rem;
+		/* margin-bottom: -12rem; */
 	}
 }

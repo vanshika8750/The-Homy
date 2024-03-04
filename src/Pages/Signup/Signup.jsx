@@ -247,7 +247,7 @@ const Signup = () => {
 
             <Link to="/login">
               <button
-                className="submit-btn"
+                className="submit-btn submit-signup"
                 type="submit"
                 disabled={isSubmitting}
                 onClick={handleSubmit}

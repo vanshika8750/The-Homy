@@ -106,7 +106,7 @@ const Customize = () => {
                 toast.success('customization api called');
                 console.log('Success:', data);
                 // Handle success response from the API
-                // window.location.href='/cart'
+                window.location.href='/cart'
             })
             .catch((error) => {
                 console.error('Error:', error);

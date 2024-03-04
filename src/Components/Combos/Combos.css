@@ -131,8 +131,13 @@ color: #E23744;
     }
 }
 @media only screen and (max-width:880px){
+    .combo-page{
+        border: 10px solid #E23744;
+        margin: 2rem;
+        padding:3rem 0px !important;
+    }
     .content-combo{
-        width: 90vw;
+        /* width: 90vw; */
         flex-direction: column;
         justify-content: center;
         margin: auto;
