@@ -26,7 +26,7 @@ Welcome to TheHomy's Refund Policy, a guideline governing the terms and conditio
     <div className="head-div">
     Cancellation of Services
     </div>
-    <div>In cases of service cancellations before initiation, we understand that circumstances may arise. While refunds are not guaranteed, we are open to considering them based on individual situations. To initiate a refund request, please submit a written request to [refund@thehomy.com] within [X days] of the cancellation notification.
+    <div>In cases of service cancellations before initiation, we understand that circumstances may arise. While refunds are not guaranteed, we are open to considering them based on individual situations. To initiate a refund request, please submit a written request to [support@thehomy.in] within [2 days] of the cancellation notification.
 </div>
 </div>
 

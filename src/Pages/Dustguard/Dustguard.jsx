@@ -100,7 +100,7 @@ const DustGuard = () => {
 							<li>Verified for hygiene </li>
 							<li>Equipped with cleaning kit</li>
 						</ul>
-						<Link to="/KitchenKing/homy">
+						<Link to="/dustguard/homy">
 							<div className="connect-button book-btn">
 								BOOK NOW
 							</div>

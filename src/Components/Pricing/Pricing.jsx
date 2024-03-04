@@ -72,9 +72,9 @@ const Pricing = () => {
 								</li>
 								<li>Comes prepared with a kitchen kit.</li>
 							</ul>
-							<a href="./homy" className="pcard__cta cta">
+							<Link to="/kitchenking" className="pcard__cta cta">
 						Get Started
-							</a>
+							</Link>
 							
 						</div>
 
@@ -90,9 +90,9 @@ const Pricing = () => {
 								</li>
 								<li>Helper Chef included.</li>
 							</ul>
-							<a href="./homypro" className="pcard__cta cta">
+							<Link to="/kitchenking" className="pcard__cta cta">
 								Get Started
-							</a>
+							</Link>
 						</div>
 
 						<div className="pcards__pcard pcard">
@@ -115,9 +115,9 @@ const Pricing = () => {
 								</li>
 								
 							</ul>
-							<a href="./homypromax" className="pcard__cta cta">
+							<Link to="/kitchenking" className="pcard__cta cta">
 								Get Started
-							</a>
+							</Link>
 						</div>
 					</div>
 

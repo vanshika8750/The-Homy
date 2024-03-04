@@ -7,6 +7,7 @@
 }
 .cardo img{
 	height: 300px;
+	width: 90%;
 }
 .link-services{
 	text-decoration: none;
@@ -47,10 +48,13 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .cardo img {
-	width: inherit;
+	/* width: inherit; */
 	/* padding: 1rem; */
 	border-top-right-radius: 22.4px;
 	border-top-left-radius: 22.4px;
+}
+.ourservices-cards .cardo img{
+	width: 82% !important;
 }
 
 .cardo p {   
@@ -97,6 +101,9 @@
 }
 .ourservices-cards .cardo{
 	width: 22vw;
+}
+.ourservices-cards .cardo img{
+	width: 87%;
 }
 }
 @media only screen and (max-width:1050px){
