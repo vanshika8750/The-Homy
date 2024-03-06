@@ -25,11 +25,11 @@ const Banner = () => {
 					style={{ width: "15vw", height: "3.5vw" }}
 				>
 					<Link
-						to="/Maintenance"
+						to="/services"
 						className="connect-btn get-app-home"
 						style={{ textDecoration: "none" }}
 					>
-						Get the app now
+						Book now
 						<GoArrowUpRight />
 					</Link>
 				</div>

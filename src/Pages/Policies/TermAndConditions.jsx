@@ -3,7 +3,7 @@ import './Policies.css'
 
 const TermAndConditions = () => {
   return (
-    <div className='policy'>
+    <div className='policy content-below-navbar'>
         <div className="head-policy head-policy-tc">
             <div className="head">Terms & Conditions</div>
             <div className="line"></div>

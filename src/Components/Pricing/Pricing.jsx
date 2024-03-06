@@ -88,7 +88,7 @@ const Pricing = () => {
 									Vaccinated, hygiene checked, kitchen kit
 									included.
 								</li>
-								<li>Helper Chef included.</li>
+								<li> 1 Helper Chef included.</li>
 							</ul>
 							<Link to="/kitchenking" className="pcard__cta cta">
 								Get Started
@@ -110,7 +110,7 @@ const Pricing = () => {
 
 								</li>
 								<li>
-                Professional, vaccinated, well-equipped kitchen kit.
+                2 Helper Chef included.
 
 								</li>
 								

@@ -15,7 +15,7 @@ const Combos = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://13.236.85.77/api/combopack/");
+        const response = await fetch("https://thehomy.co/api/combopack/");
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -23,7 +23,7 @@ const Combos = () => {
         const data = res.data;
         setCombosData(data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        // console.error("Error fetching data:", error);
       }
     };
     fetchData();
@@ -36,9 +36,9 @@ const Combos = () => {
       setComboHomyProMax(combosData[2]);
     }
   }, [combosData]);
-  console.log(comboHomy);
-  console.log(comboHomyPro);
-  console.log(comboHomyProMax);
+  // console.log(comboHomy);
+  // console.log(comboHomyPro);
+  // console.log(comboHomyProMax);
 
 
   return (
@@ -61,7 +61,8 @@ const Combos = () => {
             <div className="desc">{comboHomy?.description}</div>
 
             <div className="priceonetime" >
-              <div className="price-head">For 1 time cook</div>
+              <div className="price-head">With 1 time cook</div>
+              <div className="text-cut">@ 10,344 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomy?.priceonetimecook}*</div>
@@ -70,7 +71,8 @@ const Combos = () => {
             </div>
 
             <div className="pricetwotime" >
-              <div className="price-head">For 2 time cook</div>
+              <div className="price-head">With 2 time cook</div>
+              <div className="text-cut">@ 14,843 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomy?.pricetwotimecook}*</div>
@@ -92,7 +94,8 @@ const Combos = () => {
             <div className="desc">{comboHomyPro?.description}</div>
 
             <div className="priceonetime" >
-              <div className="price-head">For 1 time cook</div>
+              <div className="price-head">With 1 time cook</div>
+              <div className="text-cut">@ 29,694 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomyPro?.priceonetimecook}*</div>
@@ -101,7 +104,8 @@ const Combos = () => {
             </div>
 
             <div className="pricetwotime" >
-              <div className="price-head">For 2 time cook</div>
+              <div className="price-head">With 2 time cook</div>
+              <div className="text-cut">@ 47,693 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomyPro?.pricetwotimecook}*</div>
@@ -123,7 +127,8 @@ const Combos = () => {
             <div className="desc">{comboHomyProMax?.description}</div>
 
             <div className="priceonetime">
-              <div className="price-head">For 1 time cook</div>
+              <div className="price-head">With 1 time cook</div>
+              <div className="text-cut">@ 62,544 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomyProMax?.priceonetimecook}*</div>
@@ -132,7 +137,8 @@ const Combos = () => {
             </div>
 
             <div className="pricetwotime">
-              <div className="price-head">For 2 time cook</div>
+              <div className="price-head">With 2 time cook</div>
+              <div className="text-cut">@ 107,543 *</div>
               <div className="price-flex">
                 <div>only @</div>
                 <div>{comboHomyProMax?.pricetwotimecook}*</div>

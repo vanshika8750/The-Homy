@@ -3,7 +3,7 @@ import logo from '../../assets/logo.svg'
 
 const AdminDashboard = () => {
   return (
-    <div>
+    <div className='content-below-navbar'>
 
         <div className="left">
 

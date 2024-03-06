@@ -3,7 +3,7 @@ import './Policies.css'
 
 const RefundPolicy = () => {
   return (
-    <div className='policy'>
+    <div className='policy content-below-navbar'>
         <div className="head-policy">
             <div className="head">Refund Policy</div>
             <div className="line"></div>
@@ -44,7 +44,7 @@ Eligibility for Refund
     <div className="head-div">
     No Refunds After Initiation
     </div>
-    <div>Once our services have been initiated, encompassing activities like house cleaning, childcare, or cooking services, we are unable to process any refunds. We appreciate your understanding in this matter.
+    <div>Once our services have been initiated, encompassing activities like house cleaning , or cooking services, we are unable to process any refunds. We appreciate your understanding in this matter.
 </div>
 </div>
 
@@ -59,7 +59,7 @@ Processing Time
 </div>
 
 <div className="para">
-For any further inquiries or clarification regarding our Refund Policy, feel free to reach out to our dedicated team at [customer.support@thehomy.com]. 
+For any further inquiries or clarification regarding our Refund Policy, feel free to reach out to our dedicated team at [support@thehomy.in]. 
 </div>
 
 <div className="para">

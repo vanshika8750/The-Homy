@@ -30,7 +30,7 @@ const Signup = () => {
       if (isSubmitting) {
         try {
           const response = await fetch(
-            "http://13.236.85.77/api/user/register/",
+            "https://thehomy.co/api/user/register/",
             {
               method: "POST",
               headers: {
@@ -41,13 +41,13 @@ const Signup = () => {
           );
 
           if (response.ok) {
-            console.log(formData);
-            console.log("Signup Successful");
+            // console.log(formData);
+            // console.log("Signup Successful");
 
 
             const data = await response.json();
             const token = data.token.access;
-            console.log("token", token);
+            // console.log("token", token);
             // Extract token from response
             await fetchProfileData(token);
 
@@ -65,9 +65,9 @@ const Signup = () => {
             
             localStorage.setItem('loginStatus','true')
             const signupSuccess = localStorage.getItem("signupSuccess");
-    console.log(
-   '  signupscuccess', signupSuccess
-    )
+    // console.log(
+  //  '  signupscuccess', signupSuccess
+  //   )
 
             // Redirect to the home page
             window.location.href = "/";
@@ -83,11 +83,11 @@ const Signup = () => {
             }
           }
           else {
-            console.log("Signup failed");
+            // console.log("Signup failed");
             toast.error('Signup Failed');
           }
         } catch (error) {
-          console.error("Error occurred:", error);
+          // console.error("Error occurred:", error);
           toast.error('An error occurred');
         } finally {
           setIsSubmitting(false);
@@ -128,7 +128,7 @@ const Signup = () => {
   const fetchProfileData = async (accessToken) => {
     try {
       const profileResponse = await fetch(
-        "http://13.236.85.77/api/user/profile/",
+        "https://thehomy.co/api/user/profile/",
         {
           method: "GET",
           headers: {
@@ -140,21 +140,21 @@ const Signup = () => {
 
       if (profileResponse.ok) {
         const userData = await profileResponse.json();
-        console.log("User Data:", userData);
+        // console.log("User Data:", userData);
         localStorage.setItem("userData", JSON.stringify(userData));
         
         localStorage.setItem('loginStatus','true')
         // Process user data as needed
       } else {
-        console.log("Failed to fetch profile data");
+        // console.log("Failed to fetch profile data");
       }
     } catch (error) {
-      console.error("Error fetching profile data:", error);
+      // console.error("Error fetching profile data:", error);
     }
   };
 
   return (
-    <div className="signup">
+    <div className="signup content-below-navbar">
       <div
         className="wapper"
         style={{ display: "flex", flexDirection: "column" }}

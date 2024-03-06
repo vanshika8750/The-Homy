@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 
 const Services = () => {
 	return (
-		<div className="Services">
+		<div className="Services content-below-navbar">
 			<div className="services-upper-background">
 				<img className="desktopview" src={servicesbackground} alt="" />
 				<img className="mobileview" src={mobileviewservices} alt="" />
@@ -55,13 +55,13 @@ const Services = () => {
 							<img src={cookicon} alt="" />
 						</div>
 
-						<div className="booking">
+						{/* <div className="booking">
 							<img src={star} alt="" />
 							<p style={{ paddingTop: "1rem" }}>
 								{" "}
 								4.9 (5000 bookings)
 							</p>
-						</div>
+						</div> */}
 
 						<div className="booking-price">
 							<h2>
@@ -93,13 +93,13 @@ const Services = () => {
 							<img src={cleanicon} alt="" />
 						</div>
 
-						<div className="booking">
+						{/* <div className="booking">
 							<img src={star} alt="" />
 							<p style={{ paddingTop: "1rem" }}>
 								{" "}
 								4.8 (4000 bookings)
 							</p>
-						</div>
+						</div> */}
 
 						<div className="booking-price">
 							<h2>
@@ -131,13 +131,13 @@ const Services = () => {
 							<img src={toileticon} alt="" />
 						</div>
 
-						<div className="booking">
+						{/* <div className="booking">
 							<img src={star} alt="" />
 							<p style={{ paddingTop: "1rem" }}>
 								{" "}
 								4.9 (4000 bookings)
 							</p>
-						</div>
+						</div> */}
 
 						<div className="booking-price">
 							<h2>

@@ -26,7 +26,7 @@ const Homy = () => {
   useEffect(() => {
     // Check if the loginSuccess flag is set in localStorage
     const loginSuccess = localStorage.getItem("loginStatus");
-    console.log(loginSuccess);
+    // console.log(loginSuccess);
     // Check if loginSuccess is true
     if (loginSuccess == "true") {
     } else {
@@ -39,7 +39,7 @@ const Homy = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "http://13.236.85.77/api/subcriptionplan/"
+          "https://thehomy.co/api/subcriptionplan/"
         );
         if (response.ok) {
           const res = await response.json();
@@ -50,10 +50,10 @@ const Homy = () => {
           setSubscriptionPlans(filteredPlans); // Set fetched data in state
           setDataFetched(true);
         } else {
-          console.error("Failed to fetch data");
+          // console.error("Failed to fetch data");
         }
       } catch (error) {
-        console.error("Error occurred while fetching data:", error);
+        // console.error("Error occurred while fetching data:", error);
       }
     };
 
@@ -70,7 +70,7 @@ const Homy = () => {
   const handleBookNow = () => {
     if (selectedPlan) {
       localStorage.setItem("selectedPlan", JSON.stringify(selectedPlan));
-      console.log("selected plan", selectedPlan);
+      // console.log("selected plan", selectedPlan);
       const mappedPlan = {
         user: user_id,
         order_service: selectedPlan.services,
@@ -79,9 +79,9 @@ const Homy = () => {
         order_price: selectedPlan.prices,
       };
 
-      console.log("mappedPlan", mappedPlan);
+      // console.log("mappedPlan", mappedPlan);
 
-      fetch("http://13.236.85.77/api/createorder/", {
+      fetch("https://thehomy.co/api/createorder/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -90,21 +90,21 @@ const Homy = () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("Selected plan data posted successfully:", data);
+          // console.log("Selected plan data posted successfully:", data);
           // Redirect to the customization page
             window.location.href = "/kitchenking/customize";
         })
         .catch((error) => {
-          console.error("Error posting selected plan data:", error);
+          // console.error("Error posting selected plan data:", error);
           // Handle error response from the API
         });
     } else {
-      console.log("Please select a plan before booking.");
+      // console.log("Please select a plan before booking.");
     }
   };
 
   return (
-    <div className="KitchenKing-homy">
+    <div className="KitchenKing-homy content-below-navbar">
       <div className="KitchenKing-homy-top">
         <div className="KitchenKing-homy-upper-background">
           <img className="desktopviewh " src={KitchenKingbg} />

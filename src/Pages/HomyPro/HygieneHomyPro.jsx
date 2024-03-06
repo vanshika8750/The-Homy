@@ -23,7 +23,7 @@ const HygieneHomypro = () => {
 	useEffect(() => {
 		// Check if the loginSuccess flag is set in localStorage
 		const loginSuccess = localStorage.getItem('loginStatus');
-	  console.log(loginSuccess)
+	//   console.log(loginSuccess)
 		// Check if loginSuccess is true
 		if (loginSuccess == 'true') {
 		}
@@ -35,7 +35,7 @@ const HygieneHomypro = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://13.236.85.77/api/subcriptionplan/");
+                const response = await fetch("https://thehomy.co/api/subcriptionplan/");
                 if (response.ok) {
                     const res = await response.json();
                     const data = res.data;
@@ -43,10 +43,10 @@ const HygieneHomypro = () => {
 					setSubscriptionPlans(filteredPlans);
 					setDataFetched(true);
 				} else {
-                    console.error("Failed to fetch data");
+                    // console.error("Failed to fetch data");
                 }
             } catch (error) {
-                console.error("Error occurred while fetching data:", error);
+                // console.error("Error occurred while fetching data:", error);
             }
         };
 
@@ -72,7 +72,7 @@ const HygieneHomypro = () => {
 				order_price: selectedPlan.prices,
 			  };
 
-            fetch('http://13.236.85.77/api/createorder/', {
+            fetch('https://thehomy.co/api/createorder/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -81,20 +81,20 @@ const HygieneHomypro = () => {
             })
             .then(response => response.json())
             .then(data => {
-                console.log('Selected plan data posted successfully:', data);
+                // console.log('Selected plan data posted successfully:', data);
 			window.location.href = '/customizePro';
             })
             .catch((error) => {
-                console.error('Error posting selected plan data:', error);
+                // console.error('Error posting selected plan data:', error);
             });
 
         } else {
-            console.log("Please select a plan before booking.");
+            // console.log("Please select a plan before booking.");
         }
     };
 
 	return (
-		<div className="KitchenKing-homypro">
+		<div className="KitchenKing-homypro content-below-navbar">
 			<div className="KitchenKing-homypro-top">
 				<div className="KitchenKing-homypro-upper-background">
 					<img className="desktopviewh" src={KitchenKingbg} />

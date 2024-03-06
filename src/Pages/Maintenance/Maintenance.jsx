@@ -3,7 +3,7 @@ import "./Maintenance.css";
 const Maintenance = () => {
 	return (
 		<div>
-			<div className="maintenance__container">
+			<div className="maintenance__container content-below-navbar">
 				<div className="maintenance__image"></div>
 				<div className="maintenance__title">
 					Temporary Downtime for Scheduled Maintenance

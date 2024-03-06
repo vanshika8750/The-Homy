@@ -1,3 +1,7 @@
+.text-cut{
+    text-decoration: line-through;
+}
+
 .combo-page{
     display: flex;
     align-items: start;
@@ -115,7 +119,7 @@ color: #E23744;
     margin: 25px 0px;
 }
 .homy-combo,.homypro-combo,.homypromax-combo{
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 33%;
 }
 }

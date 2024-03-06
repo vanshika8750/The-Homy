@@ -26,7 +26,7 @@ const Contactus = () => {
         const submitForm = async () => {
             if (isSubmitting) {
                 try {
-                    const response = await fetch('http://13.236.85.77/api/contact/', {
+                    const response = await fetch('https://thehomy.co/api/contact/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -45,11 +45,11 @@ const Contactus = () => {
                         localStorage.setItem('contactSuccess', 'true');
                         window.location.href ='/';
                     } else {
-                        console.log('Contact us failed');
+                        // console.log('Contact us failed');
                         toast.error('There was a problem sending your message');
                     }
                 } catch (error) {
-                    console.error('Error occurred:', error);
+                    // console.error('Error occurred:', error);
                     toast.error('There was a problem sending your message');
                 } finally {
                     setIsSubmitting(false);
@@ -66,7 +66,7 @@ const Contactus = () => {
     };
 
     return (
-        <div className="contactus">
+        <div className="contactus content-below-navbar">
             <div className="wapper" style={{ display: 'flex', flexDirection: 'column' }}>
                 <div className="contactus-headline">Contact Us</div>
                 <img src={mobileview} alt="" className="mobileview" />

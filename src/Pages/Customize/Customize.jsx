@@ -27,7 +27,7 @@ const Customize = () => {
             setSelectedPlan(JSON.parse(storedPlan));
         }
     }, []);
-    console.log(selectedPlan)
+    // console.log(selectedPlan)
 
     const [formData, setFormData] = useState({
        user:user_id,
@@ -86,7 +86,7 @@ const Customize = () => {
 
 
     const handleContinue = () => {
-        console.log("Form Data:", formData);
+        // console.log("Form Data:", formData);
         // Call the API to send formData
         sendDataToAPI(formData);
     };
@@ -94,7 +94,7 @@ const Customize = () => {
     const sendDataToAPI = (data) => {
         // Make the API call to send data
         // Replace 'your-api-endpoint' with your actual API endpoint
-        fetch('http://13.236.85.77/api/customize/', {
+        fetch('https://thehomy.co/api/customize/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -104,18 +104,18 @@ const Customize = () => {
             .then(response => response.json())
             .then(data => {
                 toast.success('customization api called');
-                console.log('Success:', data);
+                // console.log('Success:', data);
                 // Handle success response from the API
                 window.location.href='/cart'
             })
             .catch((error) => {
-                console.error('Error:', error);
+                // console.error('Error:', error);
                 // Handle error response from the API
             });
     };
 
     return (
-        <div className="customize-page">
+        <div className="customize-page content-below-navbar">
             <div className="img-div-customize">
                 <img src={customizebg} alt="" className="desktop-cus" />
                 <img src={cusbgmobile} alt="" className="mobile-cus" />

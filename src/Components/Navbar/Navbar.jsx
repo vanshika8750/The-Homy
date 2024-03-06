@@ -21,7 +21,7 @@ function OffcanvasExample() {
                 setUserData(userDataJSON);
                 setAuthenticated(true);
             } catch (error) {
-                console.error("Error parsing userData JSON:", error);
+                // console.error("Error parsing userData JSON:", error);
             }
         }
     }, []);
@@ -58,9 +58,9 @@ function OffcanvasExample() {
                 <Navbar
                     key={expand}
                     expand={expand}
-                    className="bg-custom "
+                    className="bg-custom fixed-top-navbar "
                     data-bs-theme="dark"
-                    sticky="top"
+                    // sticky="top"
                 >
                     <Container fluid>
                         <div className="navbar-link-container">

@@ -30,7 +30,7 @@ const Login = () => {
         if (isSubmitting) {
             const loginUser = async () => {
                 try {
-                    const response = await fetch('http://13.236.85.77/api/user/login/', {
+                    const response = await fetch('https://thehomy.co/api/user/login/', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -39,10 +39,10 @@ const Login = () => {
                     });
     
                     if (response.ok) {
-                        console.log('Login successful');
+                        // console.log('Login successful');
 
                         const data = await response.json();
-                        console.log(data);
+                        // console.log(data);
     
                         // Extract the token from the response data
                         const { token } = data;
@@ -64,7 +64,7 @@ const Login = () => {
                     else if (response.status === 404) {
                         // User might not exist or there is a validation error
                         const errorData = await response.json();
-                        console.log('errordata')
+                        // console.log('errordata')
                         if (errorData.errors && errorData.errors.non_field_errors) {
                             toast.error(errorData.errors.non_field_errors[0]);
                         } else if (errorData.errors && errorData.errors.email) {
@@ -74,11 +74,11 @@ const Login = () => {
                         }
                     }
                     else {
-                        console.log('Login failed');
+                        // console.log('Login failed');
                         toast.error('Login Failed');
                     }
                 } catch (error) {
-                    console.error('Error occurred:', error);
+                    // console.error('Error occurred:', error);
                     toast.error('An error occurred');
                 } finally {
                     setIsSubmitting(false);
@@ -98,7 +98,7 @@ const Login = () => {
 
     const fetchProfileData = async (accessToken) => {
         try {
-            const profileResponse = await fetch('http://13.236.85.77/api/user/profile/', {
+            const profileResponse = await fetch('https://thehomy.co/api/user/profile/', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -108,23 +108,23 @@ const Login = () => {
     
             if (profileResponse.ok) {
                 const userData = await profileResponse.json();
-                console.log('User Data:', userData);
+                // console.log('User Data:', userData);
                 localStorage.setItem('userData', JSON.stringify(userData));
                 // Process user data as needed
                 localStorage.setItem('loginSuccess', 'true');
                 localStorage.setItem('loginStatus','true')
                 window.location.href = '/';
             } else {
-                console.log('Failed to fetch profile data');
+                // console.log('Failed to fetch profile data');
             }
         } catch (error) {
-            console.error('Error fetching profile data:', error);
+            // console.error('Error fetching profile data:', error);
         }
     };
 
 
     return (
-        <div className="login">
+        <div className="login content-below-navbar">
        
             <div className="wapper" style={{ display: "flex", flexDirection: "column" }}>
                 <div className="login-headline">LOGIN</div>

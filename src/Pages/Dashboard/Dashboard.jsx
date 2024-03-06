@@ -18,10 +18,10 @@ useEffect(() => {
   const storedUserData = JSON.parse(localStorage.getItem('userData'));
   setUserData(storedUserData);
 }, []);
-console.log(userData)
+// console.log(userData)
 
   return (
-    <div className='dashboard'>
+    <div className='dashboard content-below-navbar'>
         
        {userData&&
        (

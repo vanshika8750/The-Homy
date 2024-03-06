@@ -36,7 +36,7 @@ export default function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://13.236.85.77/api/subscribe/", {
+      const response = await fetch("https://thehomy.co/api/subscribe/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function App() {
         toast.error("Subscription failed. Please try again later.");
       }
     } catch (error) {
-      console.error("Error occurred:", error);
+      // console.error("Error occurred:", error);
       toast.error("An error occurred. Please try again later.");
     }
 

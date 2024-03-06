@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     // Get signupSuccess from localStorage
     const signupSuccess = localStorage.getItem("signupSuccess");
-    console.log('signupSuccess', signupSuccess);
+    // console.log('signupSuccess', signupSuccess);
 
     // Check if signupSuccess is true
     if (signupSuccess === "true") {
@@ -76,17 +76,42 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className='home-page' style={{overflow:'hidden'}}>
+    <div className='home-page content-below-navbar' style={{overflow:'hidden'}}>
 
-    {/* <Helmet>
+    <Helmet>
                 <title>The Homy</title>
                 <meta name="description" content="
-                
-                
-
+                Private chef
+                Chef at home
+                Home cook
+                Cook for home
+                Home chef
+                Cook in noida
+                Cook services near me
+                Cook online noida
+                Cook for home
+                Cook for home noida
+                Cook greater noida
+                Home cook near me
+                House help in noida
+                Domestic maid
+                Maid service in noida
+                House keeping services
+                Domestic help
+                House help near me
+                House cleaning services noida
+                Toilet cleaning services in noida
+                Bathroom cleaning services in Noida
+                Home cleaning services Noida
+                Home cook near me
+                House cleaning services noida
+                Best bathroom cleaning services in Noida
+                Professional bathroom deep cleaning services
+                Full home deep cleaning services
+                Dusting service
                 " />
                 
-            </Helmet> */}
+            </Helmet>
     
         <Banner/>
         <Description/>

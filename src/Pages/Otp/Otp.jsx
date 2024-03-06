@@ -41,7 +41,7 @@ const Otp = () => {
   };
 
   return (
-    <div className="otp-page">
+    <div className="otp-page content-below-navbar">
       <div className="img-bg">
         <img src={otpbgdesk} alt="" className="otp-desktop" />
         <img src={otpmobile} alt="" className="otp-mobile" />

@@ -17,7 +17,7 @@ import hygieneBordermid from "../../assets/KitchenKingBordermid.svg";
 
 const hygiene = () => {
 	return (
-		<div className="KitchenKing">
+		<div className="KitchenKing content-below-navbar">
 			<div className="KitchenKing-top">
 				<div className="KitchenKing-upper-background">
 					<img className="desktopviewkk" src={hygienebg} />

@@ -21,11 +21,11 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
+    // console.log('Form Data:', formData);
   };
 
   return (
-    <div className='fp-page'>
+    <div className='fp-page content-below-navbar'>
         
 
         <div

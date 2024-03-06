@@ -19,7 +19,7 @@ const Cart = () => {
             setSelectedPlan(JSON.parse(storedPlan));
         }
     }, []);
-    console.log(selectedPlan)
+    // console.log(selectedPlan)
     const { userSelectedOption,selectedOption} = useCustomizationContext();
 
     const [count, setCount] = useState(1);
@@ -45,7 +45,7 @@ const Cart = () => {
     };
 
     const submitSuggestion = () => {
-        console.log('Submitted suggestion:', suggestion);
+        // console.log('Submitted suggestion:', suggestion);
     };
 
 
@@ -65,11 +65,11 @@ const Cart = () => {
       const option = selectedOption;
       const price = findPrice(category, option);
       
-      const priceprod = count*selectedPlan?.prices;
+      const priceprod = selectedPlan ? (count * selectedPlan.prices) : 0;
 
   return (
   
- <div className="cart-page">
+ <div className="cart-page content-below-navbar">
       <div className="img-div-cart">
         <img src={customizebg} alt="" className="desktop-cart" />
         <img src={cusbgmobile} alt="" className="mobile-cart" />
@@ -103,17 +103,19 @@ Fill in the details here 👉</div>
 
                 <div className="prod-no">
 
-                    <div className="prodname">
-                       {selectedPlan?.services}-{selectedPlan?.plans}-{selectedPlan?.planoptions}
-                    </div>
+                <div className="prodname">
+    {selectedPlan?.services || ''}-{selectedPlan?.plans || ''}-{selectedPlan?.planoptions || ''}
+</div>
+
 
                     <div className="no-prod">
                 <button onClick={decrement}>-</button>
-                <div>{count}</div>
+                <div>{count || 0}</div>
+
                 <button onClick={increment}>+</button>
             </div>
             <div className="price-prod">
-                {priceprod}
+            <div>{(priceprod || 0).toFixed(2)}</div>
             </div>
                 </div>
 
