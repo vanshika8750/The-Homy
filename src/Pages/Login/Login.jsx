@@ -164,12 +164,12 @@ const Login = () => {
                             />
                         </div>
                         <div className="Forgot-password">
-                            <Link to="/forgotPassword" className='Forgot-password'>Forgot Password</Link>
+                            <Link to="/forgotPassword" className='Forgot-password'>Forgot Password ?</Link>
                         </div>
                         <button className='submit-btn' type="submit" disabled={isSubmitting}>
                             {isSubmitting ? 'Logging in....' : 'Login'}
                         </button>
-                        <p className='login-other-option-line'>or login in with</p>
+                        {/* <p className='login-other-option-line'>or login in with</p>
                         <div className="other-options-login">
                             <div className="By-phone">
                                 <Link className='By-phone-link'> <FaPhone /></Link>
@@ -177,7 +177,7 @@ const Login = () => {
                             <div className="By-google">
                                 <Link className='By-google-link'> <FaGoogle /></Link>
                             </div>
-                        </div>
+                        </div> */}
                     </form>
                 </div>
             </div>

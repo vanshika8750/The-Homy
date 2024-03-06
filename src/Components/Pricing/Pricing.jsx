@@ -100,7 +100,7 @@ const Pricing = () => {
 							<p className="pcard__price">₹4,999 onwards</p>
 							<ul role="list" className="pcard__bullets flow">
 								<li>
-									Access to all premium workouts and nutrition
+									Access to all premium workout and nutrition
 									plans
 								</li>
 								<li>5-star chef experience at home.
@@ -110,7 +110,7 @@ const Pricing = () => {
 
 								</li>
 								<li>
-                2 Helper Chef included.
+                2 Helper Chefs included.
 
 								</li>
 								

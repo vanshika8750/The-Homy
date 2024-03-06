@@ -1,5 +1,7 @@
 .KitchenKing-homypromax-table .selected{
-	border: 2px solid white;
+	background-color: #fff;
+	color: black;
+	border: none;
 }
 .KitchenKing-homy {
 	display: flex;

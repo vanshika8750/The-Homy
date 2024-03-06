@@ -160,7 +160,7 @@ const DustGuardHomy = () => {
                             >
                                 {plan.planoptions}
                                 <br />
-                                <span className="red">{plan.prices}</span>
+                                <span className="">{plan.prices}</span>
                             </div>
                         ))}
                     </div>

@@ -101,8 +101,17 @@
 	flex-direction: row;
 	justify-content: space-around;
 }
-.KitchenKing-homypromax-table:hover {
-	transition: 0.5s ease-in-out;
+.KitchenKing-homypromax-table div{
+	border: 2px solid #e23744;
+	cursor: pointer;
+	border-radius: 10px;
+	background: #e23744;
+	color: white;
+	transition: 0s !important;
+}
+.KitchenKing-homypromax-table div:hover {
+	background-color: #fff;
+	color: black;
 }
 .pricecard {
 	text-align: center;
