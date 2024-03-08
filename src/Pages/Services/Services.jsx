@@ -30,7 +30,7 @@ const Services = () => {
 			</div>
 
 			<div className="service-headline">
-				<h1>What we provide?</h1>
+				<h1 style={{overflow:'hidden'}}>What we provide?</h1>
 
 				<div className="services-content">
 					<p>The luxury homecare services for your peaceful living. </p>

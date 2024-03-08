@@ -13,6 +13,9 @@ import KitchenKingBordermid from "../../assets/KitchenKingBordermid.svg";
 import KitchenKingbgmid from "../../assets/KitchenKingbgmid.svg";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import loadinggif from '../../assets/loadinggif.gif'
+import { MdCurrencyRupee } from "react-icons/md";
+
 const DustguardHomypromax = () => {
 
 	const [dataFetched, setDataFetched] = useState(false);
@@ -53,7 +56,11 @@ const DustguardHomypromax = () => {
     }, []);
 
 	 if (!dataFetched) {
-        return <div>Loading...</div>;
+        return <div className="content-below-navbar"
+		style={{textAlign:'center',width:'100vw'}}
+		>
+		  <img src={loadinggif} alt="" />
+		  </div>;
     }
 
 	const handleSelectPlan = (plan) => {
@@ -158,7 +165,7 @@ const DustguardHomypromax = () => {
                             >
                                 {plan.planoptions}
                                 <br />
-                                <span className="">{plan.prices}</span>
+                                <span className=""><MdCurrencyRupee/>{plan.prices}</span>
                             </div>
                         ))}
                     </div>

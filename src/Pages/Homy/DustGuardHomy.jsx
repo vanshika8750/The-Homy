@@ -14,6 +14,9 @@ import { IoStarOutline } from "react-icons/io5";
 import DustGuard from "../Dustguard/Dustguard";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import loadinggif from '../../assets/loadinggif.gif'
+import { MdCurrencyRupee } from "react-icons/md";
+
 
 const DustGuardHomy = () => {
 	const [dataFetched, setDataFetched] = useState(false);
@@ -57,7 +60,11 @@ const DustGuardHomy = () => {
     }, []);
 
 	 if (!dataFetched) {
-        return <div>Loading...</div>;
+        return <div className="content-below-navbar"
+		style={{textAlign:'center',width:'100vw'}}
+		>
+		  <img src={loadinggif} alt="" />
+		  </div>;
     }
 	const handleSelectPlan = (plan) => {
         setSelectedPlan(plan);
@@ -160,7 +167,7 @@ const DustGuardHomy = () => {
                             >
                                 {plan.planoptions}
                                 <br />
-                                <span className="">{plan.prices}</span>
+                                <span className=""><MdCurrencyRupee/>{plan.prices}</span>
                             </div>
                         ))}
                     </div>

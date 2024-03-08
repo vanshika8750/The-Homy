@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img from "../../assets/ourservicesbackground.svg";
 import "./ourservices.css";
 import card from "../../assets/servicescard.svg";
-import kitchenhomeservice from '../../assets/kitchenhomeservice.svg'
-import dustguardhomeservice from '../../assets/dustguardhomeservice.svg'
-import hygienehomeservice from '../../assets/hygienehomeservice.svg'
+import kitchenhomeservice from "../../assets/kitchenhomeservice.svg";
+import dustguardhomeservice from "../../assets/dustguardhomeservice.svg";
+import hygienehomeservice from "../../assets/hygienehomeservice.svg";
 import { Link } from "react-router-dom";
-import ourservicesbgmb from '../../assets/ourservicesbg.svg'
-import servicescombo from '../../assets/servicescombo.png'
+import ourservicesbgmb from "../../assets/ourservicesbg.svg";
+import servicescombo from "../../assets/servicescombo.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Ourservices = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
-    <div className="ourservices">
+    <div className="ourservices" style={{ width: "inherit" }}>
       <div
         className="wapper"
         style={{ display: "flex", flexDirection: "column" }}
@@ -19,13 +26,12 @@ const Ourservices = () => {
 
         <img className="img-ourservices" src={img} alt="" />
         <img className="imgmb-ourservices" src={ourservicesbgmb} alt="" />
-
       </div>
 
       <div className="ourservices-cards">
         <Link className="link-services" to="/Kitchenking">
           <div className="cardo">
-            <img src={kitchenhomeservice} alt="" />
+            <img data-aos="fade-right" src={kitchenhomeservice} alt="" />
 
             <p>
               Kitchen king <br />{" "}
@@ -40,7 +46,7 @@ const Ourservices = () => {
         </Link>{" "}
         <Link className="link-services" to="/dustguard">
           <div className="cardo">
-            <img src={dustguardhomeservice} alt="" />
+            <img data-aos="fade-right" src={dustguardhomeservice} alt="" />
 
             <p>
               Dust Guards <br />{" "}
@@ -55,7 +61,7 @@ const Ourservices = () => {
         </Link>{" "}
         <Link className="link-services" to="/hygiene">
           <div className="cardo">
-            <img src={hygienehomeservice} alt="" />
+            <img data-aos="fade-left" src={hygienehomeservice} alt="" />
 
             <p>
               Mr. Hygiene <br />{" "}
@@ -65,7 +71,7 @@ const Ourservices = () => {
         </Link>{" "}
         <a className="link-services" href="#comboo">
           <div className="cardo">
-            <img src={servicescombo} alt="" />
+            <img data-aos="fade-left" src={servicescombo} alt="" />
 
             <p>
               {" "}

@@ -12,8 +12,15 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useLocation } from 'react-router-dom'
 import Combos from '../../Components/Combos/Combos'
+import AnimatedHeadline from '../../Components/Animation/AnimatedHeadline'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+
+useEffect(()=>{
+  AOS.init();
+},[])
 
   useEffect(() => {
     // Get signupSuccess from localStorage
@@ -77,6 +84,7 @@ useEffect(() => {
 
   return (
     <div className='home-page content-below-navbar' style={{overflow:'hidden'}}>
+      <AnimatedHeadline/>
 
     <Helmet>
                 <title>The Homy</title>

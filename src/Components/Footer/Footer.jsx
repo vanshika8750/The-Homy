@@ -11,9 +11,12 @@ import {
   MDBRow,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 import ps from "../../assets/ps.png";
 import "./Footer.css";
+import { GoHomeFill } from "react-icons/go";
+import { FaPhoneAlt } from "react-icons/fa";
 import logo from "../../assets/logo.svg";
 export default function App() {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -164,8 +167,22 @@ export default function App() {
                       color: "White",
                     }}
                   >
-                    <li> info@thehomy.in</li>
+                    <li style={{display:"flex"}}> <div style={{marginRight:"3px"}}>
+<MdEmail/>
+                      </div>
+                      <div>info@thehomy.in</div>
+                      </li>
                   </Link>
+                  <li style={{display:"flex"}}> <div style={{marginRight:"3px"}}>
+<FaPhoneAlt/>
+                      </div>
+                      <div>+91 8130519564</div>
+                      </li>
+                      <li style={{display:"flex"}}> <div style={{marginRight:"3px"}}>
+<GoHomeFill/>
+                      </div>
+                      <div>D-49, Sec-6, Noida,U.P.</div>
+                      </li>
                 </ul>
               </MDBCol>
 

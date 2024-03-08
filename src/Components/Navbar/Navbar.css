@@ -8,10 +8,14 @@
 .content-below-navbar {
     margin-top: 80px; /* Adjust this value according to your navbar's height */
 }
+.nav-toggle-fn{
+	display: none;
+}
 .logo {
 	padding-right: 9rem;
 	cursor: pointer;
 }
+
 .profile-dropdown{
 	cursor: pointer;
 }
@@ -74,7 +78,7 @@ color: #e23744;
 .logo img {
 	width: 20rem;
 	height: 3.5rem;
-	flex-shrink: 0;
+	/* flex-shrink: 0; */
 }
 .home-logo-nav{
 	height: 50px;
@@ -210,7 +214,7 @@ height: 50px;
 }
 
 .hamburger-links-outer {
-	display: none;
+	display: none ;
 }
 
 .hamburger-links-inner {
@@ -225,13 +229,24 @@ height: 50px;
 	padding: 0.5rem;
 	padding-bottom: 0.8rem;
 }
-
+@media (max-width:1400px){
+	.logo img{
+		display: none;
+	}
+	.logo1{
+		display: block;
+	}
+}
 @media (max-width: 800px) {
+	.nav-toggle-fn{
+		display: block;
+	}
 	.navbar-link-container {
 		display: none;
 	}
 
 	.logo1 {
+		
 		display: block;
 	}
 

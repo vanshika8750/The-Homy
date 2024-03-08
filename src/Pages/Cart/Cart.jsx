@@ -7,7 +7,7 @@ import percent from '../../assets/percent.svg'
 import pricesArray from '../../Components/prices'
 import {useCustomizationContext} from '../../Components/Context/CustomizationContext'
 import rightarrcart from '../../assets/right-arr-cart.svg'
-
+import { MdCurrencyRupee } from "react-icons/md";
 
 const Cart = () => {
     const [selectedPlan, setSelectedPlan] = useState(null);
@@ -115,7 +115,7 @@ Fill in the details here 👉</div>
                 <button onClick={increment}>+</button>
             </div>
             <div className="price-prod">
-            <div>{(priceprod || 0).toFixed(2)}</div>
+            <div><MdCurrencyRupee/>{(priceprod || 0).toFixed(2)}</div>
             </div>
                 </div>
 
@@ -172,7 +172,7 @@ Fill in the details here 👉</div>
                
                 <div>18%</div>
                 <div>.............</div>
-                <div>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
+                <div><MdCurrencyRupee/>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
 
             </div>
           </div>
@@ -184,7 +184,7 @@ Fill in the details here 👉</div>
                     Amount to be paid
                 </div>
 
-                <div>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
+                <div><MdCurrencyRupee/>{(priceprod + (priceprod * 0.18)).toFixed(2)}</div>
             </div>
 
 

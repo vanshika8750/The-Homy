@@ -13,6 +13,9 @@ import KitchenKingMobile from "../../assets/hygieneimgmobile.png";
 import { Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import loadinggif from '../../assets/loadinggif.gif'
+import { MdCurrencyRupee } from "react-icons/md";
+
 const HygieneHomypro = () => {
 
 	const [dataFetched, setDataFetched] = useState(false);
@@ -54,7 +57,11 @@ const HygieneHomypro = () => {
     }, []);
 
 	 if (!dataFetched) {
-        return <div>Loading...</div>;
+        return <div className="content-below-navbar"
+		style={{textAlign:'center',width:'100vw'}}
+		>
+		  <img src={loadinggif} alt="" />
+		  </div>;
     }
 
 	const handleSelectPlan = (plan) => {
@@ -132,7 +139,7 @@ const HygieneHomypro = () => {
 						<ul>
 							<li>Versatile culinary expert </li>
 							<li>Skilled in crafting diverse dishes. </li>
-							<li>lPossesses a professional degree</li>
+							<li>Possesses a professional degree</li>
 							<li>Equipped with kitchen kits</li>
 							<li>Vaccinated for safety</li>
 						</ul>
@@ -155,7 +162,7 @@ const HygieneHomypro = () => {
                             >
                                 {plan.planoptions}
                                 <br />
-                                <span className="">{plan.prices}</span>
+                                <span className=""><MdCurrencyRupee/>{plan.prices}</span>
                             </div>
                         ))}
                     </div>

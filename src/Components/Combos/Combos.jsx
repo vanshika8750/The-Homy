@@ -2,9 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./Combos.css";
 import ComboFrame from "../../assets/comboframe.svg";
 import combomobile from '../../assets/combomobile.svg'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Combos = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const [combosData, setCombosData] = useState([]);
   const [comboHomy, setComboHomy] = useState({});
@@ -49,13 +54,13 @@ const Combos = () => {
       </div>
 
       <div className="content-div-combo">
-        <div className="combo-head">
+        <div data-aos="flip-up" className="combo-head">
           <div>Our</div>
           <div className="combo-head-head">Combos</div>
         </div>
 
         <div className="content-combo">
-          <div className="homy-combo">
+          <div data-aos="fade-right"  className="homy-combo">
             <div className="head">{comboHomy?.plan}</div>
 
             <div className="desc">{comboHomy?.description}</div>
@@ -87,7 +92,7 @@ const Combos = () => {
 
 
 
-          <div className="homypro-combo">
+          <div data-aos="zoom-out"  className="homypro-combo">
 
             <div className="head">{comboHomyPro?.plan}</div>
 
@@ -121,7 +126,7 @@ const Combos = () => {
 
 
 
-          <div className="homypromax-combo">
+          <div data-aos="fade-left"  className="homypromax-combo">
             <div className="head">{comboHomyProMax?.plan}</div>
 
             <div className="desc">{comboHomyProMax?.description}</div>

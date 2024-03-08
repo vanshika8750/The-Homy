@@ -104,10 +104,11 @@
 .KitchenKing-homypromax-table div{
 	border: 2px solid #e23744;
 	cursor: pointer;
+	font-weight: 400;
 	border-radius: 10px;
 	background: #e23744;
 	color: white;
-	transition: 0s !important;
+	transition: 0.3s !important;
 }
 .KitchenKing-homypromax-table div:hover {
 	background-color: #fff;
@@ -117,6 +118,7 @@
 	text-align: center;
 	width: 15%;
 	gap: 1rem;
+	transition: 0.3s ease-in;
 	/* border: 2px solid white; */
 }
 .pricecard:hover {

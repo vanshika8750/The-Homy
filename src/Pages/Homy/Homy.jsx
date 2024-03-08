@@ -14,6 +14,8 @@ import { IoStarOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useCustomizationContext } from "../../Components/Context/CustomizationContext";
+import loadinggif from '../../assets/loadinggif.gif'
+import { MdCurrencyRupee } from "react-icons/md";
 
 const Homy = () => {
   const [dataFetched, setDataFetched] = useState(false);
@@ -61,7 +63,11 @@ const Homy = () => {
   }, []);
 
   if (!dataFetched) {
-    return <div>Loading...</div>;
+    return <div className="content-below-navbar"
+    style={{textAlign:'center',width:'100vw'}}
+    >
+      <img src={loadinggif} alt="" />
+      </div>;
   }
   const handleSelectPlan = (plan) => {
     setSelectedPlan(plan);
@@ -156,7 +162,7 @@ const Homy = () => {
               >
                 {plan.planoptions}
                 <br />
-                <span className="">{plan.prices}</span>
+                <span className=""><MdCurrencyRupee/>{plan.prices}</span>
               </div>
             ))}
           </div>

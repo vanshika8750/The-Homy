@@ -1,9 +1,16 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Description.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Description = () => {
+
+	useEffect(()=>{
+		AOS.init({duration:1000});
+	  },[])
+
 	return (
-		<div className="Description">
+		<div data-aos="fade-up"
+		data-aos-anchor-placement="bottom-bottom" className="Description">
 			<p>
 				The Homy efficiently streamlines your daily tasks, simplifying
 				your life and proving valuable in creating a homely atmosphere.

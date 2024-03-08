@@ -94,6 +94,7 @@ function OffcanvasExample() {
                         <Navbar.Toggle
                             aria-controls={`offcanvasNavbar-expand-${expand}`}
                             onClick={handleToggleNavbar}
+                            className="nav-toggle-fn"
                         />
 
                         <Navbar.Offcanvas
@@ -105,7 +106,7 @@ function OffcanvasExample() {
                         >
                             <Offcanvas.Header closeButton />
                             <Offcanvas.Body>
-                                <Nav className="justify-content-center flex-grow-1 pe-1">
+                                <Nav className="mob-nav justify-content-center flex-grow-1 pe-1">
                                     <Navbar.Brand to="#" className="logo">
                                         <Link to='/'><img src={logo} alt="Thehomy" /></Link>
                                     </Navbar.Brand>
@@ -154,7 +155,7 @@ function OffcanvasExample() {
                                                             className="connect-btn"
                                                             onClick={handleCloseNavbar} 
                                                         >
-                                                            Connect
+                                                            Sign up
                                                             <GoArrowUpRight />
                                                         </Link>
                                                     </div>
@@ -188,7 +189,7 @@ function OffcanvasExample() {
                                 ) : (
                                     <div className="d-flex connect-button justify-content-center align-items-center square">
                                         <Link to="/signup" className="connect-btn ">
-                                            Connect
+                                            Sign up
                                             <GoArrowUpRight />
                                         </Link>
                                     </div>

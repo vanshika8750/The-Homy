@@ -70,7 +70,7 @@
 	color: #fff;
 	text-align: center;
 	font-family: Montserrat;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
@@ -124,10 +124,11 @@
 		color: #fff;
 		text-align: right;
 		font-family: Montserrat;
-		font-size: 1.2rem;
+		font-size: 1.2rem !important;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
+		text-align: center;
 	}
 	.deskview {
 		display: none !important;
@@ -137,7 +138,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		justify-content: center !important;
+		text-align: center !important;
 	}
 	.connect-button {
 		width: 50vw !important;

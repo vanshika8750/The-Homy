@@ -115,7 +115,9 @@ letter-spacing: 1.5px;
 .head-coupon .headc{
     font-size: 24px;
 }
-
+.right-pay{
+    text-align: right;
+}
 .payment{
     font-size: 24px;
     font-weight: 500;
@@ -194,6 +196,9 @@ letter-spacing: 1.5px;
    .btn-cart{
     margin: 20px;
    }
+   .amount{
+    font-size: 18px;
+   }
 }
 @media only screen and (max-width:380px){
 .btn-cart{
@@ -201,6 +206,6 @@ letter-spacing: 1.5px;
 
 }
 .amount{
-    font-size: 20px;
+    font-size: 15px;
 }
 }
