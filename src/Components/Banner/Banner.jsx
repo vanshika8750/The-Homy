@@ -1,41 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Banner.css";
 import banner from "../../assets/Banner.svg";
 import { Link } from "react-router-dom";
 import mockup from "../../assets/mockup.mp4";
 import { GoArrowUpRight } from "react-icons/go";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
-	return (
-		<div className="Banner">
-			<div className="banner-image">
-				{/* <img src={banner} alt="" /> */}
-				<video src={mockup} muted loop autoPlay playsInline />
-			</div>
-			<div className="banner-title">
-				<p>
-					{" "}
-					<span className="E-letter">E</span>xperience the{" "}
-					<span style={{ color: " #E23744" }}>luxury</span> homecare{" "}
-					<br />
-					services
-				</p>
-				<div
-					className="connect-button "
-					style={{ width: "15vw", height: "3.5vw" }}
-				>
-					<Link
-						to="/services"
-						className="connect-btn get-app-home"
-						style={{ textDecoration: "none" }}
-					>
-						Book now
-						<GoArrowUpRight />
-					</Link>
-				</div>
-			</div>
-		</div>
-	);
-};
+  return (
 
+    <div className="banner">
+      <div class="Section_top">
+        <div class="content">
+        
+           <div className="head-banner">
+            <div>Experience Luxury Homecare </div>
+            <div>Services</div>
+           </div>
+          
+          <div>
+            <Link to='/services'><button>Book Now</button></Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Banner;

@@ -1,3 +1,42 @@
+.combo-container {
+    position: relative;
+  }
+  
+  .combo-overlay {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background-color: rgba(0, 0, 0, 0.599); /* Adjust opacity here */
+    display: flex;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    opacity: 0; 
+  }
+  
+  .combo-container:hover .combo-overlay {
+    height: 100%;
+    opacity: 1; 
+  }
+  
+  
+  
+  .btn-book-now {
+    padding: 10px 20px;
+    background-color: #E23744;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-book-now:hover {
+    background-color: #AF263A;
+  }
+
 .text-cut{
     text-decoration: line-through;
 }
@@ -6,28 +45,22 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    padding: 5rem;
-    background-color: #020202;
+    padding: 2rem;
+    /* background-color: #020202; */
+    background-color: #fff;
     overflow-x: hidden;
     color: white;
 }
-.img-combo{
-    width: 92vw;
-}
-.img-combo-mob{
-    display: none;
-    width: 92vw;
-}
 .content-div-combo{
-    position:absolute;
+    /* position:absolute; */
      display: flex;
      flex-direction: column;
-     width: 90%;
+     width: 100%;
      /* height: 100%; */
      align-items: flex-start;
      justify-content: space-between;
      /* margin-top: 5rem; */
-     color: white;
+     color:black;
      padding: 20px;
 }
 .combo-head-head{
@@ -41,6 +74,18 @@
    display: flex;
    justify-content: center;
 align-items: center;
+position: relative;
+padding-bottom: 1rem;
+}
+.combo-head::after{
+    content: '';
+  position: absolute;
+  bottom: 0;
+  /* left: 0; */
+  margin-right: 7rem;
+  width: 15rem; /* Adjust the width as needed */
+  height: 10px; /* Adjust the height and style of the line as needed */
+  background-color:black;
 }
 .content-combo{
     width: 100%;
@@ -54,7 +99,10 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    border: 2px solid grey;
+    padding: 2rem 0rem;
+    border-radius: 20px;
 }
 .content-combo .head{
 color: #E23744;

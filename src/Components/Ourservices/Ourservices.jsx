@@ -71,7 +71,7 @@ const Ourservices = () => {
         </Link>{" "}
         <a className="link-services" href="#comboo">
           <div className="cardo">
-            <img data-aos="fade-left" src={servicescombo} alt="" />
+            <img data-aos="fade-right" src={servicescombo} alt="" />
 
             <p>
               {" "}

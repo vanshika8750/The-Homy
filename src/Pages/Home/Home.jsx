@@ -15,6 +15,8 @@ import Combos from '../../Components/Combos/Combos'
 import AnimatedHeadline from '../../Components/Animation/AnimatedHeadline'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Gallery from '../../Components/Gallery/Gallery'
+import OurCooks from '../../Components/OurCooks/OurCooks'
 
 const Home = () => {
 
@@ -84,7 +86,6 @@ useEffect(() => {
 
   return (
     <div className='home-page content-below-navbar' style={{overflow:'hidden'}}>
-      <AnimatedHeadline/>
 
     <Helmet>
                 <title>The Homy</title>
@@ -121,14 +122,18 @@ useEffect(() => {
                 
             </Helmet>
     
+        <div className="home-height">
+        <AnimatedHeadline/>
         <Banner/>
+        </div>
         <Description/>
         <FeatureBanner/>
         <Why/>
         <Ourservices/>
         <Combos/>
         <Pricing/>
-       
+        <Gallery/>
+<OurCooks/>       
 
         
 

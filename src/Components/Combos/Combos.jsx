@@ -4,7 +4,7 @@ import ComboFrame from "../../assets/comboframe.svg";
 import combomobile from '../../assets/combomobile.svg'
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import { Link } from "react-router-dom";
 const Combos = () => {
 
   useEffect(() => {
@@ -41,17 +41,14 @@ const Combos = () => {
       setComboHomyProMax(combosData[2]);
     }
   }, [combosData]);
-  // console.log(comboHomy);
-  // console.log(comboHomyPro);
-  // console.log(comboHomyProMax);
 
 
   return (
     <div className="combo-page" id="comboo">
-      <div>
+      {/* <div>
         <img className="img-combo" src={ComboFrame} alt="" />
         <img className="img-combo-mob" src={combomobile} alt="" />
-      </div>
+      </div> */}
 
       <div className="content-div-combo">
         <div data-aos="flip-up" className="combo-head">
@@ -60,7 +57,7 @@ const Combos = () => {
         </div>
 
         <div className="content-combo">
-          <div data-aos="fade-right"  className="homy-combo">
+          <div data-aos="fade-right"  className="homy-combo combo-container">
             <div className="head">{comboHomy?.plan}</div>
 
             <div className="desc">{comboHomy?.description}</div>
@@ -85,6 +82,10 @@ const Combos = () => {
               </div>
             </div>
 
+            <div className="combo-overlay">
+             <Link to='/kitchenking/homy'> <button className="btn-book-now">Book Now</button></Link>
+            </div>
+
             {/* <div className="cont-combo">
               <button>CONTINUE</button>
             </div> */}
@@ -92,7 +93,7 @@ const Combos = () => {
 
 
 
-          <div data-aos="zoom-out"  className="homypro-combo">
+          <div data-aos="zoom-out"  className="homypro-combo combo-container">
 
             <div className="head">{comboHomyPro?.plan}</div>
 
@@ -118,6 +119,9 @@ const Combos = () => {
               </div>
             </div>
 
+            <div className="combo-overlay">
+             <Link to='/kitchenking/homypro'> <button className="btn-book-now">Book Now</button></Link>
+            </div>
             {/* <div className="cont-combo">
               <button>CONTINUE</button>
             </div> */}
@@ -126,7 +130,7 @@ const Combos = () => {
 
 
 
-          <div data-aos="fade-left"  className="homypromax-combo">
+          <div data-aos="fade-left"  className="homypromax-combo combo-container">
             <div className="head">{comboHomyProMax?.plan}</div>
 
             <div className="desc">{comboHomyProMax?.description}</div>
@@ -149,6 +153,9 @@ const Combos = () => {
                 <div>{comboHomyProMax?.pricetwotimecook}*</div>
                 <div className="percentage">10% off</div>
               </div>
+            </div>
+            <div className="combo-overlay">
+             <Link to='/kitchenking/homypromax'> <button className="btn-book-now">Book Now</button></Link>
             </div>
 
             {/* <div className="cont-combo">

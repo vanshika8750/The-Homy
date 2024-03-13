@@ -15,7 +15,7 @@ const FeatureBanner = () => {
     <video data-aos="zoom-in-up" src={video2}  muted loop autoPlay playsInline/>
     <div className="content">
       <h1 data-aos="fade-right">
-      Like what you see?  
+      Transforming Spaces, Touching Souls.
       </h1>
       <p data-aos="fade-left">
       Picture the same on your table presented to you with ease, sophistication and commitment. It's time to experience comfort at its finest! 

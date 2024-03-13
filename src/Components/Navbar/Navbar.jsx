@@ -12,7 +12,7 @@ function OffcanvasExample() {
     const [authenticated, setAuthenticated] = useState(false);
     const [dropdownVisible, setDropdownVisible] = useState(false);
     const [showNavbar, setShowNavbar] = useState(false);
-
+const [navColor,setnavColor]=useState(false);
     useEffect(() => {
         const storedUserData = localStorage.getItem("userData");
         if (storedUserData) {
@@ -52,42 +52,37 @@ function OffcanvasExample() {
         setShowNavbar(prevState => !prevState);
     };
 
+    useEffect(() => {
+        const changeBackground = () => {
+            if (window.scrollY >= 200) {
+                setnavColor(true);
+            } else {
+                setnavColor(false);
+            }
+        };
+    
+        window.addEventListener('scroll', changeBackground);
+    
+        // Cleanup function to remove the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('scroll', changeBackground);
+        };
+    }, []);
+
     return (
         <>
             {["xxl"].map((expand) => (
                 <Navbar
                     key={expand}
                     expand={expand}
-                    className="bg-custom fixed-top-navbar "
-                    data-bs-theme="dark"
+                    className={navColor?'bg-custom fixed-top-navbar nav-active-color':'bg-custom fixed-top-navbar'} 
+                    // data-bs-theme="dark"
                     // sticky="top"
                 >
                     <Container fluid>
-                        <div className="navbar-link-container">
-                            <Link
-                                to="/aboutus"
-                                className="navbar-link-buttons1"
-                                onClick={handleCloseNavbar}
-                            >
-                                About Us
-                            </Link>
-                            <Link
-                                to="/services"
-                                className="navbar-link-buttons2"
-                                onClick={handleCloseNavbar}
-                            >
-                                Services
-                            </Link>
-                            <Link
-                                to="/contactus"
-                                className="navbar-link-buttons3"
-                                onClick={handleCloseNavbar}
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
+                       
 
-                        <div className="logo1">
+                    <div className="logo1">
                             <img src={logo} alt="Thehomy" />
                         </div>
 
@@ -106,7 +101,7 @@ function OffcanvasExample() {
                         >
                             <Offcanvas.Header closeButton />
                             <Offcanvas.Body>
-                                <Nav className="mob-nav justify-content-center flex-grow-1 pe-1">
+                                <Nav className="mob-nav ">
                                     <Navbar.Brand to="#" className="logo">
                                         <Link to='/'><img src={logo} alt="Thehomy" /></Link>
                                     </Navbar.Brand>
@@ -166,13 +161,42 @@ function OffcanvasExample() {
                                 </Nav>
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
-
+                        <div className="navbar-link-container">
+                        <Link
+                                to="/"
+                                className="navbar-link-buttons1"
+                                onClick={handleCloseNavbar}
+                            >
+                                Home
+                            </Link>
+                            <Link
+                                to="/services"
+                                className="navbar-link-buttons2"
+                                onClick={handleCloseNavbar}
+                            >
+                                Services
+                            </Link>
+                            <Link
+                                to="/aboutus"
+                                className="navbar-link-buttons2"
+                                onClick={handleCloseNavbar}
+                            >
+                                About Us
+                            </Link>
+                            <Link
+                                to="/contactus"
+                                className="navbar-link-buttons3"
+                                onClick={handleCloseNavbar}
+                            >
+                                Contact Us
+                            </Link>
+                        </div>
                         <div className="connect-btn-control">
-                            <Link to="/">
+                            {/* <Link to="/">
                                 <div className="home-logo-nav">
                                     <img src={homelogo} alt="" />
                                 </div>
-                            </Link>
+                            </Link> */}
 
                             <Form>
                                 {authenticated ? (

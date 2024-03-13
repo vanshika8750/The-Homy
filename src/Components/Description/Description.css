@@ -1,20 +1,20 @@
 .Description{
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 186px;
+    /* top: 100vh; */
+    position: relative;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    background-color: #020202;
+    /* background-color: #020202; */
+    background-color: #fff;
     padding-top: 10rem;
     padding-bottom: 10rem;
-
-
-
 }
 
 .Description p{
-    color: #FFF;
+    color: black;
 text-align: center;
 font-family: Inter;
 font-size: 20px;
