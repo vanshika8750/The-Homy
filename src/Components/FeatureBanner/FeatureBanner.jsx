@@ -18,7 +18,7 @@ const FeatureBanner = () => {
       Transforming Spaces, Touching Souls.
       </h1>
       <p data-aos="fade-left">
-      Picture the same on your table presented to you with ease, sophistication and commitment. It's time to experience comfort at its finest! 
+      Experience the Magic of Home with Our Unique Blend of Care and Comfort. Your Haven, Our Heart.
       </p>
     </div>
   </div>

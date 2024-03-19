@@ -116,7 +116,12 @@ line-height: 4rem;
 
 /* ------------------------------ */
 
-
+.eye{
+    background: none;
+    border: none;
+    color: white;
+    margin: -35px;
+}
 .signup-form input{
     background-color: #1E1E1E;
     outline: none;

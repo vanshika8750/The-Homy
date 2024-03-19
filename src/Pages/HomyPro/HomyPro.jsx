@@ -186,12 +186,11 @@ const Homypro = () => {
 							<IoDiamondOutline /> HOMY
 						</h2>
 						<ul>
-							<li>
-								Access to all premium nutrition & workout plans
-							</li>
-							<li>5-star professional chef at home</li>
-							<li className='middle'>Customizable gourmet meals</li>
-							<li className="middle">Get dietician once a month</li>
+						<li>Chefs with cooking expertise</li>
+              <li>Equipped with kitchen kits</li>
+              <li>Verified for hygiene and well-trained</li>
+			  <li className="middle">Professional and experienced</li>
+              <li className="middle">Vaccinated for safety</li>
 						</ul>
 						<Link to="/kitchenking/homy">
 							<div className="connect-button book-btn">

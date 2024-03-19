@@ -11,11 +11,13 @@ const OurCooks = () => {
         Our Cooks
     </div>
      <div className='ourcooks'>
+
+    
 <div class="cards-cooks">
 
-  
+  <div className="left-ourcooks"></div>
       <div class="cooks-slide">
-      
+      {/* <FadingSemiCircle/> */}
       <img src={examplepic} alt="" />
       <img src={examplepic} alt="" />
 
@@ -66,9 +68,13 @@ const OurCooks = () => {
 
 
       </div>
-    
+      <div className="right-ourcooks"></div>
     </div>
+
+   
     </div>
+    <div className="shadow-left-cooks"></div>
+    <div className="shadow-right-cooks"></div>
      </div>
    </div>
   )

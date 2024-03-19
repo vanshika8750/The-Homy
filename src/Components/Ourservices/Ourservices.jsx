@@ -18,15 +18,15 @@ const Ourservices = () => {
 
   return (
     <div className="ourservices" style={{ width: "inherit" }}>
-      <div
+      {/* <div
         className="wapper"
-        style={{ display: "flex", flexDirection: "column" }}
-      >
+        
+      > */}
         <div className="services-headline">Our Services</div>
 
-        <img className="img-ourservices" src={img} alt="" />
-        <img className="imgmb-ourservices" src={ourservicesbgmb} alt="" />
-      </div>
+        {/* <img className="img-ourservices" src={img} alt="" />
+        <img className="imgmb-ourservices" src={ourservicesbgmb} alt="" /> */}
+      {/* </div> */}
 
       <div className="ourservices-cards">
         <Link className="link-services" to="/Kitchenking">
@@ -71,7 +71,7 @@ const Ourservices = () => {
         </Link>{" "}
         <a className="link-services" href="#comboo">
           <div className="cardo">
-            <img data-aos="fade-right" src={servicescombo} alt="" />
+            <img data-aos="fade-left" src={servicescombo} alt="" />
 
             <p>
               {" "}

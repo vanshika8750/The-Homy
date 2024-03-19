@@ -9,6 +9,7 @@ import {jwtDecode} from 'jwt-decode';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import login from '../../assets/login.png'
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
 
@@ -122,6 +123,11 @@ const Login = () => {
         }
     };
 
+    const [showPassword, setShowPassword] = useState(false);
+ 
+    const togglePasswordVisibility = () => {
+      setShowPassword(!showPassword);
+    };
 
     return (
         <div className="login content-below-navbar">
@@ -154,7 +160,7 @@ const Login = () => {
                         </div>
                         <div>
                             <input
-                                type="password"
+                                type={showPassword ? 'text' : 'password'}
                                 id="password"
                                 name="password"
                                 value={formData.password}
@@ -162,6 +168,11 @@ const Login = () => {
                                 onChange={handleChange}
                                 required
                             />
+                             <button type="button"
+                             className='eye' 
+              onClick={togglePasswordVisibility}
+              >{showPassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
                         </div>
                         <div className="Forgot-password">
                             <Link to="/forgotPassword" className='Forgot-password'>Forgot Password ?</Link>

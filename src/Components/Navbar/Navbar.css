@@ -18,7 +18,7 @@ transition: 0.5s ease;
 	display: none;
 }
 .mob-nav{
-	width: 30vw !important;
+	width: 20vw !important;
 }
 .offcanvas{
 	/* width: 30vw !important; */
@@ -26,10 +26,11 @@ transition: 0.5s ease;
 .navbar-link-container{
 	padding: auto;
 	margin: auto;
-	margin-left: -2rem ;
-	width: 50vw;
+	/* margin-left: -2rem ; */
+	width: 60vw;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .connect-btn-control{
 	display: flex;
@@ -41,7 +42,13 @@ transition: 0.5s ease;
 	cursor: pointer;
 }
 
+
+/* .profile-dropdown:hover .dropdown-content {
+    display: block; } */
+
 .profile-dropdown{
+	position: relative;
+	/* z-index: 5; */
 	cursor: pointer;
 }
 .profile-btn{
@@ -49,7 +56,8 @@ transition: 0.5s ease;
 }
 .dropdown-content{
 	transition: opacity 0.7s ease;
-	position: absolute;
+	position: fixed !important;
+	z-index: 1000000 !important;
 	display: flex;
 	flex-direction: column;
 	text-decoration: none;
@@ -101,12 +109,12 @@ color: white;
 color: #e23744;
 }
 .logo img {
-	width: 20rem;
-	height: 3.5rem;
+	width: 25rem;
+	height: 4.5rem;
 	/* flex-shrink: 0; */
 }
 .home-logo-nav{
-	height: 50px;
+	/* height: 50px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -114,7 +122,7 @@ color: #e23744;
 	background-color: #e23744;
 	border-start-start-radius: 8px;
 	border-end-start-radius: 8px;
-	padding: 15px 21.6px;
+	padding: 8px 21.6px;
 	margin-right: 5px;
 }
 .connect-btn-control{
@@ -122,23 +130,23 @@ color: #e23744;
 }
 .connect-button {
 	display: inline-flex;
-	padding: 15px 21.6px;
+	padding: 12px 21.6px !important;
 	color: white;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
-height: 50px;
+/* height: 50px; */
 	background-color: #e23744;
 	transition: all ease-in-out 0.3s;
 	margin-right: 1rem;
 }
 .square{
 	border-radius: 8px !important;
-
-
+	
 }
 .connect-button .connect-btn {
+	/* padding: 8px 21px !important; */
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
@@ -265,19 +273,20 @@ height: 50px;
 		display: block;
 	}
 	.navbar-link-container{
-		width: 40vw;
-		margin-left: 6rem;
+		width: 60vw;
+		/* margin-left: 6rem; */
 	}
 	.logo1 img{
-		margin-left: -2rem;
-		width: 20rem;
-	height: 3.5rem;
+		/* margin-left: -2rem; */
+		/* width: 15rem; */
+	height: 3rem;
 
 	}
+	
 }
 @media only screen and (max-width:1120px) and (min-width:900px) {
 	.mob-nav{
-		width: 30vw !important;
+		width: 20vw !important;
 	}
 	.logo1{
 		/* margin-left: -20px; */
@@ -290,8 +299,8 @@ height: 50px;
 width: 20vw;
 	}
 	.logo1 img{
-		margin-left: -2rem;
-		width: 17rem;
+		/* margin-left: -2rem; */
+		/* width: 17rem; */
 	height: 3.5rem;
 
 	}
@@ -299,10 +308,11 @@ width: 20vw;
 @media (max-width: 900px) {
 	.logo1 img{
 		width: 17rem;
-	height: 3.5rem;
+	height: 4rem;
 margin-left: -2rem;
 	}
 	.nav-toggle-fn{
+		color: #fff !important;
 		display: block;
 	}
 	.navbar-link-container {
@@ -319,19 +329,22 @@ margin-left: -2rem;
 	}
 	.hamburger-links-outer {
 		display: block;
+		width: max-content !important;
 	}
 	.bg-custom {
-		height: 8vh;
+		/* height: 8vh; */
 	}
 
     .navbar-toggler-icon {
-        display: inline-block;
-        width: 1.5em;
-        height: 1.5em;
-        vertical-align: middle;
-        background-image: var(--bs-navbar-toggler-icon-bg) !important;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-    }
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		vertical-align: middle;
+		background-image: var(--bs-navbar-toggler-icon-bg) !important;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100%;
+		filter: brightness(0) invert(1); /* Invert the colors to make the icon white */
+	}
+	
 }

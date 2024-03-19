@@ -125,25 +125,22 @@ const DustguardHomypromax = () => {
 				</div>
 				<div className="KitchenKing-homypromax-content">
 					<p>
-						Our chefs are trained and experienced in curating
-						exquisite meals tailored to your preferences. Whether
-						it's a five-course gourmet experience or your favorite
-						comfort food, with a keen eye for detail, focus on
-						nutrition and calorie count, our chefs ensure you get
-						the most delicious food on the table that doesn't
-						compromise your health!
+					Dust cleaning services goodbye to untidy spaces and the headaches that come with them. Our team of professionals ensures your abode is spotless and cleaned with the best techniques and care. All of our staff is hygiene checked, vaccinated, responsible and trustworthy. So, it's time to relax and sit back, and let our experts make your home shine! 
 					</p>
 					<div className="KitchenKing-homypromax-features">
-						<p style={{ color: "red" }}>Kitchen King</p>
+						<p style={{ color: "red" }}>DustGuard</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>
-								Well trained staff: 2 cleaner + 1 supervisor{" "}
+						<li>
+							Well trained staff: 2 cleaner + 1 supervisor
 							</li>
-							<li>Professional & experienced </li>
-							<li>Equipped with cleaning kit </li>
-							<li>Professional & experienced</li>
 							<li>Adaptable to all requirements</li>
+							<li >
+							Vaccinated for safety
+							</li>
+							<li >
+							Equipped with cleaning kit
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -188,16 +185,13 @@ const DustguardHomypromax = () => {
 							<IoDiamondOutline /> HOMY
 						</h2>
 						<ul>
-							<li>
-								Access to all premium nutrition & workout plans
+						<li>
+							Well trained cleaner
 							</li>
-							<li>5-star professional chef at home</li>
-							<li className="middle">
-								Customizable gourmet meals
-							</li>
-							<li className="middle">
-								Get dietician once a month
-							</li>
+							<li>Verified for hygiene</li>
+							<li>Professional and experienced</li>
+							<li className='middle'>Vaccinated for safety</li>
+							<li className="middle">Equipped with cleaning kit</li>
 						</ul>
 						<Link to="/dustguard/homy">
 							<div className="connect-button book-btn">
@@ -211,11 +205,13 @@ const DustguardHomypromax = () => {
 							<LiaCrownSolid /> HOMY PRO
 						</h2>
 						<ul>
-							<li>Versatile culinary expert </li>
-							<li>Skilled in crafting diverse dishes.</li>
-							<li>Possesses a professional degree</li>
+						<li>Well trained staff: 1 cleaner + 1 supervisor
+</li>
+							<li>Adaptable to all requirements
+</li>
+
 							<li className="middle">
-								Equipped with kitchen kits
+								Equipped with cleaning kits
 							</li>
 							<li className="middle">Vaccinated for safety</li>
 						</ul>{" "}

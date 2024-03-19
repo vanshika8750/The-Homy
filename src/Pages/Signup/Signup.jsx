@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import mobileview from "../../assets/mobileview.svg";
 import { Link } from "react-router-dom";
 import desktopview from "../../assets/ourservicesbackground.svg";
@@ -153,6 +154,19 @@ const Signup = () => {
     }
   };
 
+
+  const [showPassword, setShowPassword] = useState(false);
+ 
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
+  const [showConfPassword, setShowConfPassword] = useState(false);
+ 
+  const toggleConfPasswordVisibility = () => {
+    setShowConfPassword(!showConfPassword);
+  };
+
   return (
     <div className="signup content-below-navbar">
       <div
@@ -215,7 +229,7 @@ const Signup = () => {
             </div>
             <div>
               <input
-                type="password"
+               type={showPassword ? 'text' : 'password'}
                 id="password"
                 name="password"
                 value={formData.password}
@@ -223,10 +237,16 @@ const Signup = () => {
                 onChange={handleChange}
                 required
               />
+              <button type="button" 
+              className="eye"
+              onClick={togglePasswordVisibility}
+              >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
             </div>
             <div>
               <input
-                type="password"
+               type={showConfPassword ? 'text' : 'password'}
                 id="password2"
                 name="password2"
                 value={formData.password2}
@@ -234,6 +254,11 @@ const Signup = () => {
                 onChange={handleChange}
                 required
               />
+               <button className="eye" type="button" 
+              onClick={toggleConfPasswordVisibility}
+              >
+          {showConfPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
             </div>
             <div className="Signup-link" style={{ marginTop: "-1rem" }}>
               <p>

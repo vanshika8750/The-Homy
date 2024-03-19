@@ -59,7 +59,7 @@ const Pricing = () => {
   return (
     <div className="pricepage">
       <div className="pmain flow">
-        <h1 className="pmain__heading">Pricing</h1>
+        <h1 className="pmain__heading">Kitchen King</h1>
         <div className="pmain__pcards pcards">
           <div className="pcards__inner">
             <div className="pcards__pcard pcard">

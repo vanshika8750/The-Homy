@@ -11,11 +11,11 @@ const AnimatedHeadline = () => {
       <div>Dietitian</div>
 <div>Diet</div>
 <div>Healthy Food</div>
-<div>Homy</div>
-<div>Homy Pro</div>
-<div>Homy Pro Max</div>
+<div>Hygiene</div>
+<div>Cleanliness</div>
      <div>Professional Chefs</div>
      <div>Skilled</div>
+<div>Fitness</div>
      <div>5 star Experience</div>
      <div>Carbs</div>
      <div>Gourmet Multi-grain</div>
@@ -38,11 +38,11 @@ const AnimatedHeadline = () => {
      <div>Dietitian</div>
 <div>Diet</div>
 <div>Healthy Food</div>
-<div>Homy</div>
-<div>Homy Pro</div>
-<div>Homy Pro Max</div>
+<div>Hygiene</div>
+<div>Cleanliness</div>
      <div>Professional Chefs</div>
      <div>Skilled</div>
+<div>Fitness</div>
      <div>5 star Experience</div>
      <div>Carbs</div>
      <div>Gourmet Multi-grain</div>

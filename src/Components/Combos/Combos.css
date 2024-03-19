@@ -13,7 +13,7 @@
     border-radius: 18px;
     justify-content: center;
     align-items: center;
-    transition: height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    transition: height 0.7s ease, opacity 0.7s ease; /* Smooth transition */
     opacity: 0; 
   }
   
@@ -31,10 +31,12 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
   }
   
   .btn-book-now:hover {
-    background-color: #AF263A;
+   color: black;
   }
 
 .text-cut{
@@ -47,9 +49,9 @@
     justify-content: center;
     padding: 2rem;
     /* background-color: #020202; */
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.983);
     overflow-x: hidden;
-    color: white;
+    color: black !important;
 }
 .content-div-combo{
     /* position:absolute; */
@@ -69,13 +71,13 @@
 .combo-head{
     font-size: 65px;
    width: 100%;
-   font-weight: 500;
+   font-weight: 400;
    letter-spacing: -1px;
    display: flex;
    justify-content: center;
 align-items: center;
 position: relative;
-padding-bottom: 1rem;
+padding-bottom: 0.5rem;
 }
 .combo-head::after{
     content: '';
@@ -84,7 +86,7 @@ padding-bottom: 1rem;
   /* left: 0; */
   margin-right: 7rem;
   width: 15rem; /* Adjust the width as needed */
-  height: 10px; /* Adjust the height and style of the line as needed */
+  height: 6px; /* Adjust the height and style of the line as needed */
   background-color:black;
 }
 .content-combo{
@@ -99,8 +101,9 @@ padding-bottom: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
     margin-top: 3rem;
-    border: 2px solid grey;
+    border: 1px solid grey;
     padding: 2rem 0rem;
     border-radius: 20px;
 }
@@ -155,6 +158,16 @@ color: #E23744;
     .combo-head{
         font-size: 50px;
     }
+    .combo-head::after{
+        content: '';
+      position: absolute;
+      bottom: 0;
+      /* left: 0; */
+      margin-right: 0rem;
+      width: 15rem; /* Adjust the width as needed */
+      height: 6px; /* Adjust the height and style of the line as needed */
+      background-color:black;
+    }
     .cont-combo button{
         margin: 10px 0px;
     }
@@ -204,6 +217,7 @@ color: #E23744;
     }
     .content-combo .head{
         font-size: 40px;
+
     }
     /* .combo-head{
         flex-direction: column;
@@ -233,7 +247,7 @@ color: #E23744;
          align-items: flex-start;
          justify-content: space-between;
          /* margin-top: 5rem; */
-         color: white;
+         color: black;
          padding: 0px;
     }
     .combo-page{

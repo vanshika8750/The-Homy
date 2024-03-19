@@ -83,7 +83,7 @@ const Combos = () => {
             </div>
 
             <div className="combo-overlay">
-             <Link to='/kitchenking/homy'> <button className="btn-book-now">Book Now</button></Link>
+             <Link to='/contactus'> <button className="btn-book-now">Book Now</button></Link>
             </div>
 
             {/* <div className="cont-combo">
@@ -120,7 +120,7 @@ const Combos = () => {
             </div>
 
             <div className="combo-overlay">
-             <Link to='/kitchenking/homypro'> <button className="btn-book-now">Book Now</button></Link>
+             <Link to='/contactus'> <button className="btn-book-now">Book Now</button></Link>
             </div>
             {/* <div className="cont-combo">
               <button>CONTINUE</button>
@@ -155,7 +155,7 @@ const Combos = () => {
               </div>
             </div>
             <div className="combo-overlay">
-             <Link to='/kitchenking/homypromax'> <button className="btn-book-now">Book Now</button></Link>
+             <Link to='/contactus'> <button className="btn-book-now">Book Now</button></Link>
             </div>
 
             {/* <div className="cont-combo">

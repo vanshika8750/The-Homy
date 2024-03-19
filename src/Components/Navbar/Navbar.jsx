@@ -54,7 +54,7 @@ const [navColor,setnavColor]=useState(false);
 
     useEffect(() => {
         const changeBackground = () => {
-            if (window.scrollY >= 200) {
+            if (window.scrollY >= 100) {
                 setnavColor(true);
             } else {
                 setnavColor(false);
@@ -79,7 +79,7 @@ const [navColor,setnavColor]=useState(false);
                     // data-bs-theme="dark"
                     // sticky="top"
                 >
-                    <Container fluid>
+                    <Container fluid className="container-nav">
                        
 
                     <div className="logo1">

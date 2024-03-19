@@ -130,22 +130,20 @@ const HygieneHomy = () => {
 				</div>
 				<div className="KitchenKing-homy-content">
 					<p>
-						Our chefs are trained and experienced in curating
-						exquisite meals tailored to your preferences. Whether
-						it's a five-course gourmet experience or your favorite
-						comfort food, with a keen eye for detail, focus on
-						nutrition and calorie count, our chefs ensure you get
-						the most delicious food on the table that doesn't
-						compromise your health!
+					Our skilled cleaners uphold the highest standards of hygiene
+					and precision, leaving no tile unpolished and no fixture
+					untouched. With an unwavering commitment to excellence, we
+					ensure restoring your restroom to pristine luxury.
 					</p>
 					<div className="KitchenKing-homy-features">
-						<p style={{ color: "red" }}>Kitchen King</p>
+						<p style={{ color: "red" }}>Mr. Hygiene</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>Chefs with cooking expertise</li>
-							<li>Equipped with kitchen kits</li>
-							<li>Verified for hygiene and well-trained</li>
+							<li>Well trained cleaner</li>
 							<li>Vaccinated for safety</li>
+							<li>Verified for hygiene </li>
+							<li>Equipped with toilet cleaner kit
+</li>
 						</ul>
 					</div>
 				</div>
@@ -191,13 +189,15 @@ const HygieneHomy = () => {
 							<LiaCrownSolid /> HOMY PRO
 						</h2>
 						<ul>
-							<li>Versatile culinary expert </li>
-							<li>Skilled in crafting diverse dishes.</li>
-							<li>Possesses a professional degree</li>
+							<li>Well trained staff: 1 cleaner + 1 supervisor </li>
+							<li>Verified for hygiene
+</li>
+							<li>Vaccinated for safety
+</li>
 							<li className="middle">
-								Equipped with kitchen kits
+							Equipped with toilet cleaner kit
+
 							</li>
-							<li className="middle">Vaccinated for safety</li>
 						</ul>{" "}
 						<Link to="/hygiene/homypro">
 							<div className="connect-button book-btn">
@@ -212,14 +212,18 @@ const HygieneHomy = () => {
 						</h2>
 						<ul>
 							<li>
-								Access to all premium nutrition & workout plans
+							Well trained staff: 2 cleaner + 1 supervisor
+
 							</li>
-							<li>5-star professional chef at home</li>
+							<li>Verified for hygiene
+</li>
 							<li className="middle">
-								Customizable gourmet meals
+							Vaccinated for safety
+
 							</li>
 							<li className="middle">
-								Get dietician once a month
+							Equipped with toilet cleaner kit
+
 							</li>
 						</ul>
 						<Link to="/hygiene/homypromax">

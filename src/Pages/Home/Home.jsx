@@ -17,6 +17,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Gallery from '../../Components/Gallery/Gallery'
 import OurCooks from '../../Components/OurCooks/OurCooks'
+import Carousel  from '../../Components/Carousel/Carousel'
 
 const Home = () => {
 
@@ -125,6 +126,7 @@ useEffect(() => {
         <div className="home-height">
         <AnimatedHeadline/>
         <Banner/>
+        {/* <Carousel/> */}
         </div>
         <Description/>
         <FeatureBanner/>
@@ -132,14 +134,16 @@ useEffect(() => {
         <Ourservices/>
         <Combos/>
         <Pricing/>
-        <Gallery/>
-<OurCooks/>       
+        {/* <Gallery/> */}
+{/* <OurCooks/>        */}
 
         
 
     
     
     </div>
+
+
   )
 }
 

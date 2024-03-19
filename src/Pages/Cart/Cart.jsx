@@ -104,15 +104,26 @@ Fill in the details here 👉</div>
                 <div className="prod-no">
 
                 <div className="prodname">
-    {selectedPlan?.services || ''}-{selectedPlan?.plans || ''}-{selectedPlan?.planoptions || ''}
+                    <div className="prodname-service">
+                    {selectedPlan?.services || ''}
+                    </div>
+                    <div className="prodname-plan">
+                    {selectedPlan?.plans || ''}                    
+                    </div>
+                    <div className="prodname-planoption">
+                    {selectedPlan?.planoptions || ''}
+                    </div>
 </div>
 
 
                     <div className="no-prod">
+                <div className="btn-cart-prod">
                 <button onClick={decrement}>-</button>
                 <div>{count || 0}</div>
 
                 <button onClick={increment}>+</button>
+                </div>
+                <div className="time-head">(Time in hours)</div>
             </div>
             <div className="price-prod">
             <div><MdCurrencyRupee/>{(priceprod || 0).toFixed(2)}</div>
@@ -134,7 +145,7 @@ Fill in the details here 👉</div>
 
             </div>
 
-
+{/* 
             <div className="coupons border-cart">
 
 <div className="coupons-icon">
@@ -152,7 +163,7 @@ Fill in the details here 👉</div>
     <img src={rightarrcart} alt="" />
 </div>
 
-            </div>
+            </div> */}
 
             <div className="payment border-cart">
 

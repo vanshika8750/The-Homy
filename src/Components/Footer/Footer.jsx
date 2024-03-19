@@ -64,7 +64,7 @@ export default function App() {
     <div className="footer">
       <MDBFooter className="text-center" color="footer" bgColor="black">
         <div className="newsletter">
-          <div style={{ fontSize: "25px" }}>Subscribe to Newsletter</div>
+          <div style={{ fontSize: "25px",paddingBottom:'10px' }}>Subscribe to Newsletter</div>
           <div>
             <form onSubmit={handleSubscription}>
               <input
@@ -91,7 +91,7 @@ export default function App() {
             </Link>
           </div>
         </div>
-        <MDBContainer className="p-4">
+        <MDBContainer className="p-0">
           <section className="footer-links">
             <MDBRow>
               <MDBCol lg="3" md="6" className="mb-4 mb-md-0">

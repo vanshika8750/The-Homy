@@ -1,15 +1,16 @@
 .Description{
     display: flex;
     width: 100vw;
-    height: 186px;
+    height: 130px !important;
     /* top: 100vh; */
+    margin-top: -4px;
     position: relative;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     /* background-color: #020202; */
     background-color: #fff;
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-bottom: 10rem;
 }
 
@@ -19,7 +20,7 @@ text-align: center;
 font-family: Inter;
 font-size: 20px;
 font-style: normal;
-font-weight: 300;
+font-weight: 500;
 line-height: normal;
 padding-left: 17rem;
 padding-right: 17rem;

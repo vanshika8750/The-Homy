@@ -1,5 +1,6 @@
 .home-height{
     height: 90vh !important;
+    /* position: relative; */
     width: 100vw;
     overflow:  hidden !important;
 }

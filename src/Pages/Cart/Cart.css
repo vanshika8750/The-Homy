@@ -68,11 +68,34 @@ img{
     display: flex;
     justify-content: space-between;
 }
-.no-prod{
+.prodname-plan
+{
+    font-size: 20px;
+}
+.prodname-planoption{
+    font-size: 18px;
+}
+.btn-cart-prod{
+    height: 40px;
     background: #EC616C;
     display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px;
     color: black;
+}
+.no-prod{
+    /* height: 40px; */
+    /* background: #EC616C; */
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    color: white;
 }
 .no-prod button{
 border: none;
@@ -185,13 +208,30 @@ letter-spacing: 1.5px;
    .prod-no{
     display: block;
    }
+   .prodname {
+    display: flex;
+   }
+   .prodname-plan,.prodname-planoption,.prodname-service{
+    font-size: 22px !important;
+    margin-right: 15px;
+   }
    .no-prod{
-    width: 100px;
-    justify-content: center;
-    justify-self: right ;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 15px;
+    /* width: 100px; */
+    /* justify-content: center; */
+    /* justify-self: right ; */
+   }
+   .time-head{
+    margin-right: 20px;
    }
    .no-prod,.price-prod{
-    text-align: right;
+    text-align: right !important;
+   }
+   .price-prod{
+    margin-top: 15px;
    }
    .btn-cart{
     margin: 20px;

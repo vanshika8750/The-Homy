@@ -137,13 +137,12 @@ const Homypromax = () => {
 						<p style={{ color: "red" }}>Kitchen King</p>
 						<h3>Choose the plan that’s right for you </h3>
 						<ul>
-							<li>
-								Well trained staff: 2 cleaner + 1 supervisor{" "}
+						<li>
+								Access to all premium nutrition & workout plans
 							</li>
-							<li>Professional & experienced </li>
-							<li>Equipped with cleaning kit </li>
-							<li>Professional & experienced</li>
-							<li>Adaptable to all requirements</li>
+							<li>5-star professional chef at home</li>
+							<li className="middle">Customizable gourmet meals</li>
+							<li className="middle">Get dietician once a month</li>
 						</ul>
 					</div>
 				</div>
@@ -188,16 +187,11 @@ const Homypromax = () => {
 							<IoDiamondOutline /> HOMY
 						</h2>
 						<ul>
-							<li>
-								Access to all premium nutrition & workout plans
-							</li>
-							<li>5-star professional chef at home</li>
-							<li className="middle">
-								Customizable gourmet meals
-							</li>
-							<li className="middle">
-								Get dietician once a month
-							</li>
+						<li>Chefs with cooking expertise</li>
+              <li>Equipped with kitchen kits</li>
+              <li>Verified for hygiene and well-trained</li>
+			  <li className="middle">Professional and experienced</li>
+              <li className="middle">Vaccinated for safety</li>
 						</ul>
 						<Link to="/kitchenking/homy">
 							<div className="connect-button book-btn">
